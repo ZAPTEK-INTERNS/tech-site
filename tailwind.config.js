@@ -8,7 +8,11 @@ module.exports = {
     
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "hero" : "url('../public/images/quote-bg.webp')",
+      }
+    },
   },
   plugins: [],
 }
