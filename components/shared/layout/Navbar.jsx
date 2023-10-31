@@ -7,10 +7,8 @@ import {CgMenuRight} from 'react-icons/cg'
 import {FiArrowDownRight} from 'react-icons/fi'
 import {AiOutlineClose} from 'react-icons/ai'
 import {MdKeyboardArrowDown} from 'react-icons/md'
-import DropDownA from '../../DropDownA'
-import DropDownB from '../../DropDownB'
-import DropDownC from '../../DropDownC'
-import Cart from '../../Cart'
+import {DropDownA, DropDownB, DropDownC, Cart} from '../../links'
+
 
 
 const Navbar = () => {
@@ -20,13 +18,13 @@ const Navbar = () => {
   const handleCartOpen = () => {
     setCart(true)
   }
-
   const handleMenu = () => {
     setMenu(prev => !prev)
   }
   const handleClose = () => {
     setMenu(false)
   }
+
   return (
     <nav className='w-full overflow-hidden py-4 lg:py-0'>
       <section className='flex justify-between items-center w-[94%] lg:w-[96%] mx-[3%] lg:ml-[4%]'>
@@ -88,19 +86,19 @@ const Navbar = () => {
      </section>
 
      {menu && (
-     <div className="fixed lg:hidden left-0 top-0 bg-green-200 h-[100vh] w-[50%] sm:w-[300px] z-50">
+     <div className="fixed lg:hidden left-0 top-0 bg-white h-[100vh] w-[60%] sm:w-[300px] z-40">
        <div className="flex justify-between items-center my-6 mx-4">
          <Image src={logo} className="w-[70px] sm:w-[100px]"/>
          <AiOutlineClose size={24} onClick={handleClose}/>
        </div>
        <div className='flex flex-col text-lg gap-6 mx-4 font-semibold'> 
-          <div className='group'>
+          <div className='group '>
             <p className='cursor-pointer flex justify-between items-center relative hover:text-violet-900 transition-all'>
               <span>Demos</span>
               <MdKeyboardArrowDown className="transition-all group-hover:-rotate-180"/>
             </p>
              <div>
-              <DropDownA/>
+               <DropDownA/>
             </div>
           </div>
           <div className='group'>

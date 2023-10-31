@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const DropDownC = () => {
   return (
-    <div className='bg-white w-full dropdown absolute hidden group-hover:flex py-3 px-8 rounded-md gap-6 z-20'>
+    <div className='bg-white h-[230px] lg:h-fit overflow-y-scroll lg:absolute w-full hidden flex-col lg:flex-row group-hover:flex py-3 px-8 rounded-md gap-6 z-20'>
       <div className="flex flex-col gap-4 text-black/70">
         <Link href="/" className='hover:text-violet-900'>Home 1</Link>
         <Link href="" className='hover:text-violet-900'>Home 2</Link>
