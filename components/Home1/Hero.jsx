@@ -1,9 +1,9 @@
-import logo from '../public/images/logo-white.svg'
+import logo from '../../public/images/logo-white.svg'
 import Image from 'next/image'
 
 
 
-const HomeHero = () => {
+const Hero = () => {
   return (
     <div className='bg-hero bg-center bg-cover bg-no-repeat h-screen w-full relative top-0 left-0'>
       <div className='flex text-white flex-col justify-center items-center h-screen sm:text-lg w-[90%] mx-[5%] sm:w-[80%] sm:mx-[10%] lg:w-[70%] lg:mx-[15%]'>
@@ -28,4 +28,4 @@ const HomeHero = () => {
   )
 }
 
-export default HomeHero
+export default Hero

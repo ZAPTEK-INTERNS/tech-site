@@ -1,4 +1,4 @@
-import {logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo11, logo10} from '../public/links'
+import {logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo11, logo10} from '../../public/links'
 import Image from 'next/image'
 
 

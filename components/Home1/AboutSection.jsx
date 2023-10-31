@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import {pricing1} from '../public/links'
+import {pricing1} from '../../public/links'
 
 const AboutSection = () => {
   return (
