@@ -41,7 +41,7 @@ const Card = () => {
               </div>
 
               </Link>
-              <p className="font-medium my-2">{card.detail}</p>
+              <p className="font-medium my-2 text-gray-400">{card.detail}</p>
               <div className="text-purple-900 font-medium">
              {
                 card.categories.map((category, categoryIndex) => (
