@@ -1,0 +1,12 @@
+export { default as Home4Banner } from './Home4Banner';
+export { default as Home4HelpSection } from './Home4HelpSection';
+export { default as Home4AboutSection } from './Home4AboutSection';
+export { default as Home4WorkSection } from './Home4WorkSection';
+export { default as Home4TestimonialSection } from './Home4TestimonialSection';
+export { default as DotBtnLink } from './DotBtnLink';
+export {default as ArrowBtn} from './ArrowBtn';
+export { default as Folder } from './Folder';
+export { default as HeadingTag } from './HeadingTag';
+export { default as ServicesCard } from './ServicesCard';
+export { default as WorkCard } from './WorkCard';
+export { default as TestimonialCard } from './TestimonialCard';
