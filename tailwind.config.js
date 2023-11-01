@@ -12,6 +12,7 @@ module.exports = {
       backgroundImage: {
         "hero" : "url('../public/images/quote-bg.webp')",
         "hero-h4" : "url('../public/images/about1.webp')",
+        "ourteam" : "url('../public/images/ourteam.webp')",
       }
     },
   },

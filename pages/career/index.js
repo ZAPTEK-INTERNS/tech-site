@@ -7,7 +7,7 @@ const Career = () => {
      <CareerClients/>
      <Benefits/>
      <Careers/>
-     <Getintouch/>
+  <Getintouch/>
     </div>
   )
 }
