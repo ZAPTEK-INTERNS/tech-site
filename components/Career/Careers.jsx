@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 
 const Careers = () => {
-  console.log(typeof joblist)
+ 
   return (
     <section className='mx-[5%] w-[90%] lg:w-[80%] lg:mx-[10%] mt-[10px]'>
       <div className="flex items-center justify-center flex-col">
@@ -17,18 +17,18 @@ const Careers = () => {
 
       <div className="flex flex-col">
         {joblist.map((job) => ( 
-          console.log(typeof job)
-            // <article key={job.id} 
-            //  className="flex flex-col gap-4 md:flex-row justify-between items-center bg-violet-100/50 rounded-md px-6 py-8 w-full my-4 border border-gray-200">
-            //   <Link href={`/career/${job.id}`} className="text-3xl font-bold text-gray-700 hover:text-violet-800 transition-all">
-            //     {job.title}
-            //   </Link>
-            //   <p className="font-semibold text-gray-700 text-xl">{job.location}</p>
-            //   <p className="font-semibold text-gray-700 text-xl">{job.jobtype}</p>
-            //   <Link href={`/career/${job.id}`} className="text-lg bg-violet-700 p-3 rounded-3xl text-white font-semibold transition-all hover:bg-white hover:text-black border border-violet-600">
-            //     Apply Now
-            //  </Link>
-            // </article>
+       
+            <article key={job.id} 
+             className="flex flex-col gap-4 md:flex-row justify-between items-center bg-violet-100/50 rounded-md px-6 py-8 w-full my-4 border border-gray-200">
+              <Link href={`/career/${job.id}`} className="text-3xl font-bold text-gray-700 hover:text-violet-800 transition-all">
+                {job.title}
+              </Link>
+              <p className="font-semibold text-gray-700 text-xl">{job.location}</p>
+              <p className="font-semibold text-gray-700 text-xl">{job.jobtype}</p>
+              <Link href={`/career/${job.id}`} className="text-lg bg-violet-700 p-3 rounded-3xl text-white font-semibold transition-all hover:bg-white hover:text-black border border-violet-600">
+                Apply Now
+             </Link>
+            </article>
         ))}
       </div>
     </section>

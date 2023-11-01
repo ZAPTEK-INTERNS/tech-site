@@ -2,17 +2,17 @@ import { joblist }  from "../../components/Career/index"
 import { useRouter } from 'next/router';
 
 const CareerDetail = () => {
-
+  //console.log(typeof joblist)
   const router = useRouter();
   const jobId = router.query.id;
 
-const job = joblist.find((job) => job.id === jobId);
-//console.log(jobId)
-console.log(job.description)
+const job = joblist.find((job) => job.id == jobId);
+console.log(jobId)
+
 
   return (
     <section>
-      <h1>{job.description}</h1>
+      <h1>{job.title}</h1>
     </section>
   )
 }

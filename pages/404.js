@@ -1,11 +1,10 @@
-import {logo, error} from '../public/links'
+import { error} from '../public/links'
 import Image from 'next/image'
 import Link from 'next/link'
 
 const Errorpage = () => {
   return (
     <div className='w-[90%] flex flex-col items-center justify-center my-8 mx-[5%]'>
-      <Image src={logo} alt="logo" className='mb-1 '/>
       <div className='flex items-center'>
        <h1 className='text-violet-700 font-bold text-[6rem] sm:text-[10rem]'>4</h1>
        <Image src={error} alt="error" className='sm:w-[150px]'/>
