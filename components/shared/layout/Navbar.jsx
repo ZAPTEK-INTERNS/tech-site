@@ -1,4 +1,4 @@
-import logo from '../../../public/images/logo-black.svg'
+import { logo } from '../../../public/links'
 import Link from 'next/link'
 import Image from 'next/image'
 import {useState} from 'react'

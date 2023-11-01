@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 
 const Careers = () => {
+  //console.log(joblist)
   return (
     <section className='mx-[5%] w-[90%] lg:w-[80%] lg:mx-[10%] mt-[10px]'>
       <div className="flex items-center justify-center flex-col">
