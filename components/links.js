@@ -5,3 +5,11 @@ export {default as Cart} from './Home1/Cart'
 export {default as Hero} from './Home1/Hero'
 export {default as Clients} from './Home1/Clients'
 export {default as AboutSection} from './Home1/AboutSection'
+export {default as Header} from './Career/Header'
+export {default as CareerClients} from './Career/Clients'
+export {default as Benefits} from './Career/Benefits'
+export {default as Careers} from './Career/Careers'
+export {default as Getintouch} from './Career/Getintouch'
+
+
+
