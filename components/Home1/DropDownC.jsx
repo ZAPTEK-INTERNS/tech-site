@@ -9,7 +9,7 @@ const DropDownC = () => {
         <Link href="" className='hover:text-violet-900'>Home 3</Link>
         <Link href="" className='hover:text-violet-900'>Home 4</Link>
         <Link href="" className='hover:text-violet-900'>About Us</Link>
-        <Link href="" className='hover:text-violet-900'>Leadership</Link>
+        <Link href="/ourteam" className='hover:text-violet-900'>Leadership</Link>
         <Link href="" className='hover:text-violet-900'>Testimonials</Link>
         <Link href="" className='hover:text-violet-900'>Why Choose Us</Link>
         <Link href="" className='hover:text-violet-900'>Our Values</Link>

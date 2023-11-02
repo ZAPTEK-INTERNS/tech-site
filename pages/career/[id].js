@@ -51,7 +51,7 @@ const job = joblist.find((job) => job.id === newId);
           <p className="text-lg font-semibold text-[#1a0533]/60 mt-3">{job.comment}</p>
         </div>
      
-        <div className="col-span-6 md:col-span-2 bg-violet-300/10 w-full h-fit px-6 py-8 border border-gray-200 rounded-md">
+        <div className="col-span-6 md:col-span-2 bg-violet-300/10 w-full h-fit px-6 py-8 border border-gray-200 rounded-md sticky top-8">
           <div className="flex gap-4 items-center">
             <FaCalendarAlt size={20} className="text-violet-900"/>
             <p className="text-lg font-semibold text-gray-500">{job.jobtype}</p>
@@ -65,7 +65,7 @@ const job = joblist.find((job) => job.id === newId);
            <p className="text-lg font-semibold text-gray-500">{job.location}</p>
           </div>
           <Link href="/"
-           className="bg-violet-900 text-white border p-3 border-violet-900 hover:text-black hover:bg-white rounded-3xl transition-all duration-500 font-semibold w-full sticky top-8">
+           className="bg-violet-900 text-white border p-3 border-violet-900 hover:text-black hover:bg-white rounded-3xl transition-all duration-500 font-semibold w-full">
             Apply Now
           </Link>
         </div>

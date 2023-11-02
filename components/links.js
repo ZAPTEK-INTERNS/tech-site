@@ -12,6 +12,8 @@ export {default as Careers} from './Career/Careers'
 export {default as Getintouch} from './Career/Getintouch'
 export {default as TeamHero} from './Leadership/Hero'
 export {default as TeamCards} from './Leadership/TeamCards'
+export {default as Video} from './Leadership/Video'
+
 
 
 

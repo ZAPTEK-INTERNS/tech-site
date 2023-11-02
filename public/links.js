@@ -29,5 +29,7 @@ export {default as member5} from './images/member5.webp'
 export {default as member6} from './images/member6.webp'
 export {default as member7} from './images/member7.webp'
 export {default as member8} from './images/member8.webp'
+export {default as vpole} from './images/verticalpole.svg'
+
 
 
