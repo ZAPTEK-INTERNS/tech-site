@@ -1,17 +1,13 @@
 import { useState } from 'react';
 import { useFilter } from './Context/Filter';
+import {  filterCategories} from  './data.js';
 
 const Filter = () => {
   const [selectedFilter, setSelectedFilter] = useState('all');
   const { setFilter } = useFilter();
   const color = 'text-purple-900';
 
-  const filterCategories = [
-    { text: 'All', value: 'all' },
-    { text: 'Design', value: 'Design' },
-    { text: 'Development', value: 'Development' },
-    { text: 'IT Consultancy', value: 'IT Consultancy' },
-  ];
+
 
   const handleFilterChange = (newFilter) => {
     setSelectedFilter(newFilter);

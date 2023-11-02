@@ -80,3 +80,14 @@ export const cardsData = [
     ],
   },
 ];
+
+/**
+ * This array is for filters of card component 
+ */
+
+export const filterCategories = [
+  { text: 'All', value: 'all' },
+  { text: 'Design', value: 'design' },
+  { text: 'Development', value: 'development' },
+  { text: 'IT Consultancy', value: 'it-consultancy' },
+];
