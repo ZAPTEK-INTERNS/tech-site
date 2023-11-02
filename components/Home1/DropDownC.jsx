@@ -15,8 +15,8 @@ const DropDownC = () => {
         <Link href="" className='hover:text-violet-900'>Our Values</Link>
       </div>
       <div className="flex flex-col gap-4 text-black/70">
-        <Link href="" className='hover:text-violet-900'>Careers</Link>
-        <Link href="" className='hover:text-violet-900'>Career Details</Link>
+        <Link href="/career" className='hover:text-violet-900'>Careers</Link>
+        <Link href="career/1" className='hover:text-violet-900'>Career Details</Link>
         <Link href="" className='hover:text-violet-900'>Blog</Link>
         <Link href="" className='hover:text-violet-900'>Blog Details</Link>
         <Link href="" className='hover:text-violet-900'>Case Studies</Link>

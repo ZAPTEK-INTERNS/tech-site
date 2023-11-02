@@ -21,3 +21,13 @@ export {default as whitelogo6} from './images/white-logo6.svg'
 export {default as whitelogo7} from './images/white-logo7.svg'
 export {default as whitelogo8} from './images/white-logo8.svg'
 export {default as whitelogo9} from './images/white-logo9.svg'
+export {default as member1} from './images/member1.webp'
+export {default as member2} from './images/member2.webp'
+export {default as member3} from './images/member3.webp'
+export {default as member4} from './images/member4.webp'
+export {default as member5} from './images/member5.webp'
+export {default as member6} from './images/member6.webp'
+export {default as member7} from './images/member7.webp'
+export {default as member8} from './images/member8.webp'
+
+

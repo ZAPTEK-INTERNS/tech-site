@@ -26,7 +26,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className='w-full overflow-hidden py-4 lg:py-0 border-b border-gray-300'>
+    <nav className='w-full overflow-hidden py-4 lg:py-0 border-b border-gray-300 '>
       <section className='flex justify-between items-center w-[94%] lg:w-[96%] mx-[3%] lg:ml-[4%]'>
         <Image src={logo} />
 
