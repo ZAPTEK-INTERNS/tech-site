@@ -47,7 +47,7 @@ const members = [
 
 const TeamCards = () => {
   return (
-    <section className='mx-[3%] w-[94%] lg:w-[90%] lg:mx-[5%] mt-[100px] sm:mt-[180px] md:mt-0'>
+    <section className='mx-[3%] w-[94%] lg:w-[90%] lg:mx-[5%] mt-[100px] sm:mt-[180px] md:mt-8'>
       <div className='grid grid-cols-12 gap-6'>
        {members.map((member, index) => (
          <article key={index} className='relative col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3'>

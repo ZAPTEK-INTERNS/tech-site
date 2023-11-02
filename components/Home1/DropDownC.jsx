@@ -20,7 +20,7 @@ const DropDownC = () => {
         <Link href="" className='hover:text-violet-900'>Blog</Link>
         <Link href="" className='hover:text-violet-900'>Blog Details</Link>
         <Link href="" className='hover:text-violet-900'>Case Studies</Link>
-        <Link href="" className='hover:text-violet-900'>Case Stydy Details</Link>
+        <Link href="" className='hover:text-violet-900'>Case Study Details</Link>
         <Link href="" className='hover:text-violet-900'>Services </Link>
         <Link href="" className='hover:text-violet-900'>Services Details</Link>
       </div>
@@ -30,7 +30,7 @@ const DropDownC = () => {
         <Link href="" className='hover:text-violet-900'>Get A Quote</Link>
         <Link href="" className='hover:text-violet-900'>Testimonials</Link>
         <Link href="" className='hover:text-violet-900'>Pricing</Link>
-        <Link href="" className='hover:text-violet-900'>FAQ</Link>
+        <Link href="/faq" className='hover:text-violet-900'>FAQ</Link>
       </div>
     </div>
   )
