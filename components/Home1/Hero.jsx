@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const Hero = () => {
   return (
-    <div className='bg-hero bg-center bg-cover bg-no-repeat h-screen w-full relative top-0 left-0'>
+    <div className='bg-hero bg-center bg-cover bg-no-repeat h-screen w-full'>
       <div className='flex text-white flex-col justify-center items-center h-screen sm:text-lg w-[90%] mx-[5%] sm:w-[80%] sm:mx-[10%] lg:w-[70%] lg:mx-[15%]'>
         <Image src={logo} alt="logo"/>
         <h1 className='text-4xl sm:6xl lg:text-7xl font-bold mt-8 lg:leading-[5rem] text-center'>

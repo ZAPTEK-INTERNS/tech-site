@@ -9,18 +9,18 @@ const DropDownC = () => {
         <Link href="" className='hover:text-violet-900'>Home 3</Link>
         <Link href="" className='hover:text-violet-900'>Home 4</Link>
         <Link href="" className='hover:text-violet-900'>About Us</Link>
-        <Link href="" className='hover:text-violet-900'>Leadership</Link>
+        <Link href="/ourteam" className='hover:text-violet-900'>Leadership</Link>
         <Link href="" className='hover:text-violet-900'>Testimonials</Link>
         <Link href="" className='hover:text-violet-900'>Why Choose Us</Link>
         <Link href="" className='hover:text-violet-900'>Our Values</Link>
       </div>
       <div className="flex flex-col gap-4 text-black/70">
-        <Link href="" className='hover:text-violet-900'>Careers</Link>
-        <Link href="" className='hover:text-violet-900'>Career Details</Link>
+        <Link href="/career" className='hover:text-violet-900'>Careers</Link>
+        <Link href="career/1" className='hover:text-violet-900'>Career Details</Link>
         <Link href="" className='hover:text-violet-900'>Blog</Link>
         <Link href="" className='hover:text-violet-900'>Blog Details</Link>
         <Link href="" className='hover:text-violet-900'>Case Studies</Link>
-        <Link href="" className='hover:text-violet-900'>Case Stydy Details</Link>
+        <Link href="" className='hover:text-violet-900'>Case Study Details</Link>
         <Link href="" className='hover:text-violet-900'>Services </Link>
         <Link href="" className='hover:text-violet-900'>Services Details</Link>
       </div>
@@ -30,7 +30,7 @@ const DropDownC = () => {
         <Link href="" className='hover:text-violet-900'>Get A Quote</Link>
         <Link href="" className='hover:text-violet-900'>Testimonials</Link>
         <Link href="" className='hover:text-violet-900'>Pricing</Link>
-        <Link href="" className='hover:text-violet-900'>FAQ</Link>
+        <Link href="/faq" className='hover:text-violet-900'>FAQ</Link>
       </div>
     </div>
   )
