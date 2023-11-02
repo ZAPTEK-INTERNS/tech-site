@@ -1,4 +1,4 @@
-import {TeamHero, TeamCards, Getintouch, Video} from '../components/links'
+import {TeamHero, TeamCards, Getintouch, Video, Faq} from '../components/links'
 import Head from 'next/head';
 
 const ourteam = () => {
@@ -8,6 +8,7 @@ const ourteam = () => {
       <TeamHero/>
       <TeamCards/>
       <Video/>
+      <Faq/>
       <Getintouch/>
     </div>
   )

@@ -13,6 +13,8 @@ export {default as Getintouch} from './Career/Getintouch'
 export {default as TeamHero} from './Leadership/Hero'
 export {default as TeamCards} from './Leadership/TeamCards'
 export {default as Video} from './Leadership/Video'
+export {default as Faq} from './Leadership/Faq'
+
 
 
 

@@ -2,7 +2,7 @@ import {AiOutlineClose} from 'react-icons/ai'
 
 const Cart = ({video, setVideo}) => {
 
-  const handleCart = () => {
+  const handleVideo = () => {
     setVideo(false)
   }
 
@@ -17,7 +17,7 @@ const Cart = ({video, setVideo}) => {
             title="YouTube video player"
             allowFullScreen
           ></iframe>
-          <div onClick={handleCart} >
+          <div onClick={handleVideo} >
            <AiOutlineClose  size={25} className='cursor-pointer text-white font-bold'/>
           </div>
          </div>
