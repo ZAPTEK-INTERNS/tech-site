@@ -10,7 +10,7 @@ const CartCardsGrid = ({DBArray}) => {
             <CartCard 
               CartKey={key}
               CartImg={inobj.image}
-              ProductLink={inobj.url}
+              ShopLink={inobj.url}
               CategoryLink={inobj.tag}
               CartTag={inobj.tag}
               CartTitle={inobj.name}
