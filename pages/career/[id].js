@@ -11,11 +11,11 @@ const CareerDetail = () => {
   const jobId = router.query.id;
   const newId = parseInt(jobId) 
 
-
-console.log(typeof newId)
 const job = joblist.find((job) => job.id === newId);
 
-
+if (!job) {
+  return <div>Loading...</div>;
+}
 
   return (
     <section>
