@@ -14,6 +14,8 @@ export {default as TeamHero} from './Leadership/Hero'
 export {default as TeamCards} from './Leadership/TeamCards'
 export {default as Video} from './Leadership/Video'
 export {default as Faq} from './Leadership/Faq'
+export {default as Services} from './Home1/Services'
+
 
 
 
