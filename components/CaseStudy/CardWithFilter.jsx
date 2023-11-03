@@ -11,7 +11,7 @@ const CardWithFilter = () => {
       {
         cardsData.map((card, index) => {
           const matchedCategories = card.categories.filter(
-            (category) => category.name === filter
+            (category) => category.link === filter
           );
 
           if (filter === "all" || matchedCategories.length > 0) {
