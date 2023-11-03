@@ -36,6 +36,12 @@ export { default as digital } from "./images/digital.svg";
 export { default as www } from "./images/www.svg";
 export { default as mobile } from "./images/mobile.svg";
 export { default as cloud } from "./images/cloud.svg";
+export { default as CS1 } from "./images/supply-chain.jpg";
+export { default as CS4 } from "./images/xyz.jpg";
+export { default as CS5 } from "./images/e-commerce.jpg";
+export { default as CS6 } from "./images/marketing.jpg";
+
+
 
 
 
