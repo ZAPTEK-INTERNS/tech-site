@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 
 const Careers = () => {
+ 
   return (
     <section className='mx-[5%] w-[90%] lg:w-[80%] lg:mx-[10%] mt-[10px]'>
       <div className="flex items-center justify-center flex-col">
@@ -15,7 +16,8 @@ const Careers = () => {
       </div>
 
       <div className="flex flex-col">
-        {joblist.map((job) => (
+        {joblist.map((job) => ( 
+       
             <article key={job.id} 
              className="flex flex-col gap-4 md:flex-row justify-between items-center bg-violet-100/50 rounded-md px-6 py-8 w-full my-4 border border-gray-200">
               <Link href={`/career/${job.id}`} className="text-3xl font-bold text-gray-700 hover:text-violet-800 transition-all">

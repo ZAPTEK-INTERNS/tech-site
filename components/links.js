@@ -10,6 +10,13 @@ export {default as CareerClients} from './Career/Clients'
 export {default as Benefits} from './Career/Benefits'
 export {default as Careers} from './Career/Careers'
 export {default as Getintouch} from './Career/Getintouch'
+export {default as TeamHero} from './Leadership/Hero'
+export {default as TeamCards} from './Leadership/TeamCards'
+export {default as Video} from './Leadership/Video'
+export {default as Faq} from './Leadership/Faq'
+
+
+
 
 
 
