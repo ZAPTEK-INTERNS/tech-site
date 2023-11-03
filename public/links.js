@@ -1,5 +1,5 @@
 export { default as logo } from "./images/logo.svg";
-export { default as onlyLogo } from "./images/logo.png";
+export { default as onlyLogo } from "./images/only_logo.svg";
 export { default as logo1 } from "./images/logo1.svg";
 export { default as logo2 } from "./images/logo2.svg";
 export { default as logo3 } from "./images/logo3.svg";
