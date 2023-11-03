@@ -7,7 +7,7 @@ const DropDownC = () => {
         <Link href="/" className='hover:text-violet-900'>Home 1</Link>
         <Link href="" className='hover:text-violet-900'>Home 2</Link>
         <Link href="" className='hover:text-violet-900'>Home 3</Link>
-        <Link href="" className='hover:text-violet-900'>Home 4</Link>
+        <Link href="/home4" className='hover:text-violet-900'>Home 4</Link>
         <Link href="" className='hover:text-violet-900'>About Us</Link>
         <Link href="/ourteam" className='hover:text-violet-900'>Leadership</Link>
         <Link href="" className='hover:text-violet-900'>Testimonials</Link>
@@ -25,10 +25,10 @@ const DropDownC = () => {
         <Link href="" className='hover:text-violet-900'>Services Details</Link>
       </div>
       <div className="flex flex-col gap-4 text-black/70">
-        <Link href="" className='hover:text-violet-900'>Shop</Link>
+        <Link href="/shop" className='hover:text-violet-900'>Shop</Link>
         <Link href="" className='hover:text-violet-900'>Shop Details</Link>
         <Link href="" className='hover:text-violet-900'>Get A Quote</Link>
-        <Link href="" className='hover:text-violet-900'>Testimonials</Link>
+        <Link href="/testimonials" className='hover:text-violet-900'>Testimonials</Link>
         <Link href="" className='hover:text-violet-900'>Pricing</Link>
         <Link href="/faq" className='hover:text-violet-900'>FAQ</Link>
       </div>
