@@ -30,3 +30,12 @@ export { default as member6 } from "./images/member6.webp";
 export { default as member7 } from "./images/member7.webp";
 export { default as member8 } from "./images/member8.webp";
 export { default as vpole } from "./images/verticalpole.svg";
+export { default as data } from "./images/data.svg";
+export { default as padlock } from "./images/padlock.svg";
+export { default as digital } from "./images/digital.svg";
+export { default as www } from "./images/www.svg";
+export { default as mobile } from "./images/mobile.svg";
+export { default as cloud } from "./images/cloud.svg";
+
+
+
