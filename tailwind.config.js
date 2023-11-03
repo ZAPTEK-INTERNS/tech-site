@@ -5,15 +5,16 @@ module.exports = {
     "./components/**/*.{js,jsx,ts,tsx}",
     "./layouts/**/*.{js,jsx,ts,tsx}",
     "./lib/**/*.{js,jsx,ts,tsx}",
-    
   ],
   theme: {
     extend: {
       backgroundImage: {
-        "hero" : "url('../public/images/quote-bg.webp')",
-      }
+        hero: "url('../public/images/quote-bg.webp')",
+      },
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+      },
     },
   },
   plugins: [],
-}
-
+};
