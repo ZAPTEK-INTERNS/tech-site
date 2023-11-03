@@ -9,15 +9,17 @@ const images = [
 
 const Clients = () => {
   return (
-   <section className='mx-8 my-12 py-8 relative overflow-hidden'>
+   <section className='bg-black/5'>
+    <div className='mx-12 py-12 relative overflow-hidden'>
       <div className='flex justify-center items-center gap-8 slider animate-scroll'>
          {images.map((item, index) => (
           <div key={index} className="w-[200px]">
             <Image src={item} alt={index}  
-            className='grayscale hover:grayscale-0 '/>
+            className='brightness-0'/>
           </div>
          ))}
       </div>
+     </div>
     </section>
   );
 };
