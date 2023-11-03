@@ -19,7 +19,10 @@ export {default as Itservices} from './Home1/Itservices'
 export {default as Git} from './Home1/Git'
 export {default as Projects} from './Home1/Projects'
 export {default as Testimonials} from './Home1/Testimonials'
-export {default as Slider} from './home4/Slider/Slider'
+export {default as Slider} from './Home1/Slider'
+export {default as TestimonialCard} from './Home1/TestimonialCard'
+export {default as Build} from './Home1/Build'
+
 
 
 

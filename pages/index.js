@@ -7,7 +7,8 @@ import {
    Itservices, 
    Git, 
    Projects,
-   Testimonials
+   Testimonials,
+   Build
   } from '../components/links'
 
 export default function Home() {
@@ -25,7 +26,8 @@ export default function Home() {
         <Itservices/>
         <Git/>
         <Projects/>
-        <Testimonials/>
+        {/*<Testimonials/>*/}
+        <Build/>
       </main>
     </div>
   );
