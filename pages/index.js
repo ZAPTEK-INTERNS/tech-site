@@ -1,4 +1,5 @@
 import Head from 'next/head'
+
 import {
    Hero, 
    Clients, 
@@ -7,7 +8,8 @@ import {
    Itservices, 
    Git, 
    Projects,
-   Testimonials
+   Testimonials,
+   Build,Hero, Clients, AboutSection
   } from '../components/links'
 
 export default function Home() {
@@ -25,7 +27,8 @@ export default function Home() {
         <Itservices/>
         <Git/>
         <Projects/>
-        <Testimonials/>
+        {/*<Testimonials/>*/}
+        <Build/>
       </main>
     </div>
   );

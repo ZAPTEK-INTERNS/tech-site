@@ -10,6 +10,7 @@ export { default as logo10 } from "./images/logo10.svg";
 export { default as logo11 } from "./images/logo11.svg";
 export { default as pricing2 } from "./images/pricing2.webp";
 export { default as pricing3 } from "./images/pricing3.webp";
+export {default as meeting} from './images/meeting.webp'
 export { default as whitelogo1 } from "./images/white-logo1.svg";
 export { default as whitelogo2 } from "./images/white-logo2.svg";
 export { default as whitelogo3 } from "./images/white-logo3.svg";
@@ -40,8 +41,5 @@ export { default as CS1 } from "./images/supply-chain.jpg";
 export { default as CS4 } from "./images/xyz.jpg";
 export { default as CS5 } from "./images/e-commerce.jpg";
 export { default as CS6 } from "./images/marketing.jpg";
-
-
-
-
-
+export { default as logoHome } from "./images/logo-home.svg";
+export { default as lock } from "./images/lock-violet.svg";

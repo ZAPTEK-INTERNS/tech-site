@@ -1,5 +1,5 @@
 import React from 'react'
-import {Slider} from '../links'
+import Slider from '../links'
 
 
 const Testimonials = () => {
