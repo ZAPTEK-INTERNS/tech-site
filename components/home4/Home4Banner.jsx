@@ -18,14 +18,14 @@ const Home4Banner = () => {
       {/* Text Container */}
       <div className='px-4 md:px-[170px] mb-20 md:mb-44 space-y-5 '>
         <HeadingTag Title="Who we are" />
-        <h2 className='text-5xl md:text-7xl font-bold text-[#180030] tracking-tighter'>Software Crafting for <br className="hidden md:block" /> Digital Success</h2>
-        <div className="relative top-8">
+        <h2 className='text-5xl md:text-7xl font-bold text-[#180030] tracking-tighter' data-aos="fade-up">Software Crafting for <br className="hidden md:block" /> Digital Success</h2>
+        <div className="relative top-8" data-aos="zoom-out">
           <Link href='/case-studies' className='bg-[#8000ff] py-3 px-6 rounded-3xl text-white text-lg border-2 border-[#8000ff] transition-colors ease-linear duration-100 hover:bg-white hover:text-black'>Explore Our Work</Link>
         </div>
       </div>
       {/* End of Text Container */}
       {/* img */}
-      <div className='bottom-0 right-0 flex-row-reverse md:flex md:absolute'>
+      <div className='bottom-0 right-0 flex-row-reverse md:flex md:absolute' data-aos="fade-up">
         <Image src={BannerImg} alt="" className='w-full md:w-[80%] h-[400px] md:h-full' />
       </div>
       {/* end of img */}
@@ -34,14 +34,14 @@ const Home4Banner = () => {
         <h3 className='text-3xl font-semibold'>Market leaders <br className="hidden md:block" /> use Tech to grow</h3>
         <div className="flex flex-row py-4 space-x-4 md:space-x-0 md:space-y-6 md:flex-col">
           <div className="flex flex-col space-y-8 md:space-y-0 md:space-x-8 md:flex-row">
-            <Image src={Logo1} alt='' className='w-3/4 invert' />
-            <Image src={Logo2} alt='' className='w-3/4 invert' />
-            <Image src={Logo3} alt='' className='w-3/4 invert' />
+            <Image src={Logo1} alt='' className='w-3/4 invert' data-aos="fade-up"/>
+            <Image src={Logo2} alt='' className='w-3/4 invert' data-aos="fade-up"/>
+            <Image src={Logo3} alt='' className='w-3/4 invert' data-aos="fade-up"/>
           </div>
           <div className="flex flex-col space-y-8 md:space-y-0 md:space-x-8 md:flex-row">
-            <Image src={Logo4} alt='' className='w-3/4 invert' />
-            <Image src={Logo5} alt='' className='w-3/4 invert' />
-            <Image src={Logo6} alt='' className='w-3/4 invert' />
+            <Image src={Logo4} alt='' className='w-3/4 invert' data-aos="fade-up"/>
+            <Image src={Logo5} alt='' className='w-3/4 invert' data-aos="fade-up"/>
+            <Image src={Logo6} alt='' className='w-3/4 invert' data-aos="fade-up"/>
           </div>
         </div>
       </div>
