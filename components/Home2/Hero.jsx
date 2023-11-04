@@ -1,5 +1,5 @@
 import Button from "../shared/components/Button";
-import { logo, onlyLogo } from "./../../public/links";
+import { onlyLogo } from "./../../public/links";
 import Image from "next/image";
 
 const Hero = () => {
