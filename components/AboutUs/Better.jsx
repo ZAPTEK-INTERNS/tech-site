@@ -29,13 +29,16 @@ const dataBetter = [
   
 const Better = () => {
     return (
-       <div className="bg-white">
-         <div className="flex justify-center md:flex-none md:justify-normal mx-4 pt-20">
+       <div className="bg-white ">
+         <div className="flex justify-center md:flex-none md:justify-normal  pt-20 mx-4 lg:mx-16">
         <div className="text-violet-900 w-fit p-3 bg-violet-900/5 rounded-md font-medium ">
           Why we are better
         </div>
       </div>
+      <div className="mx-4 lg:mx-16">
+        
        <SideSwitch Data={dataBetter}/>
+        </div> 
        </div>
       );
 }
