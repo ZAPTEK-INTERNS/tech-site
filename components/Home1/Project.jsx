@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { ButtonLink } from '../links'
 
 
-const Projects = () => {
+const Project = () => {
   return (
     <section className='my-[120px] mx-[5%] w-[90%] lg:w-[86%] lg:mx-[7%]'>
       <p className='bg-black/10 text-lg font-semibold w-fit rounded-md px-4 py-2 text-violet-900'>
@@ -46,4 +46,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Project

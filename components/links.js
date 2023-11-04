@@ -17,7 +17,7 @@ export {default as Faq} from './Leadership/Faq'
 export {default as Services} from './Home1/Services'
 export {default as Itservices} from './Home1/Itservices'
 export {default as Git} from './Home1/Git'
-export {default as Project} from './Home1/Projects'
+export {default as Project} from './Home1/Project'
 export {default as Testimonials} from './Home1/Testimonials'
 export {default as Slider} from './Home1/Slider'
 export {default as TestimonialCard} from './Home1/TestimonialCard'
@@ -28,3 +28,4 @@ export {default as Countrys} from './Getaquote/Countrys'
 export { default as Projects } from "./Home3/Projects";
 export { default as OurServices } from "./Home3/OurServices";
 export { default as Deliver } from "./Home3/Deliver";
+export {default as ButtonLink} from './shared/components/ButtonLink'
