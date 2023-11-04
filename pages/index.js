@@ -26,7 +26,7 @@ export default function Home() {
         <Itservices/>
         <Git/>
         <Projects/>
-        {/*<Testimonials/>*/}
+        <Testimonials/>
         <Build/>
       </main>
     </div>

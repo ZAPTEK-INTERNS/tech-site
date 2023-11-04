@@ -1,8 +1,9 @@
 import React from 'react'
-import {vpole, meeting, pricing1, pricing2} from '../../public/links'
+import {vpole} from '../../public/links'
 import Image from 'next/image'
 import {FiArrowDownRight} from 'react-icons/fi'
 import Link from 'next/link'
+import Images from '../shared/components/Images'
 
 
 const Build = () => {
@@ -27,11 +28,7 @@ const Build = () => {
         </div>
        </div>
 
-        <div className="flex mt-[100px] overflow-hidden">
-        <Image src={meeting} alt="career galary" className='w-[70%] rounded-t-md transform -rotate-12'/>
-         <Image src={pricing2} alt="career galary2" className='w-[70%] rounded-t-md transform rotate-12'/>
-         <Image src={pricing2} alt="career galary" className='w-[70%] rounded-t-md transform -rotate-12'/>
-        </div>
+        <Images/>
       </div>
     </div>
   )

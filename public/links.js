@@ -23,3 +23,14 @@ export { default as whitelogo6 } from "./images/white-logo6.svg";
 export { default as whitelogo7 } from "./images/white-logo7.svg";
 export { default as whitelogo8 } from "./images/white-logo8.svg";
 export { default as whitelogo9 } from "./images/white-logo9.svg";
+
+export { default as digital } from "./images/digital.svg";
+export { default as data } from "./images/data.svg";
+export { default as mobile } from "./images/mobile.svg";
+export { default as www } from "./images/www.svg";
+export { default as cloud } from "./images/cloud.svg";
+export { default as padlock } from "./images/padlock.svg";
+export { default as CS1 } from "./images/supply-chain.jpg";
+export { default as CS4 } from "./images/xyz.jpg";
+export { default as CS5 } from "./images/marketing.jpg";
+export { default as CS6 } from "./images/e-commerce.jpg";

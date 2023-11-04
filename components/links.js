@@ -9,7 +9,7 @@ export { default as Header } from "./Career/Header";
 export { default as CareerClients } from "./Career/Clients";
 export { default as Benefits } from "./Career/Benefits";
 export { default as Careers } from "./Career/Careers";
-export { default as Getintouch } from "./Career/Getintouch";
+export { default as Getintouch } from "./shared/components/Getintouch";
 export { default as TeamHero } from "./Leadership/Hero";
 export { default as TeamCards } from "./Leadership/TeamCards";
 export { default as Video } from "./Leadership/Video";
@@ -25,3 +25,4 @@ export { default as Build } from "./Home1/Build";
 export { default as GetHero } from "./Getaquote/Hero";
 export { default as Form } from "./Getaquote/Form";
 export { default as Countrys } from "./Getaquote/Countrys";
+export {default as ButtonLink} from './shared/components/ButtonLink'

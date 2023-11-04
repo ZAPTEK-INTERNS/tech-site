@@ -6,6 +6,14 @@
       transform: translateX(calc(-250px * 7));
     }
   }
+  @keyframes scrolltop {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(calc(-200px * 3));
+    }
+  }
   .slider {
     background: white;
     height: 100%;
@@ -50,4 +58,13 @@
     height: 100%;
     width: 100%;
   }
-  
+  .slideTop {
+    animation: scrolltop 40s linear infinite;
+  }
+  @media screen and (max-width:1023px) {
+    .slideOnMobile{
+      animation: scroll 40s linear infinite;
+      display: flex;
+      width: 100%;
+    }
+  }

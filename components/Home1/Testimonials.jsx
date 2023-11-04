@@ -1,12 +1,12 @@
 import React from 'react'
-import Slider from '../links'
+import {Slider} from '../links'
 
 
 const Testimonials = () => {
   return (
     <section className='bg-gradient-to-t from-violet-700 to-[#5f11d4] w-full h-screen'>
-      <div className='mx-[5%] w-[90%] lg:w-[86%] lg:mx-[7%] grid grid-cols-5'>
-        <div className='text-white col-span-2 my-8'>
+      <div className='lg:w-[86%] lg:mx-[7%] grid grid-cols-5'>
+        <div className='text-white col-span-5 lg:col-span-2 my-8 mt-[70px] w-[90%] mx-[5%] lg:w-auto lg:mx-auto'>
          <p className='bg-violet-600 border border-gray-400/90 text-lg font-semibold w-fit rounded-md px-4 py-2'>
           Testimonials
          </p>
@@ -20,7 +20,7 @@ const Testimonials = () => {
          </p>
         </div>
 
-      <div className='col-span-3'>
+      <div className='col-span-5 lg:col-span-3 mt-[60px] lg:mt-0'>
        <Slider />
       </div>
     </div>

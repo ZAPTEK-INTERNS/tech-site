@@ -2,7 +2,7 @@ import {services} from '.'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FiArrowDownRight } from "react-icons/fi";
-
+import {ButtonLink} from '../links'
 
 const Services = () => {
   return (
@@ -45,11 +45,7 @@ const Services = () => {
        <div className='bg-ourteam w-full h-[50vh] md:h-screen bg-fixed'>
          <div className='text-white'>
           <div className='flex items-center justify-center pt-24'>
-           <Link  href="/"
-            className="flex justify-between gap-8 w-fit items-start p-3 border border-violet-700 bg-violet-700 hover:bg-white  transition-all text-white hover:text-black rounded-3xl">
-            <p className="font-semibold">View More</p>
-            <span className='font-bold'>.</span>
-          </Link>
+           <ButtonLink/>
          </div>
 
          <h1 className='font-bold text-3xl sm:text-4xl md:text-5xl mx-[5%] w-[90%] lg:w-[86%] lg:mx-[7%] mt-20'>

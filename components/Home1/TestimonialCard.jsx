@@ -3,13 +3,12 @@ import React from 'react'
 const TestimonialCard = ({
     name = "Name Here", 
     message = "Message Here",
-    bgColor = "bg-[#fcf8ff]",
 }) => {
   return (
-    <div className={`w-80 px-8 py-10 border-2 space-y-8 border-gray-400 rounded md:w-[408px] bg-[#fcf8ff] ` + bgColor}>
+    <div className="w-[22rem] h-[26rem] p-10 border-2 text-white border-gray-200 rounded text-lg lg:w-[300px] bg-violet-500/95">
         <p>⭐⭐⭐⭐⭐</p>
-        <p>{message}</p>
-        <p className='text-[#8000ff] font-bold text-xl'>{name}</p>
+        <p className='my-4 font-semibold'>{message}</p>
+        <p className='text-white font-bold text-xl'>{name}</p>
     </div>
   )
 }
