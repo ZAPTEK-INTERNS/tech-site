@@ -10,6 +10,7 @@ export { default as logo7 } from "./images/logo7.svg";
 export { default as logo8 } from "./images/logo8.svg";
 export { default as logo10 } from "./images/logo10.svg";
 export { default as logo11 } from "./images/logo11.svg";
+export { default as logo12 } from "./images/logo-12.svg";
 export { default as pricing2 } from "./images/pricing2.webp";
 export { default as pricing3 } from "./images/pricing3.webp";
 export { default as whitelogo1 } from "./images/white-logo1.svg";
@@ -21,3 +22,7 @@ export { default as whitelogo6 } from "./images/white-logo6.svg";
 export { default as whitelogo7 } from "./images/white-logo7.svg";
 export { default as whitelogo8 } from "./images/white-logo8.svg";
 export { default as whitelogo9 } from "./images/white-logo9.svg";
+
+export { default as feature_img_1 } from "./images/featuredImage_1.webp";
+export { default as feature_img_2 } from "./images/featuredImage_2.webp";
+export { default as feature_img_3 } from "./images/featuredImage_3.webp";

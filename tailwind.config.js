@@ -17,6 +17,10 @@ module.exports = {
       colors: {
         "deep-purple": "rgb(24, 0, 48)",
       },
+      screens: {
+        vsm: "480px",
+        slg: "960px",
+      },
     },
   },
   plugins: [],
