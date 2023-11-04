@@ -32,4 +32,16 @@ body {
     background: rgb(43, 18, 68);
     background: radial-gradient(circle, rgba(43,18,68,1) 50%, rgba(0,0,0,1) 98%);
   }
+
+  .menu-link {
+    @apply flex items-center hover:text-violet-900;
+  }
+
+  .menu-link-bar {
+    @apply w-4 h-[2px] bg-violet-700 hidden mr-2;
+  }
+}
+
+.menu-link:hover .menu-link-bar {
+  display: block;
 }
