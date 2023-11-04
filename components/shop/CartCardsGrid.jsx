@@ -18,7 +18,7 @@ const CartCardsGrid = ({DBArray}) => {
             />    
           ))
         }
-      </div>
+    </div>
     </>
   )
 }
