@@ -34,7 +34,7 @@ const Testimonials = () => {
 
 <div className="space-y-8 lg:space-y-0 my-8 grid lg:grid-cols-3 gap-4 justify-center">
     { testimoniallist.map((item,idx)=>(
-<div key={idx} className="space-y-8 bg-slate-200/30 rounded-md border border-slate-400 p-8 w-[300px]">
+<div key={idx} className="space-y-8 bg-slate-200/30 rounded-md border border-slate-400 p-8 w-[350px]">
     
 <Image src="https://assets-global.website-files.com/64f99a189bbe4d7717201680/64fb32deb101691b78c366de_start.svg" alt="img" width={50} height={50}/>
 
