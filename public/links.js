@@ -1,11 +1,16 @@
-export {default as logo1} from './images/logo1.svg'
-export {default as logo2} from './images/logo2.svg'
-export {default as logo3} from './images/logo3.svg'
-export {default as logo4} from './images/logo4.svg'
-export {default as logo5} from './images/logo5.svg'
-export {default as logo6} from './images/logo6.svg'
-export {default as logo7} from './images/logo7.svg'
-export {default as logo8} from './images/logo8.svg'
-export {default as logo10} from './images/logo10.svg'
-export {default as logo11} from './images/logo11.svg'
-export {default as pricing1} from './images/pricing2.webp'
+export { default as logo1 } from "./images/logo1.svg";
+export { default as logo2 } from "./images/logo2.svg";
+export { default as logo3 } from "./images/logo3.svg";
+export { default as logo4 } from "./images/logo4.svg";
+export { default as logo5 } from "./images/logo5.svg";
+export { default as logo6 } from "./images/logo6.svg";
+export { default as logo7 } from "./images/logo7.svg";
+export { default as logo8 } from "./images/logo8.svg";
+export { default as logo10 } from "./images/logo10.svg";
+export { default as logo11 } from "./images/logo11.svg";
+export { default as logoHome } from "./images/logo-home.svg";
+export { default as www } from "./images/www.svg";
+export { default as data } from "./images/data.svg";
+export { default as mobile } from "./images/mobile.svg";
+export { default as lock } from "./images/lock-violet.svg";
+export { default as pricing1 } from "./images/pricing2.webp";

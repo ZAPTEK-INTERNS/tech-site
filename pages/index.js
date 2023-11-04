@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import {HomeHero, Clients, AboutSection} from '../components/links'
+import {Hero, Clients, AboutSection} from '../components/links'
 
 export default function Home() {
   return (

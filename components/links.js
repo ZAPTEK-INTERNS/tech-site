@@ -1,7 +1,10 @@
-export {default as DropDownA} from './Home1/DropDownA'
-export {default as DropDownB} from './Home1/DropDownB'
-export {default as DropDownC} from './Home1/DropDownC'
-export {default as Cart} from './Home1/Cart'
-export {default as Hero} from './Home1/Hero'
-export {default as Clients} from './Home1/Clients'
-export {default as AboutSection} from './Home1/AboutSection'
+export { default as DropDownA } from "./Home1/DropDownA";
+export { default as DropDownB } from "./Home1/DropDownB";
+export { default as DropDownC } from "./Home1/DropDownC";
+export { default as Cart } from "./Home1/Cart";
+export { default as Hero } from "./Home1/Hero";
+export { default as Clients } from "./Home1/Clients";
+export { default as AboutSection } from "./Home1/AboutSection";
+export { default as Projects } from "./Home3/Projects";
+export { default as OurServices } from "./Home3/OurServices";
+export { default as Deliver } from "./Home3/Deliver";

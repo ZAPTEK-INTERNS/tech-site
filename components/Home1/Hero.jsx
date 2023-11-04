@@ -2,7 +2,6 @@ import logo from '../../public/images/logo-white.svg'
 import Image from 'next/image'
 
 
-
 const Hero = () => {
   return (
     <div className='bg-hero bg-center bg-cover bg-no-repeat h-screen w-full relative top-0 left-0'>
