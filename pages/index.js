@@ -1,4 +1,5 @@
 import Head from 'next/head'
+
 import {
    Hero, 
    Clients, 
@@ -8,7 +9,7 @@ import {
    Git, 
    Projects,
    Testimonials,
-   Build
+   Build,Hero, Clients, AboutSection
   } from '../components/links'
 
 export default function Home() {

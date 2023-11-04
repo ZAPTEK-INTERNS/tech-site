@@ -9,21 +9,11 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        hero: "url('../public/images/quote-bg.webp')",
-        "hero-h4": "url('../public/images/about1.webp')",
-        ourteam: "url('../public/images/ourteam.svg')",
-        about: "url('../public/images/about1.webp')",
-      },
-
-      fontFamily: {
-        inter: ["Inter", "sans-serif"],
-      },
-      colors: {
-        "deep-purple": "rgb(24, 0, 48)",
-      },
-      screens: {
-        vsm: "480px",
-        slg: "960px",
+        "hero" : "url('../public/images/quote-bg.webp')",
+        "hero-h4" : "url('../public/images/about1.webp')",
+        "ourteam" : "url('../public/images/ourteam.svg')",
+        "about" : "url('../public/images/about1.webp')",
+        news: "url('../public/images/logo-home.svg')",
       },
     },
   },

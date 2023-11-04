@@ -54,7 +54,7 @@ const Navbar = () => {
           </div>
 
           <Link
-            href=""
+            href="/services"
             className="relative hover:text-violet-900 transition-all"
           >
             <span className="absolute text-gray-500 bottom-3 left-[-15px] text-xs">
