@@ -22,6 +22,10 @@ export {default as Testimonials} from './Home1/Testimonials'
 export {default as Slider} from './Home1/Slider'
 export {default as TestimonialCard} from './Home1/TestimonialCard'
 export {default as Build} from './Home1/Build'
+export {default as GetHero} from './Getaquote/Hero'
+export {default as Form} from './Getaquote/Form'
+export {default as Countrys} from './Getaquote/Countrys'
+
 
 
 

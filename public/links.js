@@ -10,6 +10,7 @@ export { default as logo10 } from "./images/logo10.svg";
 export { default as logo11 } from "./images/logo11.svg";
 export { default as pricing2 } from "./images/pricing2.webp";
 export { default as pricing3 } from "./images/pricing3.webp";
+export {default as meeting} from './images/meeting.webp'
 export { default as whitelogo1 } from "./images/white-logo1.svg";
 export { default as whitelogo2 } from "./images/white-logo2.svg";
 export { default as whitelogo3 } from "./images/white-logo3.svg";
