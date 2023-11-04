@@ -4,7 +4,7 @@ import { TestimonialDB } from './testimonialsDB';
 
 const Slider = () => {
   return (
-    <div className={SliderCss.slider}>
+    <div className={SliderCss.slider} data-aos="fade-up">
         <div className={SliderCss.slideTrack + " space-x-10"}>
             {
                 TestimonialDB.map((TDB, index) => (
