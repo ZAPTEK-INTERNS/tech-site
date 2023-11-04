@@ -2,8 +2,8 @@ import CardWithArray from "./CardWithArray";
 
 const Work = () => {
   return (
-    <div className="py-8 bg-white">
-      <div className="flex justify-center md:flex-none md:justify-normal mx-4">
+    <div className="py-8 bg-white px-4 lg:px-16">
+      <div className="flex justify-center md:flex-none md:justify-normal ">
         <div className="text-violet-900 w-fit p-3 bg-violet-900/5 rounded-md font-medium">
           Our Work
         </div>
