@@ -4,6 +4,7 @@ import {FaCalendarAlt} from 'react-icons/fa'
 import {BiSolidTimeFive} from 'react-icons/bi'
 import {MdLocationOn} from 'react-icons/md'
 import Link from "next/link";
+import {Navbar} from '../../components/links'
 
 const CareerDetail = () => {
   //console.log(typeof joblist)
@@ -19,6 +20,7 @@ if (!job) {
 
   return (
     <section>
+      <Navbar/>
       <div className="bg-[#1a0533] h-[60vh] text-center flex items-center justify-center">
         <h1 className="text-white text-5xl sm:ext-6xl md:text-7xl font-bold ">{job.title}</h1> 
       </div>

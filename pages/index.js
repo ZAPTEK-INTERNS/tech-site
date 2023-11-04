@@ -18,7 +18,6 @@ export default function Home() {
       <Head>
         <title>Tech site</title>    
       </Head>
-
       <main>
         <HomeHero /> 
         <Clients/>  

@@ -1,8 +1,9 @@
-import {Header, CareerClients, Benefits, Careers, Getintouch} from '../../components/links'
+import {Header, CareerClients, Benefits, Careers, Getintouch, Navbar} from '../../components/links'
 
 const Career = () => {
   return (
     <div>
+      <Navbar/>
      <Header/>
      <CareerClients/>
      <Benefits/>

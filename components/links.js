@@ -29,3 +29,4 @@ export { default as Projects } from "./Home3/Projects";
 export { default as OurServices } from "./Home3/OurServices";
 export { default as Deliver } from "./Home3/Deliver";
 export {default as ButtonLink} from './shared/components/ButtonLink'
+export {default as Navbar} from './shared/layout/Navbar'

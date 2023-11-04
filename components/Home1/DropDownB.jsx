@@ -11,10 +11,10 @@ const DropDownB = () => {
         <Link href="/home2" className='hover:text-violet-900'>Pricing</Link>
       </div>
       <div className="flex flex-col gap-2 lg:gap-4 text-black/70">
-        <Link href="" className='hover:text-violet-900'>Careers</Link>
-        <Link href="" className='hover:text-violet-900'>Career Details</Link>
+        <Link href="/career" className='hover:text-violet-900'>Careers</Link>
+        <Link href="career/1" className='hover:text-violet-900'>Career Details</Link>
         <Link href="/testimonials" className='hover:text-violet-900'>Testimonials</Link>
-        <Link href="" className='hover:text-violet-900'>Get A Quote</Link>
+        <Link href="/getaquote" className='hover:text-violet-900'>Get A Quote</Link>
         <Link href="/faq" className='hover:text-violet-900'>FAQ</Link>
       </div>
     </div>

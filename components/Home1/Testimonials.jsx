@@ -20,7 +20,7 @@ const Testimonials = () => {
          </p>
         </div>
 
-      <div className='col-span-5 lg:col-span-3 mt-4 sm:mt-[100px] lg:mt-0 flex'>
+      <div className='col-span-5 lg:col-span-3 mt-[100px] lg:mt-0 flex'>
        <Slider />
       </div>
     </div>

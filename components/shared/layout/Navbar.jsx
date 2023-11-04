@@ -1,7 +1,8 @@
-import logo from "../../../public/images/logo-black.svg";
+import logoblack from "../../../public/images/logo-black.svg";
+import logowhite from '../../../public/images/logo-white.svg'
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BsCartFill } from "react-icons/bs";
 import { CgMenuRight } from "react-icons/cg";
 import { FiArrowDownRight } from "react-icons/fi";
@@ -12,6 +13,29 @@ import { DropDownA, DropDownB, DropDownC, Cart } from "../../links";
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
   const [cart, setCart] = useState(false);
+  const [navBg, setNavBg] = useState("");
+  const [changeLogo, setChangeLogo] = useState(false)
+
+  useEffect(() => {
+   const currentPage = window.location.pathname;
+   if (currentPage === '/' || 
+       currentPage === '/home3' || 
+       currentPage === '/shop' ||
+       currentPage === '/getaquote' || 
+       currentPage === '/testimonials' ||
+       currentPage === '/pricing' || 
+       currentPage === '/faq' || 
+       currentPage === '/services/1') 
+    {
+     setNavBg('bg-transparent text-white');
+     setChangeLogo(false)
+    }
+    else {
+     setNavBg('bg-white text-black');
+     setChangeLogo(true)
+   }
+ }, []);
+
 
   const handleCartOpen = () => {
     setCart(true);
@@ -24,14 +48,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full overflow-hidden py-4 lg:py-0 border-b border-gray-300">
+    <nav className={`bg-${navBg} w-full overflow-hidden py-4 lg:py-0 border-b border-gray-400`}>
       <section className="flex justify-between items-center w-[94%] lg:w-[96%] mx-[3%] lg:ml-[4%]">
-        <Image src={logo} />
+        <Image src={changeLogo ? logoblack : logowhite } />
 
         <div className="hidden lg:flex text-lg gap-12 font-semibold">
           <div className="group">
             <p className="cursor-pointer relative hover:text-violet-900 transition-all">
-              <span className="absolute text-gray-500 bottom-3 left-[-15px] text-xs">
+              <span className="absolute text-gray-400 bottom-3 left-[-15px] text-xs">
                 01
               </span>
               Demos{" "}
@@ -43,8 +67,8 @@ const Navbar = () => {
 
           <div className="group">
             <p className="cursor-pointer relative hover:text-violet-900 transition-all">
-              <span className="absolute text-gray-500 bottom-3 left-[-15px] text-xs">
-                01
+              <span className="absolute text-gray-400 bottom-3 left-[-15px] text-xs">
+                02
               </span>
               Company{" "}
             </p>
@@ -57,7 +81,7 @@ const Navbar = () => {
             href="/services"
             className="relative hover:text-violet-900 transition-all"
           >
-            <span className="absolute text-gray-500 bottom-3 left-[-15px] text-xs">
+            <span className="absolute text-gray-400 bottom-3 left-[-15px] text-xs">
               03
             </span>
             Services
@@ -66,14 +90,14 @@ const Navbar = () => {
             href=""
             className="relative hover:text-violet-900 transition-all"
           >
-            <span className="absolute text-gray-500 bottom-3 left-[-15px] text-xs">
+            <span className="absolute text-gray-400 bottom-3 left-[-15px] text-xs">
               04
             </span>
             Case Studies
           </Link>
           <div className="group">
             <p className="cursor-pointer relative hover:text-violet-900 transition-all">
-              <span className="absolute text-gray-500 bottom-3 left-[-15px] text-xs">
+              <span className="absolute text-gray-400 bottom-3 left-[-15px] text-xs">
                 01
               </span>
               All Pages
