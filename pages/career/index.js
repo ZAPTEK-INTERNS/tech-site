@@ -1,9 +1,13 @@
-import React from 'react'
+import {Header, CareerClients, Benefits, Careers, Getintouch} from '../../components/links'
 
 const Career = () => {
   return (
     <div>
-hhhhhhhhhhhhh
+     <Header/>
+     <CareerClients/>
+     <Benefits/>
+     <Careers/>
+  <Getintouch/>
     </div>
   )
 }
