@@ -41,8 +41,5 @@ export { default as CS1 } from "./images/supply-chain.jpg";
 export { default as CS4 } from "./images/xyz.jpg";
 export { default as CS5 } from "./images/e-commerce.jpg";
 export { default as CS6 } from "./images/marketing.jpg";
-
-
-
-
-
+export { default as logoHome } from "./images/logo-home.svg";
+export { default as lock } from "./images/lock-violet.svg";

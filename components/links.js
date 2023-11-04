@@ -25,16 +25,6 @@ export {default as Build} from './Home1/Build'
 export {default as GetHero} from './Getaquote/Hero'
 export {default as Form} from './Getaquote/Form'
 export {default as Countrys} from './Getaquote/Countrys'
-
-
-
-
-
-
-
-
-
-
-
-
-
+export { default as Projects } from "./Home3/Projects";
+export { default as OurServices } from "./Home3/OurServices";
+export { default as Deliver } from "./Home3/Deliver";
