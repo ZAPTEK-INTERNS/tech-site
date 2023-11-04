@@ -1,15 +1,15 @@
 import Head from 'next/head'
 
 import {
-   Hero, 
+  HomeHero, 
    Clients, 
    AboutSection, 
    Services, 
    Itservices, 
    Git, 
-   Projects,
+   Project,
    Testimonials,
-   Build,Hero, Clients, AboutSection
+   Build
   } from '../components/links'
 
 export default function Home() {
@@ -20,13 +20,13 @@ export default function Home() {
       </Head>
 
       <main>
-        <Hero /> 
+        <HomeHero /> 
         <Clients/>  
         <AboutSection/>
         <Services/>
         <Itservices/>
         <Git/>
-        <Projects/>
+        <Project/>
         <Testimonials/>
         <Build/>
       </main>

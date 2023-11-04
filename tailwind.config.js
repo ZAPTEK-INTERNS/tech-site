@@ -13,7 +13,7 @@ module.exports = {
         "hero-h4" : "url('../public/images/about1.webp')",
         "ourteam" : "url('../public/images/ourteam.svg')",
         "about" : "url('../public/images/about1.webp')",
-        news: "url('../public/images/logo-home.svg')",
+        "news": "url('../public/images/logo-black.svg')",
       },
     },
   },

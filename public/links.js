@@ -20,19 +20,6 @@ export { default as whitelogo6 } from "./images/white-logo6.svg";
 export { default as whitelogo7 } from "./images/white-logo7.svg";
 export { default as whitelogo8 } from "./images/white-logo8.svg";
 export { default as whitelogo9 } from "./images/white-logo9.svg";
-<<<<<<< HEAD
-
-export { default as digital } from "./images/digital.svg";
-export { default as data } from "./images/data.svg";
-export { default as mobile } from "./images/mobile.svg";
-export { default as www } from "./images/www.svg";
-export { default as cloud } from "./images/cloud.svg";
-export { default as padlock } from "./images/padlock.svg";
-export { default as CS1 } from "./images/supply-chain.jpg";
-export { default as CS4 } from "./images/xyz.jpg";
-export { default as CS5 } from "./images/marketing.jpg";
-export { default as CS6 } from "./images/e-commerce.jpg";
-=======
 export { default as logo } from "./images/logo-black.svg";
 export { default as error } from "./images/error.svg";
 export { default as member1 } from "./images/member1.webp";
@@ -54,6 +41,5 @@ export { default as CS1 } from "./images/supply-chain.jpg";
 export { default as CS4 } from "./images/xyz.jpg";
 export { default as CS5 } from "./images/e-commerce.jpg";
 export { default as CS6 } from "./images/marketing.jpg";
-export { default as logoHome } from "./images/logo-home.svg";
+export { default as logoHome } from "./images/logo-black.svg";
 export { default as lock } from "./images/lock-violet.svg";
->>>>>>> 13338274977bb5ff9425d07e78de287200bfe824

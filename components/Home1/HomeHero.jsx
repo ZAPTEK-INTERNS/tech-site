@@ -2,7 +2,7 @@ import logo from '../../public/images/logo-white.svg'
 import Image from 'next/image'
 
 
-const Hero = () => {
+const HomeHero = () => {
   return (
     <div className='bg-hero bg-center bg-cover bg-no-repeat h-screen w-full'>
       <div className='flex text-white flex-col justify-center items-center h-screen sm:text-lg w-[90%] mx-[5%] sm:w-[80%] sm:mx-[10%] lg:w-[70%] lg:mx-[15%]'>
@@ -27,4 +27,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default HomeHero
