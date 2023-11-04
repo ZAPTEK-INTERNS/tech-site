@@ -8,11 +8,11 @@ const DropDownC = () => {
           <div className="menu-link-bar"></div>
           <div>Home 1</div>
         </Link>
-        <Link href="" className='menu-link'>
+        <Link href="/home2" className='menu-link'>
           <div className="menu-link-bar"></div>
           <div>Home 2</div>
         </Link>
-        <Link href="" className='menu-link'>
+        <Link href="/home3" className='menu-link'>
           <div className="menu-link-bar"></div>
           <div>Home 3</div>
         </Link>
@@ -20,7 +20,7 @@ const DropDownC = () => {
           <div className="menu-link-bar"></div>
           <div>Home 4</div>
         </Link>
-        <Link href="" className='menu-link'>
+        <Link href="/about-us" className='menu-link'>
           <div className="menu-link-bar"></div>
           <div>About Us</div>
         </Link>
@@ -28,15 +28,15 @@ const DropDownC = () => {
           <div className="menu-link-bar"></div>
           <div>Leadership</div>
         </Link>
-        <Link href="" className='menu-link'>
+        <Link href="/testimonials" className='menu-link'>
           <div className="menu-link-bar"></div>
           <div>Testimonials</div>
         </Link>
-        <Link href="" className='menu-link'>
+        <Link href="/whychooseus" className='menu-link'>
           <div className="menu-link-bar"></div>
           <div>Why Choose Us</div>
         </Link>
-        <Link href="" className='menu-link'>
+        <Link href="/our-values" className='menu-link'>
           <div className="menu-link-bar"></div>
           <div>Our Values</div>
         </Link>
@@ -50,27 +50,27 @@ const DropDownC = () => {
           <div className="menu-link-bar"></div>
           <div>Career Details</div>
         </Link>
-        <Link href="" className='menu-link'>
+        <Link href="/blog" className='menu-link'>
           <div className="menu-link-bar"></div>
           <div>Blog</div>
         </Link>
-        <Link href="" className='menu-link'>
+        <Link href="/blog/1" className='menu-link'>
           <div className="menu-link-bar"></div>
           <div>Blog Details</div>
         </Link>
-        <Link href="" className='menu-link'>
+        <Link href="/case-studies" className='menu-link'>
           <div className="menu-link-bar"></div>
           <div>Case Studies</div>
         </Link>
-        <Link href="" className='menu-link'>
+        <Link href="case-studies/1" className='menu-link'>
           <div className="menu-link-bar"></div>
           <div>Case Study Details</div>
         </Link>
-        <Link href="" className='menu-link'>
+        <Link href="/services" className='menu-link'>
           <div className="menu-link-bar"></div>
           <div>Services </div>
         </Link>
-        <Link href="" className='menu-link'>
+        <Link href="/services/1" className='menu-link'>
           <div className="menu-link-bar"></div>
           <div>Services Details</div>
         </Link>
@@ -80,11 +80,11 @@ const DropDownC = () => {
           <div className="menu-link-bar"></div>
           <div>Shop</div>
         </Link>
-        <Link href="" className='menu-link'>
+        <Link href="/shop/1" className='menu-link'>
           <div className="menu-link-bar"></div>
           <div>Shop Details</div>
         </Link>
-        <Link href="" className='menu-link'>
+        <Link href="/getaquote" className='menu-link'>
           <div className="menu-link-bar"></div>
           <div>Get A Quote</div>
         </Link>
@@ -92,7 +92,7 @@ const DropDownC = () => {
           <div className="menu-link-bar"></div>
           <div>Testimonials</div>
         </Link>
-        <Link href="" className='menu-link'>
+        <Link href="/pricing" className='menu-link'>
           <div className="menu-link-bar"></div>
           <div>Pricing</div>
         </Link>

@@ -35,6 +35,7 @@ body {
 
   .menu-link {
     @apply flex items-center hover:text-violet-900;
+    transition: hover 0.5s ease;
   }
 
   .menu-link-bar {
