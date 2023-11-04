@@ -7,7 +7,7 @@ import Image from 'next/image'
 const CartCard = ({ ShopLink, CategoryLink, CartImg, CartTag, CartTitle, CartPrice, CartKey, }) => {
   return (
     <>
-    <div className='space-y-8' key={CartKey}>
+    <div className='space-y-8' key={CartKey} data-aos="fade-up">
         <div className="relative">
             <Link href={`/shop/` + ShopLink} className='overflow-hidden'><Image src={CartImg} className='transition-transform duration-150 ease-linear rounded hover:scale-105' /></Link>
             <Link href={`/category/` + CategoryLink.toLowerCase()}>
