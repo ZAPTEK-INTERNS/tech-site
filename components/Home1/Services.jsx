@@ -41,7 +41,7 @@ const Services = () => {
      </div>
     </div>
 
-     <div className='bg-[#1a0533] bg-cover bg-center bg-no-repeat w-full h-[50vh] md:h-screen bg-fixed'>
+    < div className='bg-[#1a0533] bg-cover bg-center bg-no-repeat w-full h-[50vh] md:h-screen bg-fixed'>
        <div className='bg-ourteam w-full h-[50vh] md:h-screen bg-fixed'>
          <div className='text-white'>
           <div className='flex items-center justify-center pt-24'>
