@@ -13,7 +13,7 @@ const Card = ({ card, index }) => {
             className="rounded-lg  h-80 transform transition-transform group-hover:scale-110 ease-in-out duration-300 hover:cursor-pointer"
           />
         </div>
-        <Link href={`${card.id}`}>
+        <Link href={`/case-studies/${card.id}`}>
           <div className="flex justify-between my-8 hover:text-purple-900 hover:cursor-pointer xl:w-fit xl:space-x-20">
             <p className="font-bold text-3xl"> {card.title}</p>
             <Image
@@ -29,7 +29,7 @@ const Card = ({ card, index }) => {
         <div className="text-purple-900 font-medium">
           {card.categories.map((category, categoryIndex) => (
             <span key={categoryIndex}>
-              <Link href={`/${category.link}`}>{category.name}</Link>
+              <Link href={`/case-studies-categories/${category.link}`}>{category.name}</Link>
               {categoryIndex < card.categories.length - 1 ? " / " : ""}
             </span>
           ))}

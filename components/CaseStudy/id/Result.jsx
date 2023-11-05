@@ -1,4 +1,6 @@
 import React from 'react'
+import {BsCircle} from 'react-icons/bs'
+
 
 const Result = ({data}) => {
   return (
@@ -9,7 +11,8 @@ const Result = ({data}) => {
             {
                 data.resultlist.map((item,idx)=>(
 <div className='flex' key={idx}>
-<div className=' bg-purple-900 w-2 h-2 mt-2.5 mr-4 rounded-full'>
+<div className=' h-fit w-fit'>
+            <BsCircle size={10} className='bg-violet-700 rounded-full text-white mr-4 mt-2'/>
             </div>
             <p>{item.head}:</p>
             <p> {item.body}</p>
