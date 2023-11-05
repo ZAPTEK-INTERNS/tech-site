@@ -24,7 +24,7 @@ const Form = () => {
 
   return (
     <section className='mx-[5%] w-[90%] lg:w-[86%] lg:mx-[7%] grid grid-cols-5 gap-6 items-center my-20'>
-     <div className='col-span-5 md:col-span-2'>
+     <div className='col-span-5 md:col-span-2' data-aos="fade-right">
        <h1 className='text-5xl sm:text-6xl font-bold text-black/80'>Let's discuss your project</h1>
        <p className='text-lg text-gray-600 sm:font-semibold mt-6'>
         Our dedicated team of IT experts is committed to understanding your unique requirements 
@@ -32,7 +32,8 @@ const Form = () => {
        </p>
      </div>
   
-    <form className="w-full md:max-w-lg mx-auto p-8 bg-[#1c0738] rounded-md shadow-md col-span-5 md:col-span-3">
+    <form data-aos="fade-left"
+      className="w-full md:max-w-lg mx-auto p-8 bg-[#1c0738] rounded-md shadow-md col-span-5 md:col-span-3">
       <div className="mb-4 flex flex-col sm:flex-row gap-4">
         <input
           type="text"

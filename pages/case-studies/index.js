@@ -7,7 +7,7 @@ import Success from '../../components/CaseStudy/Success.jsx';
 import Mail from '../../components/CaseStudy/Mail.jsx';
 const Case = () => {
   return (
-    <div className="mx-4">
+    <div className="mx-4 md:mx-16">
       <FilterProvider>
         <Hero title="Case Studies"/>
         <Filter />

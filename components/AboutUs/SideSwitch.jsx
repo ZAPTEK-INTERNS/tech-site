@@ -10,13 +10,13 @@ const SideSwitch = ({Data}) => {
           {Data.map((card, index) => (
             <div
               key={card.id}
-              className="lg:flex py-16 mx-4 font-serif"
+              className="lg:flex py-16 font-serif"
             >
               <div  className={`lg:w-1/2  ${
                   index % 2 === 0 ? "md:order-1" : "md:order-2"
                 }`}>
-                <h2 className="text-7xl font-medium mb-4 ">{card.title}</h2>
-                <h3 className=" font-medium mb-4 text-gray-400">{card.body}</h3>
+                <h2 data-aos="fade-up" className="lg:text-7xl text-4xl font-medium mb-4 ">{card.title}</h2>
+                <h3 data-aos="fade-up" className=" font-medium mb-4 text-gray-400">{card.body}</h3>
                
               </div>
 
@@ -26,6 +26,7 @@ const SideSwitch = ({Data}) => {
                 }`}
               >
                 <Image
+                data-aos="zoom-in"
                   className="object-cover"
                   src={card.image}
                   alt={card.title}

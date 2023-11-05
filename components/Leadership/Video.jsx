@@ -13,7 +13,8 @@ const Video = () => {
 
   return (
     <section className='mx-[3%] w-[94%] lg:w-[86%] lg:mx-[7%] mt-[100px] bg-about bg-center bg-cover bg-no-repeat h-[70vh] text-white'>
-     <div className='pt-20 sm:pt-16 md:pt-10 ml-4 sm:ml-20 flex flex-col justify-start items-start sm:justify-center'>
+     <div data-aos="fade-right"
+       className='pt-20 sm:pt-16 md:pt-10 ml-4 sm:ml-20 flex flex-col justify-start items-start sm:justify-center'>
       <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold'>Improve your</h1>
        <Image src={vpole} alt="ploe"/>
        <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold  sm:ml-16'>business with the</h1>

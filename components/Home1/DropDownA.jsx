@@ -2,21 +2,22 @@ import Link from "next/link";
 
 const DropDownA = () => {
   return (
-    <div className="lg:bg-white w-fit lg:absolute hidden group-hover:flex py-3 px-8 rounded-md flex-col gap-4 lg:z-20 text-black/70">
-      <Link
-        href="/"
-        className="hover:text-violet-900 border-l hover:border-violet-900"
-      >
-        Home
+    <div className="flex-col hidden gap-4 px-8 py-3 rounded-md lg:bg-white w-fit md:w-40 lg:absolute group-hover:flex lg:z-20 text-black/70">
+     <Link href="/" className="menu-link">
+        <div className="menu-link-bar"></div>
+        <div>Home</div>
       </Link>
-      <Link href="/home2" className="hover:text-violet-900">
-        Home 2
+      <Link href="/home2" className="menu-link">
+        <div className="menu-link-bar"></div>
+        <div>Home 2</div>
       </Link>
-      <Link href="/home3" className="hover:text-violet-900">
-        Home 3
+      <Link href="/home3" className="menu-link">
+        <div className="menu-link-bar"></div>
+        <div>Home 3</div>
       </Link>
-      <Link href="/home4" className="hover:text-violet-900">
-        Home 4
+      <Link href="/home4" className="menu-link">
+        <div className="menu-link-bar"></div>
+        <div>Home 4</div>
       </Link>
     </div>
   );

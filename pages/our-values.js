@@ -5,6 +5,7 @@ import About from "../components/OurValues/About";
 import Values from "../components/OurValues/Values";
 import Testimonials from "../components/OurValues/Testimonials";
 import Build from "../components/OurValues/Build";
+import Gradient from "../components/OurValues/Gradient";
 
 
 const OurValues = () => {
@@ -16,7 +17,9 @@ const OurValues = () => {
         <About/>
         <Values/>
         <Testimonials/>
+        <Gradient >
         <Build/>
+        </Gradient>
         </> );
 }
  

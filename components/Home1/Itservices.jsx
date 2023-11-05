@@ -1,25 +1,18 @@
-import {itservices} from '.'
-import Link from 'next/link'
+import { itservices } from ".";
+import Link from "next/link";
 
 import { useRouter } from "next/router";
 
 // ...
 
-
-
-
-
 const Itservices = () => {
-
-
-const router = useRouter();
-
+  const router = useRouter();
 
   return (
-    <section className="mx-[5%] mt-8 w-[90%] pt-[4rem] lg:w-[86%] lg:mx-[7%] flex flex-col items-center mb-[120px]">
+    <section className="mx-[5%] w-[90%] lg:w-[86%] lg:mx-[7%] flex flex-col items-center mb-[120px]">
       <p
-        className={`bg-[#8000FF]/10 text-lg font-semibold w-fit ${router.pathname === "/home3" ? "self-start" : ""
-        }  rounded-md px-4 py-2 text-[#8000FF]`}
+        data-aos="fade-up"
+        className="bg-black/10 text-lg font-semibold w-fit rounded-md px-4 py-2 text-violet-900"
       >
         Variety solution for IT services
       </p>
@@ -29,9 +22,10 @@ const router = useRouter();
           <article
             key={service.id}
             className="my-2 group col-span-2 md:col-span-1"
+            data-aos="fade-up"
           >
             <Link
-              href="/"
+              href="/services"
               className="text-4xl lg:text-5xl font-bold text-gray-800 group-hover:text-violet-700"
             >
               {service.title}
@@ -47,6 +41,6 @@ const router = useRouter();
       </div>
     </section>
   );
-}
+};
 
-export default Itservices
+export default Itservices;

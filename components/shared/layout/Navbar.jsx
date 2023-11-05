@@ -1,7 +1,8 @@
-import logo from "../../../public/images/logo-black.svg";
+import logoblack from "../../../public/images/logo-black.svg";
+import logowhite from '../../../public/images/logo-white.svg'
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BsCartFill } from "react-icons/bs";
 import { CgMenuRight } from "react-icons/cg";
 import { FiArrowDownRight } from "react-icons/fi";
@@ -12,6 +13,29 @@ import { DropDownA, DropDownB, DropDownC, Cart } from "../../links";
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
   const [cart, setCart] = useState(false);
+  const [navBg, setNavBg] = useState("");
+  const [changeLogo, setChangeLogo] = useState(false)
+
+  useEffect(() => {
+   const currentPage = window.location.pathname;
+   if (currentPage === '/' || 
+       currentPage === '/home3' || 
+       currentPage === '/shop' ||
+       currentPage === '/getaquote' || 
+       currentPage === '/testimonials' ||
+       currentPage === '/pricing' || 
+       currentPage === '/faq' || 
+       currentPage === '/services/1') 
+    {
+     setNavBg('bg-transparent text-white');
+     setChangeLogo(false)
+    }
+    else {
+     setNavBg('bg-white text-black');
+     setChangeLogo(true)
+   }
+ }, []);
+
 
   const handleCartOpen = () => {
     setCart(true);
@@ -24,14 +48,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full overflow-hidden py-4 lg:py-0 border-b border-gray-300">
-      <section className="flex justify-between items-center w-[94%] lg:w-[96%] mx-[3%] lg:ml-[4%]">
-        <Image src={logo} />
+    <nav className={`bg-${navBg} w-full overflow-hidden  border-b border-gray-400`}>
+      <section className="flex justify-between items-center w-[90%] lg:w-[96%] mx-[5%] lg:ml-[4%]">
+        <Image src={changeLogo ? logoblack : logowhite } />
 
         <div className="hidden lg:flex text-lg gap-12 font-semibold">
           <div className="group">
             <p className="cursor-pointer relative hover:text-violet-900 transition-all">
-              <span className="absolute text-gray-500 bottom-3 left-[-15px] text-xs">
+              <span className="absolute text-gray-400 bottom-3 left-[-15px] text-xs">
                 01
               </span>
               Demos{" "}
@@ -43,8 +67,8 @@ const Navbar = () => {
 
           <div className="group">
             <p className="cursor-pointer relative hover:text-violet-900 transition-all">
-              <span className="absolute text-gray-500 bottom-3 left-[-15px] text-xs">
-                01
+              <span className="absolute text-gray-400 bottom-3 left-[-15px] text-xs">
+                02
               </span>
               Company{" "}
             </p>
@@ -57,23 +81,23 @@ const Navbar = () => {
             href="/services"
             className="relative hover:text-violet-900 transition-all"
           >
-            <span className="absolute text-gray-500 bottom-3 left-[-15px] text-xs">
+            <span className="absolute text-gray-400 bottom-3 left-[-15px] text-xs">
               03
             </span>
             Services
           </Link>
           <Link
-            href=""
+            href="/case-studies"
             className="relative hover:text-violet-900 transition-all"
           >
-            <span className="absolute text-gray-500 bottom-3 left-[-15px] text-xs">
+            <span className="absolute text-gray-400 bottom-3 left-[-15px] text-xs">
               04
             </span>
             Case Studies
           </Link>
           <div className="group">
             <p className="cursor-pointer relative hover:text-violet-900 transition-all">
-              <span className="absolute text-gray-500 bottom-3 left-[-15px] text-xs">
+              <span className="absolute text-gray-400 bottom-3 left-[-15px] text-xs">
                 01
               </span>
               All Pages
@@ -111,9 +135,9 @@ const Navbar = () => {
       </section>
 
       {menu && (
-        <div className="fixed lg:hidden left-0 top-0 bg-white h-[100vh] w-[60%] sm:w-[300px] z-40">
+        <div className="fixed lg:hidden left-0 top-0 bg-white h-[100vh] w-[60%] sm:w-[300px] z-40 text-black">
           <div className="flex justify-between items-center my-6 mx-4">
-            <Image src={logo} className="w-[70px] sm:w-[100px]" />
+            <Image src={logoblack} className="w-[70px] sm:w-[100px]" />
             <AiOutlineClose size={24} onClick={handleClose} />
           </div>
           <div className="flex flex-col text-lg gap-6 mx-4 font-semibold">
@@ -136,13 +160,13 @@ const Navbar = () => {
               </div>
             </div>
             <Link
-              href=""
+              href="/services"
               className="relative hover:text-violet-900 transition-all"
             >
               Services
             </Link>
             <Link
-              href=""
+              href="/case-studies"
               className="relative hover:text-violet-900 transition-all"
             >
               Case Studies

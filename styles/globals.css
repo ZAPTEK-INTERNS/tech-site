@@ -38,3 +38,16 @@ body {
 .btn-primary {
   @apply bg-[#8000FF];
 }
+
+.menu-link {
+  @apply flex items-center hover:text-violet-900;
+  transition: hover 0.5s ease;
+}
+
+.menu-link-bar {
+  @apply w-4 h-[2px] bg-violet-700 hidden mr-2;
+}
+
+.menu-link:hover .menu-link-bar {
+  display: block;
+}
