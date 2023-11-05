@@ -87,7 +87,7 @@ const Navbar = () => {
             Services
           </Link>
           <Link
-            href=""
+            href="/case-studies"
             className="relative hover:text-violet-900 transition-all"
           >
             <span className="absolute text-gray-400 bottom-3 left-[-15px] text-xs">
@@ -160,13 +160,13 @@ const Navbar = () => {
               </div>
             </div>
             <Link
-              href=""
+              href="/services"
               className="relative hover:text-violet-900 transition-all"
             >
               Services
             </Link>
             <Link
-              href=""
+              href="/case-studies"
               className="relative hover:text-violet-900 transition-all"
             >
               Case Studies
