@@ -16,7 +16,7 @@ const Home4WorkSection = () => {
       <div className="flex flex-col items-center justify-center md:items-start md:justify-start">
         <HeadingTag Title='Our Work' />
         <div className="flex flex-col items-center justify-center w-full space-y-6 md:items-end md:flex-row md:justify-between md:space-y-0">
-          <h2 className='text-4xl md:text-7xl font-bold text-[#180030] tracking-tighter mt-4'>Our latest <br className="hidden md:block" /> projects</h2>
+          <h2 className='text-4xl md:text-7xl font-bold text-[#180030] tracking-tighter mt-4' data-aos="fade-up">Our latest <br className="hidden md:block" /> projects</h2>
           <div className='inline-block'>
             <DotBtnLink URLLink='case-studies' />
           </div>

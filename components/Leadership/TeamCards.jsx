@@ -47,10 +47,11 @@ const members = [
 
 const TeamCards = () => {
   return (
-    <section className='mx-[3%] w-[94%] lg:w-[90%] lg:mx-[5%] mt-[100px] sm:mt-[180px] md:mt-0'>
+    <section className='mx-[3%] w-[94%] lg:w-[90%] lg:mx-[5%] mt-[100px] sm:mt-[180px] md:mt-8'>
       <div className='grid grid-cols-12 gap-6'>
        {members.map((member, index) => (
-         <article key={index} className='relative col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3'>
+         <article key={index} data-aos="fade-up"
+           className='relative col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3'>
            <Image src={member.image} alt="team member" className='rounded-md h-[24rem] w-full'/>
             <div className='absolute right-8 bottom-24'>
               <FaFacebookF size={35} className='text-white bg-[#1a0533] p-2 rounded-full hover:bg-white hover:text-violet-700 transition-all duration-500 cursor-pointer'/>

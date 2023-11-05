@@ -5,7 +5,6 @@ module.exports = {
     "./components/**/*.{js,jsx,ts,tsx}",
     "./layouts/**/*.{js,jsx,ts,tsx}",
     "./lib/**/*.{js,jsx,ts,tsx}",
-    
   ],
   theme: {
     extend: {
@@ -14,10 +13,9 @@ module.exports = {
         "hero-h4" : "url('../public/images/about1.webp')",
         "ourteam" : "url('../public/images/ourteam.svg')",
         "about" : "url('../public/images/about1.webp')",
-
-      }
+        "news": "url('../public/images/logo-black.svg')",
+      },
     },
   },
   plugins: [],
-}
-
+};

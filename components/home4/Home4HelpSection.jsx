@@ -13,7 +13,7 @@ const Home4HelpSection = () => {
       <div className='flex flex-col space-y-12 md:flex-row md:space-y-0 md:space-x-16'>
         {/* Title */}
         <div className='space-y-8'>
-          <h3 className='text-2xl font-bold md:text-3xl'>Let's see how we <br className="hidden md:block" /> can help</h3>
+          <h3 className='text-2xl font-bold md:text-3xl' data-aos="fade-up">Let's see how we <br className="hidden md:block" /> can help</h3>
           <DotBtnLink URLLink='services' LinkName='View More' />
         </div>
         {/* End of Title */}
