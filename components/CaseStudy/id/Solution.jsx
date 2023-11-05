@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import {BsCircle} from 'react-icons/bs'
 import im1 from '../../../public/images/case-study3.jpg'
-import im2 from '../../../public/images/case-study3.jpg'
-import im3 from '../../../public/images/case-study3.jpg'
-import im4 from '../../../public/images/case-study3.jpg'
+import im2 from '../../../public/images/case-study5.jpg'
+import im3 from '../../../public/images/case-study4.jpg'
+import im4 from '../../../public/images/case-study6.jpg'
 const Solution = ({data}) => {
   return (
     <div className="md:flex my-8">
@@ -12,10 +12,10 @@ const Solution = ({data}) => {
           <div className=""></div>
           <div className="md:row-span-3"></div>
 
-        <Image  data-aos="fade-up" src={im1} width="auto" height="auto" alt='service2' className='rounded-lg md:row-span-4' />
-        <Image data-aos="fade-up"  src={im2} width="auto" height="auto" alt='service2' className='rounded-lg md:row-span-4 ' />
-        <Image data-aos="fade-up"  src={im3} width="auto" height="auto" alt='service2' className='rounded-lg md:row-span-4 ' />
-        <Image data-aos="fade-up"  src={im4} width="auto" height="auto" alt='service2' className='rounded-lg md:row-span-4 md:-mt-16' />
+        <Image  data-aos="fade-up" src={im1} width={600} height={600} alt='service2' className='rounded-lg md:row-span-4' />
+        <Image data-aos="fade-up"  src={im2} width={600} height={600} alt='service2' className='rounded-lg md:row-span-4 ' />
+        <Image data-aos="fade-up"  src={im3} width={600} height={600} alt='service2' className='rounded-lg md:row-span-4 ' />
+        <Image data-aos="fade-up"  src={im4} width={600} height={600} alt='service2' className='rounded-lg md:row-span-4 md:-mt-16' />
 
           </div>
 

@@ -7,6 +7,45 @@ import CS4 from "../../public/images/xyz.jpg";
 import CS5 from "../../public/images/e-commerce.jpg";
 import CS6 from "../../public/images/marketing.jpg";
 
+/**
+ * images for  each detail
+ */
+import xyz1 from "../../public/images/case-study3.jpg";
+import xyz2 from "../../public/images/case-study5.jpg";
+import xyz3 from "../../public/images/case-study4.jpg";
+import xyz4 from "../../public/images/case-study6.jpg";
+const xyzflag = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/6506f71658a1171bc19d8c5e_germany_555613.png";
+
+const mscm1 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/650708bd318c91630dc226b5_Screenshot%202023-09-17%20at%2017.09.26.png";
+const mscm2 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/6507092d9c68b1724818e652_1-.jpg";
+const mscm3 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/650708be8eaeb28e20b60a4b_Screenshot%202023-09-17%20at%2017.09.54.png";
+const mscm4 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/6507092d3cc37e5fe05ff586_2-.jpg";
+const mscmflag = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/65070824acf34e9a15e17f48_france_555602.png"
+
+const dtfh1 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/65048240217fd699abcd4c49_alvaro-reyes-qWwpHwip31M-unsplash.jpg";
+const dtfh2 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/65048254b1de188ce0d26f4d_campaign-creators-e6n7uoEnYbA-unsplash.jpg";
+const dtfh3 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/6504824deda728540edb46f1_sigmund-4UGmm3WRUoQ-unsplash.jpg";
+const dtfh4 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/6504824550d1abb7e5abb601_pankaj-patel-Ylk5n_nd9dA-unsplash.jpg";
+const dtfhflag = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/65047d08592c2a683998f858_united-states_206626.png";
+
+const pppp1 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/6506fa4f3cc37e5fe0530af0_pexels-tranmautritam-326503.jpg";
+const pppp2 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/6506fa5e1f75da15474c8154_pexels-cottonbro-studio-3585000.png";
+const pppp3 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/6506fa57acf34e9a15d58e0a_moment-discussion.jpg";
+const pppp4 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/6506fa5e10237164c634c11e_happy-female-entrepreneur-with-headset-drinking-coffee-while-surfing-net-touchpad-office.jpg";
+const ppppflag = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/6506f71658a1171bc19d8c5e_germany_555613.png";
+
+const emre1 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/65070d66e2f6c2cf327800a0_Screenshot%202023-09-17%20at%2017.29.24.png";
+const emre2 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/65070d6a49742f6550c583e0_Screenshot%202023-09-17%20at%2017.29.39.png";
+const emre3 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/650708bd318c91630dc226b5_Screenshot%202023-09-17%20at%2017.09.26.png";
+const emre4 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/6506fa57acf34e9a15d58e0a_moment-discussion.jpg";
+const emreflag = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/65047d08592c2a683998f858_united-states_206626.png";
+
+const omaw1 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/650703e72a4b20c9d1b2ac47_business-presentation-laptop-screen.jpg";
+const omaw2 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/650703f21f75da154754e7f6_digital-laptop-working-global-business-concept.jpg";
+const omaw3 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/65070463ce2d9d36a2c8c7cc_businessbrainstorming-ideas-business-project-startup-office-laptop-computer.jpg";
+const omaw4 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/650703f291feec8652026360_startup-business-people-working-laptop-copy-space%201.jpg";
+const omawflag = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/65047d08592c2a683998f858_united-states_206626.png";
+
 export const cardsData = [
   {
     id: "1",
@@ -22,8 +61,9 @@ export const cardsData = [
       "Our development service firm to achieve their goal of modernizing their supply chain management processes",
     industry: "Supply Chain Management",
     location: "France",
-    services: [ "IT Consultancy","Website Maintenance"],
-    solution: "LogiTech Solutions engaged in a partnership with our development and IT consulting team to address these challenges:",
+    services: ["IT Consultancy", "Website Maintenance"],
+    solution:
+      "LogiTech Solutions engaged in a partnership with our development and IT consulting team to address these challenges:",
     solutionlist: [
       {
         head: "Assessment and Roadmap",
@@ -41,16 +81,32 @@ export const cardsData = [
         head: "Real-Time Insights",
         body: "We created real-time data analytics and reporting dashboards. These dashboards provided actionable insights, empowering informed decision-making throughout the supply chain.",
       },
-     
     ],
     resultlist: [
-      { head: "Efficiency Gains", body: "LogiTech Solutions experienced a 30% increase in operational efficiency, reducing lead times and costs." },
-      { head: "Data-Driven Decisions", body: "Real-time data visibility allowed for data-driven decision-making, leading to better inventory management and demand forecasting." },
-      { head: "Scalability", body: "The implemented solutions easily accommodated LogiTech's growth, ensuring long-term viability." },
-      { head: "Enhanced Security", body: "Robust security measures safeguarded sensitive supply chain data, reducing cybersecurity risks." },
+      {
+        head: "Efficiency Gains",
+        body: "LogiTech Solutions experienced a 30% increase in operational efficiency, reducing lead times and costs.",
+      },
+      {
+        head: "Data-Driven Decisions",
+        body: "Real-time data visibility allowed for data-driven decision-making, leading to better inventory management and demand forecasting.",
+      },
+      {
+        head: "Scalability",
+        body: "The implemented solutions easily accommodated LogiTech's growth, ensuring long-term viability.",
+      },
+      {
+        head: "Enhanced Security",
+        body: "Robust security measures safeguarded sensitive supply chain data, reducing cybersecurity risks.",
+      },
     ],
     result:
       "LogiTech Solutions, located in France, through a strategic partnership with our development and IT consulting team, successfully modernized its supply chain management processes.",
+      img1: "https://assets-global.website-files.com/64f99a189bbe4d7717201747/650708bd318c91630dc226b5_Screenshot%202023-09-17%20at%2017.09.26.png",
+      img2: mscm2,
+      img3: mscm3,
+      img3: mscm4,
+      flag: mscmflag,
   },
   {
     id: "2",
@@ -72,17 +128,44 @@ export const cardsData = [
       {
         head: "Custom Health Data Platform",
         body: "Leveraging our expertise in healthcare technology, we designed and implemented a cutting-edge health data platform. The platform allowed secure storage, retrieval, and sharing of patient data while ensuring HIPAA compliance.",
-      },{ head: "Interoperability", body: "We ensured seamless integration with electronic health record (EHR) systems, enabling healthcare providers to access patient data effortlessly." },
-      { head: "Data Analytics", body: "Advanced analytics tools were integrated to provide healthcare professionals with actionable insights for improved patient care and treatment planning." },
-      { head: "User Training", body: "We provided comprehensive training to healthcare staff to maximize the platform's utilization and efficiency." },
+      },
+      {
+        head: "Interoperability",
+        body: "We ensured seamless integration with electronic health record (EHR) systems, enabling healthcare providers to access patient data effortlessly.",
+      },
+      {
+        head: "Data Analytics",
+        body: "Advanced analytics tools were integrated to provide healthcare professionals with actionable insights for improved patient care and treatment planning.",
+      },
+      {
+        head: "User Training",
+        body: "We provided comprehensive training to healthcare staff to maximize the platform's utilization and efficiency.",
+      },
     ],
-    resultlist: [{ head: "", body: "The health data platform streamlined access to patient information, reducing administrative burden and improving overall efficiency." },
-    { head: "", body: "Healthcare providers reported more accurate diagnoses and treatment plans due to the platform's data analytics capabilities." },
-    { head: "", body: "Enhanced data security and HIPAA compliance ensured patient confidentiality and trust." },
-    { head: "", body: "Patients experienced improved care coordination, leading to better health outcomes." },
-  
-  ],
-    result: false,
+    resultlist: [
+      {
+        head: "",
+        body: "The health data platform streamlined access to patient information, reducing administrative burden and improving overall efficiency.",
+      },
+      {
+        head: "",
+        body: "Healthcare providers reported more accurate diagnoses and treatment plans due to the platform's data analytics capabilities.",
+      },
+      {
+        head: "",
+        body: "Enhanced data security and HIPAA compliance ensured patient confidentiality and trust.",
+      },
+      {
+        head: "",
+        body: "Patients experienced improved care coordination, leading to better health outcomes.",
+      },
+    ],
+    result: "",
+    img1: dtfh1,
+    img2: dtfh2,
+    img3: dtfh3,
+    img3: dtfh4,
+    flag: dtfhflag,
   },
   {
     id: "3",
@@ -94,19 +177,38 @@ export const cardsData = [
       { name: "Development", link: "development" },
       { name: "IT Consultancy", link: "it-consultancy" },
     ],
-    background: "Our team of experienced professionals is dedicated to providing exceptional web design, development, and marketing services.",
+    background:
+      "Our team of experienced professionals is dedicated to providing exceptional web design, development, and marketing services.",
     industry: "Photography",
     location: "Germany",
-    services: ["IT consultant", "Web Development" , "Q&A Testing"],
-    solution: "rr",
+    services: ["IT consultant", "Web Development", "Q&A Testing"],
+    solution: "",
     solutionlist: [
-      { head: "Strategic Planning", body: "We began by thoroughly understanding the client's photography style and goals. We then developed a comprehensive plan to design and develop a website that would align with their vision." },
-      { head: "Custom Website Development", body: "We created a custom website tailored to the client's specific needs. This included a user-friendly content management system (CMS) for easy portfolio updates and a visually appealing design that highlighted the client's diverse photography work." },
-      { head: "Portfolio Curation", body: "The heart of the website was a carefully curated portfolio section. We organized photos into various categories, allowing visitors to explore different styles and genres of photography easily." },
-      { head: "Responsive Design", body: "To ensure a seamless experience across devices, we implemented a responsive design, making the website accessible and visually appealing on both desktop and mobile devices." },
+      {
+        head: "Strategic Planning",
+        body: "We began by thoroughly understanding the client's photography style and goals. We then developed a comprehensive plan to design and develop a website that would align with their vision.",
+      },
+      {
+        head: "Custom Website Development",
+        body: "We created a custom website tailored to the client's specific needs. This included a user-friendly content management system (CMS) for easy portfolio updates and a visually appealing design that highlighted the client's diverse photography work.",
+      },
+      {
+        head: "Portfolio Curation",
+        body: "The heart of the website was a carefully curated portfolio section. We organized photos into various categories, allowing visitors to explore different styles and genres of photography easily.",
+      },
+      {
+        head: "Responsive Design",
+        body: "To ensure a seamless experience across devices, we implemented a responsive design, making the website accessible and visually appealing on both desktop and mobile devices.",
+      },
     ],
-    resultlist: false,
-    result: "The health data platform streamlined access to patient information, reducing administrative burden and improving overall efficiency.Healthcare providers reported more accurate diagnoses and treatment plans due to the platform's data analytics capabilities.Enhanced data security and HIPAA compliance ensured patient confidentiality and trust.Patients experienced improved care coordination, leading to better health outcomes. Our digital transformation consultancy successfully collaborated with MediTech Innovations in the HealthTech industry to achieve their vision of a secure and efficient health data platform. This case exemplifies our dedication to driving innovation and efficiency in the healthcare technology sector.",
+    resultlist: "",
+    result:
+      "The health data platform streamlined access to patient information, reducing administrative burden and improving overall efficiency.Healthcare providers reported more accurate diagnoses and treatment plans due to the platform's data analytics capabilities.Enhanced data security and HIPAA compliance ensured patient confidentiality and trust.Patients experienced improved care coordination, leading to better health outcomes. Our digital transformation consultancy successfully collaborated with MediTech Innovations in the HealthTech industry to achieve their vision of a secure and efficient health data platform. This case exemplifies our dedication to driving innovation and efficiency in the healthcare technology sector.",
+      img1: pppp1,
+      img2: pppp2,
+      img3: pppp3,
+      img3: pppp4,
+      flag: ppppflag
   },
   {
     id: "4",
@@ -147,6 +249,11 @@ export const cardsData = [
     resultlist: [{ head: "", body: "" }],
     result:
       "XYZ Corporation saw a significant reduction in IT-related downtime, resulting in improved overall productivity.The centralized dashboard allowed for better resource allocation, reducing operational costs.Real-time insights empowered the IT team to proactively address issues, enhancing system reliability.Executive leadership gained a clear view of IT performance, facilitating data-driven decision-making.",
+      img1: xyz1,
+      img2: xyz2,
+      img3: xyz3,
+      img3: xyz4,
+      flag: xyzflag,
   },
   {
     id: "5",
@@ -158,25 +265,58 @@ export const cardsData = [
       { name: "IT Consultancy", link: "it-consultancy" },
       { name: "Development", link: "development" },
     ],
-    background: "ABC Retail Group, a well-established player in the retail industry, approached our IT consulting and development firm with a clear objective. They sought to bolster their online presence and revenue streams through effective e-commerce integration. Recognizing the need for expert guidance, they turned to our team to bring their vision to life.",
+    background:
+      "ABC Retail Group, a well-established player in the retail industry, approached our IT consulting and development firm with a clear objective. They sought to bolster their online presence and revenue streams through effective e-commerce integration. Recognizing the need for expert guidance, they turned to our team to bring their vision to life.",
     industry: "Retail",
     location: "United States",
     services: ["IT Consultancy", "Web Development"],
     solution: "",
     solutionlist: [
-      { head: "Needs Assessment", body: "We conducted a comprehensive analysis of ABC Retail Group's business model, customer demographics, and market trends to identify strategic e-commerce opportunities." },
-      { head: "Custom E-commerce Development", body: "Leveraging our expertise in IT consulting and development, we embarked on crafting a tailor-made e-commerce platform. This platform featured intuitive navigation, secure payment processing, and an appealing design to maximize user engagement." },
-      { head: "Integration with Existing Systems", body: "We ensured a smooth integration between the new e-commerce platform and ABC Retail Group's existing inventory management, customer relationship management (CRM), and order processing systems." },
-      { head: "Mobile Responsiveness", body: "Recognizing the importance of mobile commerce, we optimized the platform for seamless access and shopping on smartphones and tablets, capturing the burgeoning mobile market." },
-      { head: "Digital Marketing Strategy", body: "Concurrently, we devised a comprehensive digital marketing strategy, encompassing SEO, email campaigns, and social media initiatives to drive targeted traffic and elevate online visibility." },
-  ],
+      {
+        head: "Needs Assessment",
+        body: "We conducted a comprehensive analysis of ABC Retail Group's business model, customer demographics, and market trends to identify strategic e-commerce opportunities.",
+      },
+      {
+        head: "Custom E-commerce Development",
+        body: "Leveraging our expertise in IT consulting and development, we embarked on crafting a tailor-made e-commerce platform. This platform featured intuitive navigation, secure payment processing, and an appealing design to maximize user engagement.",
+      },
+      {
+        head: "Integration with Existing Systems",
+        body: "We ensured a smooth integration between the new e-commerce platform and ABC Retail Group's existing inventory management, customer relationship management (CRM), and order processing systems.",
+      },
+      {
+        head: "Mobile Responsiveness",
+        body: "Recognizing the importance of mobile commerce, we optimized the platform for seamless access and shopping on smartphones and tablets, capturing the burgeoning mobile market.",
+      },
+      {
+        head: "Digital Marketing Strategy",
+        body: "Concurrently, we devised a comprehensive digital marketing strategy, encompassing SEO, email campaigns, and social media initiatives to drive targeted traffic and elevate online visibility.",
+      },
+    ],
     resultlist: [
-      { head: "", body: "ABC Retail Group experienced a substantial surge in online sales, diversifying their revenue streams and expanding their digital presence." },
-      { head: "", body: "The e-commerce platform delivered an exceptional shopping experience, fostering increased customer satisfaction and brand loyalty." },
-      { head: "", body: "Streamlined inventory management and order processing led to operational efficiencies and cost savings." },
-      { head: "", body: "Mobile optimization broadened their customer base by catering to the growing mobile commerce trend." },
+      {
+        head: "",
+        body: "ABC Retail Group experienced a substantial surge in online sales, diversifying their revenue streams and expanding their digital presence.",
+      },
+      {
+        head: "",
+        body: "The e-commerce platform delivered an exceptional shopping experience, fostering increased customer satisfaction and brand loyalty.",
+      },
+      {
+        head: "",
+        body: "Streamlined inventory management and order processing led to operational efficiencies and cost savings.",
+      },
+      {
+        head: "",
+        body: "Mobile optimization broadened their customer base by catering to the growing mobile commerce trend.",
+      },
     ],
     result: "",
+    img1: emre1,
+    img2: emre2,
+    img3: emre3,
+    img3: emre4,
+    flag: emreflag,
   },
   {
     id: "6",
@@ -188,23 +328,51 @@ export const cardsData = [
       { name: "Design", link: "design" },
       { name: "IT Consultancy", link: "it-consultancy" },
     ],
-    background: "Onson Marketing Agency, a dynamic player in the marketing and advertising industry, approached our agency with a goal to improve its online presence, increase brand visibility, and boost lead generation. As a relatively new entrant in a competitive market, Onson sought to establish itself as a trusted partner for businesses seeking innovative marketing solutions.",
+    background:
+      "Onson Marketing Agency, a dynamic player in the marketing and advertising industry, approached our agency with a goal to improve its online presence, increase brand visibility, and boost lead generation. As a relatively new entrant in a competitive market, Onson sought to establish itself as a trusted partner for businesses seeking innovative marketing solutions.",
     industry: "Digital Marketing",
     location: "New York City, USA",
     services: ["IT Consultancy", "Website Maintenance"],
-    solution: "Our agency implemented a multifaceted strategy to address Onson's challenges:",
+    solution:
+      "Our agency implemented a multifaceted strategy to address Onson's challenges:",
     solutionlist: [
-      { head: "Website Revamp", body: "We designed and developed a modern, user-friendly website for Onson, optimizing it for search engines and ensuring mobile responsiveness." },
-      { head: "Content Marketing", body: "Our team created a blog section on the website, publishing informative articles, case studies, and industry insights regularly to establish Onson as a thought leader." },
-      { head: "Social Media Engagement", body: "We devised a social media marketing plan, focusing on platforms like LinkedIn and Twitter, to engage with industry peers and potential clients" },
-      { head: "Lead Generation Funnel", body: "We implemented lead capture forms, email marketing campaigns, and downloadable resources, such as e-books, to capture and nurture leads." },
+      {
+        head: "Website Revamp",
+        body: "We designed and developed a modern, user-friendly website for Onson, optimizing it for search engines and ensuring mobile responsiveness.",
+      },
+      {
+        head: "Content Marketing",
+        body: "Our team created a blog section on the website, publishing informative articles, case studies, and industry insights regularly to establish Onson as a thought leader.",
+      },
+      {
+        head: "Social Media Engagement",
+        body: "We devised a social media marketing plan, focusing on platforms like LinkedIn and Twitter, to engage with industry peers and potential clients",
+      },
+      {
+        head: "Lead Generation Funnel",
+        body: "We implemented lead capture forms, email marketing campaigns, and downloadable resources, such as e-books, to capture and nurture leads.",
+      },
     ],
     resultlist: [
-      { head: "Improved Website Traffic", body: "Within six months, Onson's website experienced a 40% increase in organic traffic, resulting in higher visibility among potential clients." },
-      { head: "Lead Generation Success", body: "Our lead generation funnel yielded a 25% increase in qualified leads, providing Onson with a consistent stream of potential clients." },
-      { head: "Enhanced Authority", body: "Onson's active social media engagement and content marketing efforts led to its recognition as a trusted industry authority." },
+      {
+        head: "Improved Website Traffic",
+        body: "Within six months, Onson's website experienced a 40% increase in organic traffic, resulting in higher visibility among potential clients.",
+      },
+      {
+        head: "Lead Generation Success",
+        body: "Our lead generation funnel yielded a 25% increase in qualified leads, providing Onson with a consistent stream of potential clients.",
+      },
+      {
+        head: "Enhanced Authority",
+        body: "Onson's active social media engagement and content marketing efforts led to its recognition as a trusted industry authority.",
+      },
     ],
     result: "",
+    img1: omaw1,
+    img2: omaw2,
+    img3: omaw3,
+    img3: omaw4,
+    flag : omawflag,
   },
 ];
 

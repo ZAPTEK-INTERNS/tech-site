@@ -1,4 +1,6 @@
 import React from 'react'
+import Image from 'next/image'
+
 
 const Background = ({data}) => {
   return (
@@ -15,7 +17,7 @@ const Background = ({data}) => {
               </div>
               <div className='flex justify-between border-b border-b-slate-500'>
               <p  className="text-gray-500 font-medium" >Location:</p>
-              <p className='font-bold'>{data.location}</p>
+              <p className='font-bold'>{data.location}  <image data-aos="fade-up"  src={data.flag} width={40} height={40} alt='flag'/> </p>
               </div>
               <div>
               <p  className="text-gray-500 font-medium" >Services Used:</p>
