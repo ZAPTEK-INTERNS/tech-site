@@ -13,7 +13,7 @@ const PopUp = ({video, setVideo}) => {
          <div className='flex justify-start items-start w-full h-screen mx-16 gap-10 my-[50px]'>
           <iframe
             className='w-full h-[30rem]'
-            src="https://www.youtube.com/watch?v=vvyPj5bTcgQ"
+            src="https://www.youtube.com/embed/vvyPj5bTcgQ"
             title="YouTube video player"
             allowFullScreen
           ></iframe>

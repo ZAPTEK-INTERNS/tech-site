@@ -48,7 +48,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`bg-${navBg} w-full overflow-hidden py-5 lg:py-3 border-b border-gray-400`}>
+    <nav className={`bg-${navBg} w-full overflow-hidden  border-b border-gray-400`}>
       <section className="flex justify-between items-center w-[90%] lg:w-[96%] mx-[5%] lg:ml-[4%]">
         <Image src={changeLogo ? logoblack : logowhite } />
 
