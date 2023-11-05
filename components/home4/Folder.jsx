@@ -20,7 +20,7 @@ const Folder = ({
     const NonTransparentBtnClr = "text-[#8000ff]";
   return (
     <>
-    <div className='relative flex'>
+    <div className='relative flex' data-aos="fade-up">
         <div className='z-50 px-4 pt-10 md:w-64'>
             <div className='bg-[#8912ff] p-3 inline-block border-[1px] border-[rgba(255,255,255,0.3)] rounded'>
                 {Icon}

@@ -21,12 +21,12 @@ const TestimonialCardSection = () => {
         </div>
         
         <div className="mt-12 space-y-6 md:p-20">
-            <p className='p-8 text-xl md:text-3xl text-[#180030] font-bold border-l-4 border-[#8000ff]'>
+            <p className='p-8 text-xl md:text-3xl text-[#180030] font-bold border-l-4 border-[#8000ff]' data-aos="fade-up">
                 "Our organization partnered with Tech for our cybersecurity needs, and the results have been exceptional. 
                 Their cutting-edge solutions and proactive monitoring have kept our data secure. I highly recommend their services."
             </p>
             <center>
-                <div className="flex flex-row items-center justify-center space-x-3">
+                <div className="flex flex-row items-center justify-center space-x-3" data-aos="fade-up">
                     <div className='w-16 h-16'><Image src={TestimonialProfileImg} className='rounded-full ' /></div>
                     <p className='text-[#180030] text-lg font-bold'>Jain Wong</p>
                 </div>

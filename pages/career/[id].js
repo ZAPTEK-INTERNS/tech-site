@@ -4,9 +4,10 @@ import {FaCalendarAlt} from 'react-icons/fa'
 import {BiSolidTimeFive} from 'react-icons/bi'
 import {MdLocationOn} from 'react-icons/md'
 import Link from "next/link";
+import {Navbar} from '../../components/links'
+import Head from "next/head";
 
 const CareerDetail = () => {
-  //console.log(typeof joblist)
   const router = useRouter();
   const jobId = router.query.id;
   const newId = parseInt(jobId) 
@@ -19,14 +20,20 @@ if (!job) {
 
   return (
     <section>
-      <div className="bg-[#1a0533] h-[60vh] text-center flex items-center justify-center">
-        <h1 className="text-white text-5xl sm:ext-6xl md:text-7xl font-bold ">{job.title}</h1> 
-      </div>
+      <Head> <title> Career - Tech </title> </Head>
+      <Navbar/>
+      <div className="bg-[#1a0533] h-[60vh] text-center flex items-center justify-center 'w-full overflow-hidden'">
+        <h1 className="text-white text-5xl sm:ext-6xl md:text-7xl font-bold" data-aos="fade-up">
+          {job.title}
+        </h1> 
+       </div>
 
       <section className="w-[86%] ml-[7%] grid grid-cols-6 gap-6 mb-[100px] mt-[50px] ">
        <div className="col-span-6 md:col-span-4">
         <h1 className="text-3xl sm:ext-4xl md:text-5xl font-bold">Job Description</h1>
-         <p className="text-lg font-semibold text-[#1a0533]/60 mt-3">{job.description}</p>
+         <p className="text-lg font-semibold text-[#1a0533]/60 mt-3" >
+           {job.description}
+          </p>
 
          <h1 className="text-3xl sm:ext-4xl md:text-5xl font-bold my-6">Key Responsibilities:</h1>
           <ul className="list-disc">

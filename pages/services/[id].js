@@ -1,7 +1,7 @@
 // pages/services/[id].js
 
 // Import necessary components and styles
-import { useRouter } from "next/router";
+{/*import { useRouter } from "next/router";
 import { Projects } from "../../components/links";
 
 // Sample service data for demonstration (replace with your actual data)
@@ -13,14 +13,16 @@ const serviceData = {
   benefits: "List of benefits for the service.",
   workProcess: "Description of the work process.",
   projects: "Recent projects related to the service.",
-};
+};*/}
 
 function ServiceDetail() {
-  const router = useRouter();
-  const { id } = router.query;
+  {/*const router = useRouter();
+const { id } = router.query;*/}
 
-  return (
-    <div>
+  return ( 
+    <>
+      <h1>Hello</h1>
+       {/*<div>
       <h1>{serviceData.title}</h1>
       <p>{serviceData.description}</p>
       <img src={serviceData.image} alt={serviceData.title} />
@@ -36,8 +38,10 @@ function ServiceDetail() {
       <p>{serviceData.workProcess}</p>
       <h2>Projects</h2>
       <Projects />
-    </div>
-  );
+        </div>*/}
+    </>
+    
+);
 }
 
 export default ServiceDetail;

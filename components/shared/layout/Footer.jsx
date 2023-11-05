@@ -4,6 +4,7 @@ import Image from "next/image";
 import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
+  
   return (
     <footer className="bg-[#1a0533] text-white z-20">
       <section className="py-12 text-lg font-semibold mx-[3%] w-[94%] lg:w-[90%] lg:mx-[5%] grid grid-cols-5 gap-12 lg:gap-2 place-items-center lg:place-items-start">
@@ -34,26 +35,50 @@ const Footer = () => {
 
         <div className="flex flex-col gap-4 col-span-2 sm:col-span-1 lg:col-span-1">
           <h1 className="text-2xl font-bold">Home</h1>
-          <Link href="/">Home 1</Link>
-          <Link href="/home2">Home 2</Link>
-          <Link href="/home3">Home 3</Link>
-          <Link href="/home4">Home 4</Link>
+          <Link href="/" className="hover:text-violet-800 transition-all">
+            Home 1
+          </Link>
+          <Link href="/home2" className="hover:text-violet-800 transition-all">
+            Home 2
+          </Link>
+          <Link href="/home3" className="hover:text-violet-800 transition-all">
+            Home 3
+          </Link>
+          <Link href="/home4" className="hover:text-violet-800 transition-all">
+            Home 4
+          </Link>
         </div>
 
         <div className="flex flex-col gap-4 col-span-3 sm:col-span-2 lg:col-span-1">
           <h1 className="text-2xl font-bold">Company</h1>
-          <Link href="/">About Us</Link>
-          <Link href="/home2">Pricing</Link>
-          <Link href="/home3">Career</Link>
-          <Link href="/home4">Services</Link>
+          <Link href="/about-us" className="hover:text-violet-800 transition-all">
+            About Us
+          </Link>
+          <Link href="/pricing" className="hover:text-violet-800 transition-all">
+            Pricing
+          </Link>
+          <Link href="/career" className="hover:text-violet-800 transition-all">
+            Career
+          </Link>
+          <Link href="/services" className="hover:text-violet-800 transition-all">
+            Services
+          </Link>
         </div>
 
         <div className="flex flex-col gap-4 col-span-5 sm:col-span-2 lg:col-span-1">
           <h1 className="text-2xl font-bold">Resources</h1>
-          <Link href="/">Blog</Link>
-          <Link href="/home2">Case Studies</Link>
-          <Link href="/home3">Blog Details</Link>
-          <Link href="/home4">FAQ</Link>
+          <Link href="/blog" className="hover:text-violet-800 transition-all">
+            Blog
+          </Link>
+          <Link href="/case-studies" className="hover:text-violet-800 transition-all">
+            Case Studies
+          </Link>
+          <Link href="/blog/1" className="hover:text-violet-800 transition-all">
+            Blog Details
+          </Link>
+          <Link href="/home4" className="hover:text-violet-800 transition-all">
+            FAQ
+          </Link>
         </div>
       </section>
       <hr className="border border-white/10 mx-[3%] w-[94%] lg:w-[90%] lg:mx-[5%]" />

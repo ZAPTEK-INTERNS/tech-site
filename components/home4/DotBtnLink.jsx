@@ -9,7 +9,7 @@ const DotBtnLink = ({
 }) => {
   return (
     <>
-        <Link href={URLLink} className='inline-flex items-center bg-[#8000ff] py-3 px-6 rounded-full text-white text-lg border-2 border-[#8000ff] transition-colors ease-linear duration-100 hover:bg-white hover:text-black space-x-8'>
+        <Link href={URLLink} className='inline-flex items-center bg-[#8000ff] py-3 px-6 rounded-full text-white text-lg border-2 border-[#8000ff] transition-colors ease-linear duration-100 hover:bg-white hover:text-black space-x-8' data-aos="zoom-out">
             <p>{LinkName}</p>
             {showIcon && <GoDotFill />}
         </Link>

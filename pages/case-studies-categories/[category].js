@@ -12,7 +12,7 @@ const Case = () => {
     const router = useRouter();
   const { category } = router.query;
   return (
-    <div className="mx-4">
+    <div className="mx-4 md:mx-16">
       <FilterProvider>
         {
             filterCategories.map((item,idx)=>(

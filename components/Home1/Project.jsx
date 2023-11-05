@@ -1,8 +1,10 @@
 import Link from 'next/link';
 import { cardsData } from '.';
 import Image from 'next/image';
+import { ButtonLink } from '../links'
 
-const Projects = () => {
+
+const Project = () => {
   return (
     <section className='my-[120px] mx-[5%] w-[90%] lg:w-[86%] lg:mx-[7%]'>
       <p className='bg-black/10 text-lg font-semibold w-fit rounded-md px-4 py-2 text-violet-900'>
@@ -10,11 +12,7 @@ const Projects = () => {
       </p>
       <div className='flex mb-8 sm:items-center flex-col sm:flex-row sm:justify-between'>
         <h1 className='text-4xl sm:5xl md:6xl lg:text-7xl font-bold my-6'>Our latest projects</h1>
-        <Link className=' bg-violet-700 text-white p-3 rounded-3xl w-fit flex items-center gap-6 justify-between hover:text-black hover:bg-white font-semibold transition-all duration-500 border border-violet-700' 
-           href='/'>
-          <span>View More</span>
-           <span className='font-bold'>.</span>
-         </Link>
+        <ButtonLink URLLink='case-studies' />
        </div>
  
       <div className='grid grid-cols-2 gap-8'>
@@ -48,4 +46,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Project
