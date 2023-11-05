@@ -14,37 +14,37 @@ import xyz1 from "../../public/images/case-study3.jpg";
 import xyz2 from "../../public/images/case-study5.jpg";
 import xyz3 from "../../public/images/case-study4.jpg";
 import xyz4 from "../../public/images/case-study6.jpg";
-const xyzflag = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/6506f71658a1171bc19d8c5e_germany_555613.png";
+import xyzflag from "../../public/images/germany.png";
 
-const mscm1 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/650708bd318c91630dc226b5_Screenshot%202023-09-17%20at%2017.09.26.png";
-const mscm2 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/6507092d9c68b1724818e652_1-.jpg";
-const mscm3 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/650708be8eaeb28e20b60a4b_Screenshot%202023-09-17%20at%2017.09.54.png";
-const mscm4 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/6507092d3cc37e5fe05ff586_2-.jpg";
-const mscmflag = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/65070824acf34e9a15e17f48_france_555602.png"
+import mscm1 from "../../public/images/mscm1.png";
+import mscm2 from "../../public/images/mscm2.jpg";
+import mscm3 from "../../public/images/mscm3.png";
+import mscm4 from "../../public/images/mscm4.jpg";
+import mscmflag from "../../public/images/france.png"
 
-const dtfh1 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/65048240217fd699abcd4c49_alvaro-reyes-qWwpHwip31M-unsplash.jpg";
-const dtfh2 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/65048254b1de188ce0d26f4d_campaign-creators-e6n7uoEnYbA-unsplash.jpg";
-const dtfh3 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/6504824deda728540edb46f1_sigmund-4UGmm3WRUoQ-unsplash.jpg";
-const dtfh4 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/6504824550d1abb7e5abb601_pankaj-patel-Ylk5n_nd9dA-unsplash.jpg";
-const dtfhflag = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/65047d08592c2a683998f858_united-states_206626.png";
+import dtfh1 from "../../public/images/dtfh1.jpg";
+import dtfh2 from "../../public/images/dtfh2.jpg";
+import dtfh3 from "../../public/images/dtfh3.jpg";
+import dtfh4 from "../../public/images/dtfh4.jpg";
+import dtfhflag from "../../public/images/usa.png";
 
-const pppp1 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/6506fa4f3cc37e5fe0530af0_pexels-tranmautritam-326503.jpg";
-const pppp2 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/6506fa5e1f75da15474c8154_pexels-cottonbro-studio-3585000.png";
-const pppp3 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/6506fa57acf34e9a15d58e0a_moment-discussion.jpg";
-const pppp4 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/6506fa5e10237164c634c11e_happy-female-entrepreneur-with-headset-drinking-coffee-while-surfing-net-touchpad-office.jpg";
-const ppppflag = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/6506f71658a1171bc19d8c5e_germany_555613.png";
+import pppp1 from "../../public/images/pppp1.jpg";
+import pppp2 from "../../public/images/pppp2.png";
+import pppp3 from "../../public/images/pppp3.jpg";
+import pppp4 from "../../public/images/pppp4.jpg";
+import ppppflag from "../../public/images/germany.png";
 
-const emre1 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/65070d66e2f6c2cf327800a0_Screenshot%202023-09-17%20at%2017.29.24.png";
-const emre2 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/65070d6a49742f6550c583e0_Screenshot%202023-09-17%20at%2017.29.39.png";
-const emre3 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/650708bd318c91630dc226b5_Screenshot%202023-09-17%20at%2017.09.26.png";
-const emre4 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/6506fa57acf34e9a15d58e0a_moment-discussion.jpg";
-const emreflag = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/65047d08592c2a683998f858_united-states_206626.png";
+import emre1 from "../../public/images/emre1.png";
+import emre2 from "../../public/images/emre2.png";
+import emre3 from "../../public/images/emre3.png";
+import emre4 from "../../public/images/emre4.jpg";
+import emreflag from "../../public/images/usa.png";
 
-const omaw1 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/650703e72a4b20c9d1b2ac47_business-presentation-laptop-screen.jpg";
-const omaw2 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/650703f21f75da154754e7f6_digital-laptop-working-global-business-concept.jpg";
-const omaw3 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/65070463ce2d9d36a2c8c7cc_businessbrainstorming-ideas-business-project-startup-office-laptop-computer.jpg";
-const omaw4 = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/650703f291feec8652026360_startup-business-people-working-laptop-copy-space%201.jpg";
-const omawflag = "https://assets-global.website-files.com/64f99a189bbe4d7717201747/65047d08592c2a683998f858_united-states_206626.png";
+import omaw1 from "../../public/images/omaw1.jpg";
+import omaw2 from "../../public/images/omaw2.jpg";
+import omaw3 from "../../public/images/omaw3.jpg";
+import omaw4 from "../../public/images/omaw4.jpg";
+import omawflag from "../../public/images/usa.png";
 
 export const cardsData = [
   {
@@ -102,10 +102,10 @@ export const cardsData = [
     ],
     result:
       "LogiTech Solutions, located in France, through a strategic partnership with our development and IT consulting team, successfully modernized its supply chain management processes.",
-      img1: "https://assets-global.website-files.com/64f99a189bbe4d7717201747/650708bd318c91630dc226b5_Screenshot%202023-09-17%20at%2017.09.26.png",
+      img1: mscm1,
       img2: mscm2,
       img3: mscm3,
-      img3: mscm4,
+      img4: mscm4,
       flag: mscmflag,
   },
   {
@@ -164,7 +164,7 @@ export const cardsData = [
     img1: dtfh1,
     img2: dtfh2,
     img3: dtfh3,
-    img3: dtfh4,
+    img4: dtfh4,
     flag: dtfhflag,
   },
   {
@@ -207,7 +207,7 @@ export const cardsData = [
       img1: pppp1,
       img2: pppp2,
       img3: pppp3,
-      img3: pppp4,
+      img4: pppp4,
       flag: ppppflag
   },
   {
@@ -252,7 +252,7 @@ export const cardsData = [
       img1: xyz1,
       img2: xyz2,
       img3: xyz3,
-      img3: xyz4,
+      img4: xyz4,
       flag: xyzflag,
   },
   {
@@ -315,7 +315,7 @@ export const cardsData = [
     img1: emre1,
     img2: emre2,
     img3: emre3,
-    img3: emre4,
+    img4: emre4,
     flag: emreflag,
   },
   {
@@ -371,7 +371,7 @@ export const cardsData = [
     img1: omaw1,
     img2: omaw2,
     img3: omaw3,
-    img3: omaw4,
+    img4: omaw4,
     flag : omawflag,
   },
 ];

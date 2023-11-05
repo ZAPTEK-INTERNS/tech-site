@@ -21,7 +21,7 @@ const Background = ({data}) => {
               <p  className="text-gray-500 font-medium" >Location:</p>
               <p className='font-bold flex space-x-2'>
                 <p> {data.location}</p>
-                 <Image   src={flag} width={20} height={20} alt='flag'/> </p>
+                 <Image   src={data.flag} width={20} height={20} alt='flag'/> </p>
               </div>
               <div>
               <p  className="text-gray-500 font-medium" >Services Used:</p>

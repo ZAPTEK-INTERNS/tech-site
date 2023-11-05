@@ -11,11 +11,10 @@ const Solution = ({data}) => {
           <div className='grid md:grid-flow-row-dense md:grid-cols-2  gap-2 '>
           <div className=""></div>
           <div className="md:row-span-3"></div>
-
-        <Image  data-aos="fade-up" src={im1} width={600} height={600} alt='service2' className='rounded-lg md:row-span-4' />
-        <Image data-aos="fade-up"  src={im2} width={600} height={600} alt='service2' className='rounded-lg md:row-span-4 ' />
-        <Image data-aos="fade-up"  src={im3} width={600} height={600} alt='service2' className='rounded-lg md:row-span-4 ' />
-        <Image data-aos="fade-up"  src={im4} width={600} height={600} alt='service2' className='rounded-lg md:row-span-4 md:-mt-16' />
+        <Image  data-aos="fade-up" src={data.img1} width={600} height={600} alt='service2' className='rounded-lg md:row-span-4' />
+        <Image data-aos="fade-up"  src={data.img2} width={600} height={600} alt='service2' className='rounded-lg md:row-span-4 ' />
+        <Image data-aos="fade-up"  src={data.img3} width={600} height={600} alt='service2' className='rounded-lg md:row-span-4 ' />
+        <Image data-aos="fade-up"  src={data.img4} width={600} height={600} alt='service2' className='rounded-lg md:row-span-4 md:-mt-16' />
 
           </div>
 
