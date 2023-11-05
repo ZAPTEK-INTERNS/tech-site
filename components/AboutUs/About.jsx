@@ -3,14 +3,14 @@ import aboutbg from '../../public/images/about-bg.svg'
 
 const About = () => {
   return (
-    <div className="mt-8 overflow-hidden bg-white">
-      <div className="flex justify-center md:flex-none md:justify-normal mx-4 lg:mx-16">
+    <div   className="mt-8 overflow-hidden bg-white">
+      <div data-aos="fade-up" className="flex justify-center md:flex-none md:justify-normal mx-4 lg:mx-16">
         <div className="text-violet-900 w-fit p-3 bg-violet-900/5 rounded-md font-medium">
           About Us
         </div>
       </div>
 
-      <div className="md:flex md:justify-between mt-4 mx-4 lg:mx-16">
+      <div data-aos="fade-up" className="md:flex md:justify-between mt-4 mx-4 lg:mx-16">
         <p className="lg:text-7xl text-5xl font-bold  text-center md:text-start">
           We help online <br />
           businesses grow.

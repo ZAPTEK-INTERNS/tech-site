@@ -3,7 +3,7 @@ import Better from "../components/AboutUs/Better";
 import Build from "../components/AboutUs/Build";
 import Culture from "../components/AboutUs/Culture";
 import Work from "../components/AboutUs/Work";
-import Testimonial from "../components/AboutUs/Testimonials";
+import {Testimonials} from "../components/Links";
 import TeamCards from "../components/AboutUs/TeamCards";
 import Excellence from "../components/AboutUs/Excellence";
 
@@ -13,11 +13,11 @@ const AboutUs = () => {
       <About />
       <Culture />
       <Better />
-      <TeamCards/>
       <Excellence/>
+      <TeamCards/>
       <Build />
       <Work />
-      <Testimonial/>
+      <Testimonials/>
     </div>
   );
 };

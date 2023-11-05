@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Card = ({ card, index }) => {
     return (
-      <div key={index} className="my-4 md:row-span-2  border-b  border-slate-500">
+      <div data-aos="fade-up" key={index} className="my-4 md:row-span-2  border-b  border-slate-500">
         <div class="group relative overflow-hidden">
           <Image
             height="auto"

@@ -2,10 +2,10 @@ const WhyUs = () => {
   return (
     <div className="md:flex my-8">
       <div className="md:w-1/3 md:flex md:justify-end ">
-        <p className="md:text-5xl text-3xl md:6xl  font-bold md:px-12">Why to work with us</p>{" "}
+        <p data-aos="fade-up" className="md:text-5xl text-3xl md:6xl  font-bold md:px-12">Why to work with us</p>{" "}
       </div>
       <div className="md:w-2/3 px-20">
-        <div>
+        <div data-aos="fade-up">
           <div className="flex ">
             <div className=" h-1.5 bg-black w-20 my-8"></div>
             <div className="flex text-7xl">
@@ -20,7 +20,7 @@ const WhyUs = () => {
           </p>
         </div>
 
-        <div>
+        <div data-aos="fade-up">
           <div className="flex">
           <div className=" h-1.5 bg-black w-20 my-8"></div>
             <div className="flex text-7xl">
@@ -38,7 +38,7 @@ const WhyUs = () => {
           </p>
         </div>
 
-        <div>
+        <div data-aos="fade-up">
           <div className="flex">
           <div className=" h-1.5 bg-black w-20 my-8"></div>
             <div className="flex text-7xl">

@@ -16,7 +16,7 @@ const Navigation = ({ id, data }) => {
   const nextItem = data[nextIndex];
   return (
     <>
-      <div className="md:flex my-20 ">
+      <div data-aos="zoom-in" className="md:flex my-20 ">
         <div className="md:w-2/5 border border-slate-400   flex justify-center item-center">
           <div className="py-12 hover:text-purple-900 font-medium group flex">
           <BsArrowLeftShort size={30} className='transition-all group-hover:mr-4'/>

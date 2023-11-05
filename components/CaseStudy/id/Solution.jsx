@@ -12,15 +12,15 @@ const Solution = ({data}) => {
           <div className=""></div>
           <div className="md:row-span-3"></div>
 
-        <Image src={im1} width="auto" height="auto" alt='service2' className='rounded-lg md:row-span-4' />
-        <Image src={im2} width="auto" height="auto" alt='service2' className='rounded-lg md:row-span-4 ' />
-        <Image src={im3} width="auto" height="auto" alt='service2' className='rounded-lg md:row-span-4 ' />
-        <Image src={im4} width="auto" height="auto" alt='service2' className='rounded-lg md:row-span-4 md:-mt-16' />
+        <Image  data-aos="fade-up" src={im1} width="auto" height="auto" alt='service2' className='rounded-lg md:row-span-4' />
+        <Image data-aos="fade-up"  src={im2} width="auto" height="auto" alt='service2' className='rounded-lg md:row-span-4 ' />
+        <Image data-aos="fade-up"  src={im3} width="auto" height="auto" alt='service2' className='rounded-lg md:row-span-4 ' />
+        <Image data-aos="fade-up"  src={im4} width="auto" height="auto" alt='service2' className='rounded-lg md:row-span-4 md:-mt-16' />
 
           </div>
 
         </div>
-        <div className="md:w-1/2 space-y-4 mx-4">
+        <div data-aos="fade-up" className="md:w-1/2 space-y-4 mx-4">
           <p className='font-bold md:text-7xl text-4xl'>Solution</p>
           <p className='font-medium  text-gray-400'>{data.solution}</p>
       
