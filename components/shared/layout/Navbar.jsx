@@ -48,7 +48,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`bg-${navBg} w-full overflow-hidden py-5 lg:py-3 border-b border-gray-400`}>
+    <nav className={`bg-${navBg} w-full overflow-hidden  border-b border-gray-400`}>
       <section className="flex justify-between items-center w-[90%] lg:w-[96%] mx-[5%] lg:ml-[4%]">
         <Image src={changeLogo ? logoblack : logowhite } />
 
@@ -87,7 +87,7 @@ const Navbar = () => {
             Services
           </Link>
           <Link
-            href=""
+            href="/case-studies"
             className="relative hover:text-violet-900 transition-all"
           >
             <span className="absolute text-gray-400 bottom-3 left-[-15px] text-xs">
@@ -160,13 +160,13 @@ const Navbar = () => {
               </div>
             </div>
             <Link
-              href=""
+              href="/services"
               className="relative hover:text-violet-900 transition-all"
             >
               Services
             </Link>
             <Link
-              href=""
+              href="/case-studies"
               className="relative hover:text-violet-900 transition-all"
             >
               Case Studies
