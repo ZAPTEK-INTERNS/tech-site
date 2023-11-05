@@ -30,7 +30,7 @@ const dataBetter = [
 const Better = () => {
     return (
        <div className="bg-white ">
-         <div className="flex justify-center md:flex-none md:justify-normal  pt-20 mx-4 lg:mx-16">
+         <div  data-aos="fade-up" className="flex justify-center md:flex-none md:justify-normal  pt-20 mx-4 lg:mx-16">
         <div className="text-violet-900 w-fit p-3 bg-violet-900/5 rounded-md font-medium ">
           Why we are better
         </div>

@@ -3,13 +3,13 @@ import CardWithArray from "./CardWithArray";
 const Work = () => {
   return (
     <div className="py-8 bg-white px-4 lg:px-16">
-      <div className="flex justify-center md:flex-none md:justify-normal ">
+      <div data-aos="fade-up" className="flex justify-center md:flex-none md:justify-normal ">
         <div className="text-violet-900 w-fit p-3 bg-violet-900/5 rounded-md font-medium">
           Our Work
         </div>
       </div>
       <div className="md:flex md:justify-between mx-4">
-        <p className="text-7xl font-bold md:w-[50%] text-center md:text-start">
+        <p  data-aos="fade-up" className="text-7xl font-bold md:w-[50%] text-center md:text-start">
           Our latest projects
         </p>
         <div className="flex justify-center md">

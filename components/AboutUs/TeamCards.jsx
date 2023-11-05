@@ -30,12 +30,12 @@ const TeamCards = () => {
   return (
     <section className='px-[3%] w-[100%] lg:w-[100%] lg:px-[5%] pt-[100px] sm:pt-[180px] md:pt-0 bg-white'>
         <div className="md:flex md:justify-between py-12">
-            <p className='text-3xl md:text-5xl font-bold'>Executive Team</p>
-            <p className='md:w-[40%] font-medium'>Our success is a result of teamwork and building upon our technical expertise and creative style providing a full-service solution to our clients.</p>
+            <p data-aos="fade-up" className='text-3xl md:text-5xl font-bold'>Executive Team</p>
+            <p data-aos="fade-up" className='md:w-[40%] font-medium'>Our success is a result of teamwork and building upon our technical expertise and creative style providing a full-service solution to our clients.</p>
         </div>
       <div className='grid grid-cols-12 gap-6'>
        {members.map((member, index) => (
-         <article key={index} className='relative col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 py-12'>
+         <article data-aos="fade-up" key={index} className='relative col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 py-12'>
            <Image src={member.image} alt="team member" className='rounded-md h-[24rem] w-full'/>
             <div className='absolute right-8 bottom-36'>
               <FaFacebookF size={35} className='text-white bg-[#1a0533] p-2 rounded-full hover:bg-white hover:text-violet-700 transition-all duration-500 cursor-pointer'/>
