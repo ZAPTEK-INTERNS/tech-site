@@ -20,9 +20,9 @@ const Navbar = () => {
    const currentPage = window.location.pathname;
    if (currentPage === '/' || 
        currentPage === '/home3' || 
-       currentPage === '/shop' ||
+      //  currentPage === '/shop' ||
        currentPage === '/getaquote' || 
-       currentPage === '/testimonials' ||
+      //  currentPage === '/testimonials' ||
        currentPage === '/pricing' || 
        currentPage === '/faq' || 
        currentPage === '/services/1') 
