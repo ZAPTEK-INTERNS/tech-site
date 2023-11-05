@@ -1,5 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
+import flag from '../../../public/images/flag.png'
+
 
 
 const Background = ({data}) => {
@@ -17,14 +19,16 @@ const Background = ({data}) => {
               </div>
               <div className='flex justify-between border-b border-b-slate-500'>
               <p  className="text-gray-500 font-medium" >Location:</p>
-              <p className='font-bold'>{data.location}  <image data-aos="fade-up"  src={data.flag} width={40} height={40} alt='flag'/> </p>
+              <p className='font-bold flex space-x-2'>
+                <p> {data.location}</p>
+                 <Image   src={flag} width={20} height={20} alt='flag'/> </p>
               </div>
               <div>
               <p  className="text-gray-500 font-medium" >Services Used:</p>
               <div className='lg:flex lg:space-x-4 mt-4 space-y-4 lg:space-y-0 w-fit'>
               {
                 data.services.map((service,idx)=>(
-                  <div key={idx} className="border border-slate-700 px-6 rounded-full uppercase font-bold">
+                  <div key={idx} className="border border-slate-700 px-6 rounded-full uppercase font-bold hover:text-violet-700 cursor-pointer">
                     {service}
                   </div>
                 ))
