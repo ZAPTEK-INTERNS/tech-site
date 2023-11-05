@@ -16,9 +16,9 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Tech site</title>    
+        <title>Home 1 - Tech</title>    
       </Head>
-      <main>
+      <main className='w-full overflow-hidden'>
         <HomeHero /> 
         <Clients/>  
         <AboutSection/>

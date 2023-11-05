@@ -14,11 +14,13 @@ const ourteam = () => {
     <div>
       <Head> <title> Our Team - Tech </title> </Head>
       <Navbar/>
-      <TeamHero/>
-      <TeamCards/>
-      <Video/>
-      <Faq/>
-      <Getintouch/>
+      <main>
+       <TeamHero/>
+       <TeamCards/>
+       <Video/>
+       <Faq/>
+       <Getintouch/>
+      </main>
     </div>
   )
 }

@@ -68,10 +68,10 @@
   }
   @media screen and (min-width: 1024px) {
     .slideTop {
-      animation: scrolltop 20s linear infinite;
+      animation: scrolltop 10s linear infinite;
     }
     .slidebottom {
-      animation: slidebottom 20s linear infinite;
+      animation: slidebottom 10s linear infinite;
     }
   }
   

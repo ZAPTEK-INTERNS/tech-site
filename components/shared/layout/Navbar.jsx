@@ -48,8 +48,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`bg-${navBg} w-full overflow-hidden py-4 lg:py-0 border-b border-gray-400`}>
-      <section className="flex justify-between items-center w-[94%] lg:w-[96%] mx-[3%] lg:ml-[4%]">
+    <nav className={`bg-${navBg} w-full overflow-hidden py-5 lg:py-3 border-b border-gray-400`}>
+      <section className="flex justify-between items-center w-[90%] lg:w-[96%] mx-[5%] lg:ml-[4%]">
         <Image src={changeLogo ? logoblack : logowhite } />
 
         <div className="hidden lg:flex text-lg gap-12 font-semibold">
@@ -135,9 +135,9 @@ const Navbar = () => {
       </section>
 
       {menu && (
-        <div className="fixed lg:hidden left-0 top-0 bg-white h-[100vh] w-[60%] sm:w-[300px] z-40">
+        <div className="fixed lg:hidden left-0 top-0 bg-white h-[100vh] w-[60%] sm:w-[300px] z-40 text-black">
           <div className="flex justify-between items-center my-6 mx-4">
-            <Image src={logo} className="w-[70px] sm:w-[100px]" />
+            <Image src={logoblack} className="w-[70px] sm:w-[100px]" />
             <AiOutlineClose size={24} onClick={handleClose} />
           </div>
           <div className="flex flex-col text-lg gap-6 mx-4 font-semibold">

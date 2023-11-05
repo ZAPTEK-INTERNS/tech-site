@@ -31,13 +31,14 @@ const Faq = () => {
 
   return (
     <section className='mx-[3%] w-[94%] lg:w-[86%] lg:mx-[7%] mt-[100px] grid grid-cols-6'>
-      <div className='col-span-6 md:col-span-2'>
+      <div className='col-span-6 md:col-span-2' data-aos="fade-right">
        <h3 className='bg-violet-700/10 text-lg font-semibold w-fit rounded-md px-4 py-2 text-violet-900'>FAQ</h3>
        <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-[4rem] font-bold my-4'>The most common questions</h1>
       </div>
       <div className='col-span-6 md:col-span-4 w-full flex flex-col'>
         {faqs.map((faq, index) => (
-            <article key={index} className='bg-violet-300/10 py-4 px-6 my-3 rounded-md border border-gray-200 text-gray-800'>
+            <article key={index} data-aos="fade-up"
+              className='bg-violet-300/10 py-4 px-6 my-3 rounded-md border border-gray-200 text-gray-800'>
               <div className='flex justify-between items-center cursor-pointer'>
                <h1 className='text-[1.2rem] sm:text-[1.6rem] font-bold' onClick={() => handleToggle(index)}>{faq.question}</h1>
                 <div onClick={() => handleToggle(index)} className='border border-gray-300 rounded-md p-2 text-black font-bold'>

@@ -14,7 +14,8 @@ const Countrys = () => {
     <section className='mx-[5%] w-[90%] lg:w-[86%] lg:mx-[7%] mb-10'>
       <div className='grid grid-cols-4'>
         {countrys.map((country, index) => (
-          <article key={index} className='col-span-4 sm:col-span-2 md:col-span-4 flex flex-col gap-6 md:flex-row md:justify-between md:items-center md:border-b md:border-gray-300 my-8'>
+          <article key={index} data-aos="fade-up"
+           className='col-span-4 sm:col-span-2 md:col-span-4 flex flex-col gap-6 md:flex-row md:justify-between md:items-center md:border-b md:border-gray-300 my-8'>
             <div>
               <h1 className='text-4xl text-black/80 sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-3'>
                 {country.name}
