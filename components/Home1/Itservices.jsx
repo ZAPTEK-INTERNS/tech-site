@@ -1,13 +1,9 @@
 import { itservices } from ".";
 import Link from "next/link";
 
-import { useRouter } from "next/router";
-
 // ...
 
 const Itservices = () => {
-  const router = useRouter();
-
   return (
     <section className="mx-[5%] w-[90%] lg:w-[86%] lg:mx-[7%] flex flex-col items-center mb-[120px]">
       <p

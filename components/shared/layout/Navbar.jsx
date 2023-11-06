@@ -1,5 +1,5 @@
 import logoblack from "../../../public/images/logo-black.svg";
-import logowhite from '../../../public/images/logo-white.svg'
+import logowhite from "../../../public/images/logo-white.svg";
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
@@ -14,28 +14,27 @@ const Navbar = () => {
   const [menu, setMenu] = useState(false);
   const [cart, setCart] = useState(false);
   const [navBg, setNavBg] = useState("");
-  const [changeLogo, setChangeLogo] = useState(false)
+  const [changeLogo, setChangeLogo] = useState(false);
 
   useEffect(() => {
-   const currentPage = window.location.pathname;
-   if (currentPage === '/' || 
-       currentPage === '/home3' || 
-       currentPage === '/shop' ||
-       currentPage === '/getaquote' || 
-       currentPage === '/testimonials' ||
-       currentPage === '/pricing' || 
-       currentPage === '/faq' || 
-       currentPage === '/services/1') 
-    {
-     setNavBg('bg-transparent text-white');
-     setChangeLogo(false)
+    const currentPage = window.location.pathname;
+    if (
+      currentPage === "/" ||
+      currentPage === "/home3" ||
+      currentPage === "/shop" ||
+      currentPage === "/getaquote" ||
+      currentPage === "/testimonials" ||
+      currentPage === "/pricing" ||
+      currentPage === "/faq" ||
+      currentPage === "/services/1"
+    ) {
+      setNavBg("bg-transparent text-white");
+      setChangeLogo(false);
+    } else {
+      setNavBg("bg-white text-black");
+      setChangeLogo(true);
     }
-    else {
-     setNavBg('bg-white text-black');
-     setChangeLogo(true)
-   }
- }, []);
-
+  }, []);
 
   const handleCartOpen = () => {
     setCart(true);
@@ -48,9 +47,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`bg-${navBg} w-full overflow-hidden  border-b border-gray-400`}>
+    <nav
+      className={`bg-${navBg} w-full overflow-hidden  border-b border-gray-400`}
+    >
       <section className="flex justify-between items-center w-[90%] lg:w-[96%] mx-[5%] lg:ml-[4%]">
-        <Image src={changeLogo ? logoblack : logowhite } />
+        <Image src={changeLogo ? logoblack : logowhite} />
 
         <div className="hidden lg:flex text-lg gap-12 font-semibold">
           <div className="group">

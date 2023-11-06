@@ -2,7 +2,7 @@ import React from "react";
 
 const OurBelieve = () => {
   return (
-    <div className="bg-[#1a0533] mb-8 bg-news lg:h-[100vh]  px-2 text-white h-[65vh] lg:justify-start  flex flex-col gap-4">
+    <div className="bg-[#1a0533] mb-8 bg-news1 lg:h-[100vh]  px-2 text-white h-[65vh] lg:justify-start  flex flex-col gap-4">
       <div className="lg:w-8/12 lg:pt-16 lg:pl-[4rem] ">
         <h1 className="pt-10 pb-4 lg:pb-8 text-3xl lg:text-6xl font-bold">
           Beyond providing top-notch digital solutions, we believe in empowering

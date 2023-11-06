@@ -2,7 +2,7 @@ import { BsArrowDown } from "react-icons/bs";
 
 const Deliver = () => {
   return (
-    <div className="h-[80vh] bg-[#1a0533] pt-20 lg:px-[7rem] bg-news">
+    <div className="h-[80vh] bg-[#1a0533] pt-20 lg:px-[7rem] bg-news1">
       <h1 className="text-[3rem] text-white font-bold">
         Deliver your brand with a <br /> meaningful narrative
       </h1>

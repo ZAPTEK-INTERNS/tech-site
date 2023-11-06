@@ -1,5 +1,14 @@
-import React from "react";
-import { Build, Commitment, Deliver, Git, Itservices, OurBelieve, OurServices, Projects, TechLeaders } from "../components/links";
+import {
+  Build,
+  Commitment,
+  Deliver,
+  Git,
+  Itservices,
+  OurBelieve,
+  OurServices,
+  Projects,
+  TechLeaders,
+} from "../components/links";
 
 const home3 = () => {
   return (
@@ -16,5 +25,4 @@ const home3 = () => {
     </div>
   );
 };
-
 export default home3;
