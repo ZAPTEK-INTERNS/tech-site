@@ -1,3 +1,5 @@
+import { Navbar} from '../components/links'
+  import Head from 'next/head';
 import About from "../components/AboutUs/About";
 import Better from "../components/AboutUs/Better";
 import Build from "../components/AboutUs/Build";
@@ -9,16 +11,16 @@ import Excellence from "../components/AboutUs/Excellence";
 
 const AboutUs = () => {
   return (
-    <div className="bg-[url('../public/images/about1.webp')] bg-fixed bg-cover bg-center ">
+    <><Head> <title> About Us -Tech </title> </Head><Navbar /><div className="bg-[url('../public/images/about1.webp')] bg-fixed bg-cover bg-center ">
       <About />
       <Culture />
       <Better />
-      <Excellence/>
-      <TeamCards/>
+      <Excellence />
+      <TeamCards />
       <Build />
       <Work />
-      <Testimonials/>
-    </div>
+      <Testimonials />
+    </div></>
   );
 };
 
