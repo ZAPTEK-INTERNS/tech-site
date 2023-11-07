@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 html,
 body {
   padding: 0;
@@ -19,28 +17,35 @@ body {
     transform: translateX(calc(-200px * 5));
   }
 }
-.slider{
-  width:calc(200px * 10)
+.slider {
+  width: calc(200px * 10);
 }
 .animate-scroll {
   animation: scroll 25s linear infinite;
 }
 
-
 @layer components {
   .bg-radial {
     background: rgb(43, 18, 68);
-    background: radial-gradient(circle, rgba(43,18,68,1) 50%, rgba(0,0,0,1) 98%);
+    background: radial-gradient(
+      circle,
+      rgba(43, 18, 68, 1) 50%,
+      rgba(0, 0, 0, 1) 98%
+    );
   }
+}
 
-  .menu-link {
-    @apply flex items-center hover:text-violet-900;
-    transition: hover 0.5s ease;
-  }
+.btn-primary {
+  @apply bg-[#8000FF];
+}
 
-  .menu-link-bar {
-    @apply w-4 h-[2px] bg-violet-700 hidden mr-2;
-  }
+.menu-link {
+  @apply flex items-center hover:text-violet-900;
+  transition: hover 0.5s ease;
+}
+
+.menu-link-bar {
+  @apply w-4 h-[2px] bg-violet-700 hidden mr-2;
 }
 
 .menu-link:hover .menu-link-bar {
