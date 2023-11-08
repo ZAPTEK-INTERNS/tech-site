@@ -9,11 +9,12 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "hero" : "url('../public/images/quote-bg.webp')",
-        "hero-h4" : "url('../public/images/about1.webp')",
-        "ourteam" : "url('../public/images/ourteam.svg')",
-        "about" : "url('../public/images/about1.webp')",
-        "news": "url('../public/images/logo-black.svg')",
+        hero: "url('../public/images/quote-bg.webp')",
+        "hero-h4": "url('../public/images/about1.webp')",
+        ourteam: "url('../public/images/ourteam.svg')",
+        about: "url('../public/images/about1.webp')",
+        news1: "url('../public/images/ourteam.svg')",
+        news: "url('../public/images/logo-black.svg')",
       },
     },
   },

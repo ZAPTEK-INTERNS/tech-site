@@ -4,7 +4,7 @@ import {FaCalendarAlt} from 'react-icons/fa'
 import {BiSolidTimeFive} from 'react-icons/bi'
 import {MdLocationOn} from 'react-icons/md'
 import Link from "next/link";
-import {Navbar} from '../../components/links'
+import {Navbar, Loader} from '../../components/links'
 import Head from "next/head";
 
 const CareerDetail = () => {
@@ -15,7 +15,7 @@ const CareerDetail = () => {
 const job = joblist.find((job) => job.id === newId);
 
 if (!job) {
-  return <div>Loading...</div>;
+  return <Loader/>;
 }
 
   return (

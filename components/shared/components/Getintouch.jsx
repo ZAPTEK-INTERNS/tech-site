@@ -1,5 +1,5 @@
 import Link from 'next/link'
-
+import ButtonLink from './ButtonLink'
 
 const Getintouch = () => {
 
@@ -20,11 +20,7 @@ const Getintouch = () => {
           Let's build <br /> something different
         </h1>
         <p className='my-6 sm:font-semibold text-lg'>Take the first step towards a brighter future and supercharge your business with cutting-edge technologies, expert guidance, and unparalleled support.</p>
-        <Link className='col-span-7 md:col-span-2 bg-white h-fit text-black px-3 py-3 rounded-[60px] w-fit flex items-center gap-6 justify-between hover:text-white hover:bg-violet-700 font-semibold transition-all' 
-           href='/'>
-          <span>Get in Touch</span>
-           <span className='font-bold'>.</span>
-        </Link>
+        <ButtonLink URLLink='getaquote'/>
        </div>
     </section>
   )
