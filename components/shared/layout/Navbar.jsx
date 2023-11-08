@@ -1,4 +1,3 @@
-import logoblack from "../../../public/images/logo-black.svg";
 import logowhite from "../../../public/images/logo-white.svg";
 import Link from "next/link";
 import Image from "next/image";
@@ -9,12 +8,17 @@ import { FiArrowDownRight } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { DropDownA, DropDownB, DropDownC, Cart } from "../../links";
+import { useRouter } from "next/router";
+import home3 from "../../../pages/home3";
+import { logo, logoHome } from "../../../public/links";
 
-const Navbar = () => {
+const Navbar = ({ backgroundImage }) => {
   const [menu, setMenu] = useState(false);
   const [cart, setCart] = useState(false);
   const [navBg, setNavBg] = useState("");
   const [changeLogo, setChangeLogo] = useState(false);
+
+  const router = useRouter();
 
   useEffect(() => {
     const currentPage = window.location.pathname;
@@ -48,12 +52,29 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-${navBg} w-full overflow-hidden  border-b border-gray-400`}
+      className={`bg-${navBg} w-full overflow-hidden  ${
+        router.pathname === "/home3" || router.pathname === "/services/[id]"
+          ? "bg-[#1a0533] "
+          : ""
+      }  border-b border-gray-400`}
     >
       <section className="flex justify-between items-center w-[90%] lg:w-[96%] mx-[5%] lg:ml-[4%]">
-        <Image src={changeLogo ? logoblack : logowhite} />
+        <Image
+          src={
+            router.pathname === "/services"
+              ? logoHome
+              : router.pathname === "/home3" ||
+                router.pathname === "/services/[id]"
+              ? logo
+              : logowhite
+          }
+        />
 
-        <div className="hidden lg:flex text-lg gap-12 font-semibold">
+        <div
+          className={`hidden lg:flex text-lg gap-12 font-semibold ${
+            router.pathname === "/services/[id]" ? "text-white" : ""
+          }`}
+        >
           <div className="group">
             <p className="cursor-pointer relative hover:text-violet-900 transition-all">
               <span className="absolute text-gray-400 bottom-3 left-[-15px] text-xs">
