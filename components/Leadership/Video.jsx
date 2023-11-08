@@ -22,7 +22,7 @@ const Video = () => {
         <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold'>right solutions</h1>
          <div className='cursor-pointer bg-violet-700 p-5 rounded-full border-2 border-green-700 relative' 
            onClick={handleVideoOpen}>
-          <BsPlayFill size={45} className=''/>
+          <BsPlayFill size={45} className='cursor-pointer bg-violet-700 p-5 rounded-full   transition duration-300 hover:border-4'/>
          </div>
          <div>
             <Popup  video={video} setVideo={setVideo}/>
