@@ -15,6 +15,7 @@ module.exports = {
         about: "url('../public/images/about1.webp')",
         news1: "url('../public/images/ourteam.svg')",
         news: "url('../public/images/logo-black.svg')",
+        ellipse : "url('../public/images/ellipse.png')",
       },
     },
   },

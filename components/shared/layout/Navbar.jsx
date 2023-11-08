@@ -56,7 +56,7 @@ const Navbar = ({ backgroundImage }) => {
         router.pathname === "/home3" || router.pathname === "/services/[id]"
           ? "bg-[#1a0533] "
           : ""
-      }  border-b border-gray-400`}
+      } my-6 pb-3 lg:my-0 lg:pb-0 border-b border-gray-400`}
     >
       <section className="flex justify-between items-center w-[90%] lg:w-[96%] mx-[5%] lg:ml-[4%]">
         <Image
@@ -143,6 +143,7 @@ const Navbar = ({ backgroundImage }) => {
           <div>
             <Cart cart={cart} setCart={setCart} />
           </div>
+
           <div className="hidden lg:flex cursor-pointer gap-4 items-center py-7 px-3 group bg-violet-700 hover:bg-white transition-all text-white hover:text-black z-30">
             <p className="font-semibold text-lg h-full">Get in Touch</p>
             <FiArrowDownRight

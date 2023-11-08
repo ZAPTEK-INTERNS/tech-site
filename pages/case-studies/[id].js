@@ -7,6 +7,8 @@ import Solution from "../../components/CaseStudy/id/Solution";
 import { cardsData } from "../../components/CaseStudy/data";
 
 import { useRouter } from 'next/router';
+import { Navbar} from '../../components/links'
+  import Head from 'next/head';
 
 const CaseDetails = () => {
   const router = useRouter();
@@ -15,6 +17,8 @@ const CaseDetails = () => {
  
   return (
     <>
+     <Head> <title> Case Studies </title> </Head>
+        <Navbar/>
     { selectedItem ? (
     <>
     <div className="mx-4 md:mx-16">

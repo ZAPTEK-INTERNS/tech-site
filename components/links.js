@@ -33,3 +33,7 @@ export { default as OurServices } from "./Home3/OurServices";
 export { default as Deliver } from "./Home3/Deliver";
 export { default as ButtonLink } from "./shared/components/ButtonLink";
 export { default as Navbar } from "./shared/layout/Navbar";
+export {default as Getintouch} from './shared/components/Getintouch'
+export {default as Loader} from './Loader'
+export {default as BlogHero} from './Blog/Hero'
+export {default  as Posts} from './Blog/Posts'
