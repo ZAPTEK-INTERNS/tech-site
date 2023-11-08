@@ -201,7 +201,7 @@ export const cardsData = [
         body: "To ensure a seamless experience across devices, we implemented a responsive design, making the website accessible and visually appealing on both desktop and mobile devices.",
       },
     ],
-    resultlist: "",
+    resultlist: [{head:"",body:""},],
     result:
       "The health data platform streamlined access to patient information, reducing administrative burden and improving overall efficiency.Healthcare providers reported more accurate diagnoses and treatment plans due to the platform's data analytics capabilities.Enhanced data security and HIPAA compliance ensured patient confidentiality and trust.Patients experienced improved care coordination, leading to better health outcomes. Our digital transformation consultancy successfully collaborated with MediTech Innovations in the HealthTech industry to achieve their vision of a secure and efficient health data platform. This case exemplifies our dedication to driving innovation and efficiency in the healthcare technology sector.",
       img1: pppp1,
