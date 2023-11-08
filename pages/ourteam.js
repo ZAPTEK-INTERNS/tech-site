@@ -14,7 +14,7 @@ const ourteam = () => {
     <div>
       <Head> <title> Our Team - Tech </title> </Head>
       <Navbar/>
-      <main className='w-full overflow-hidden'>
+      <main>
        <TeamHero/>
        <TeamCards/>
        <Video/>

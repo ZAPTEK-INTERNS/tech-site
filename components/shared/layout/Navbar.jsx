@@ -123,6 +123,7 @@ const Navbar = () => {
           <div>
             <Cart cart={cart} setCart={setCart} />
           </div>
+          
           <div className="hidden lg:flex cursor-pointer gap-4 items-center py-7 px-3 group bg-violet-700 hover:bg-white transition-all text-white hover:text-black z-30">
             <p className="font-semibold text-lg h-full">Get in Touch</p>
             <FiArrowDownRight
