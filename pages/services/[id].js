@@ -1,10 +1,11 @@
 import { useRouter } from "next/router";
 import React from "react";
 import { servicelist } from "../../components/ServicesDetail/constant";
-import { Build, Git, Navbar, Projects } from "../../components/links";
+import { Git, Navbar, Projects } from "../../components/links";
 import Image from "next/image";
 import { check, service2 } from "../../public/links";
 import Process from "../../components/Services/Process";
+import Head from "next/head";
 
 const ServiceDetails = () => {
   const router = useRouter();
@@ -19,8 +20,12 @@ const ServiceDetails = () => {
 
   return (
     <div>
-      <Navbar  />
-      <div className="bg-[#1a0533] h-[50vh] mb-4 items-center bg-news1 flex flex-col justify-center">
+      <Head>
+        {" "}
+        <title> Services-Tech </title>{" "}
+      </Head>
+      <Navbar />
+      <div className="bg-[#1a0533] h-[50vh] mt-[-2rem] lg:mt-0  mb-4 items-center bg-news1 flex flex-col justify-center">
         <h1 className="text-5xl text-white font-bold">{service.title}</h1>
         <p className="text-white text-center pt-4 text-lg font-semibold w-10/12">
           {service.about}
@@ -28,27 +33,28 @@ const ServiceDetails = () => {
       </div>
 
       <section className="mb-8">
-        <div className="mx-2">
+        <div className="mx-2 lg:px-4">
           <h1 className="text-4xl pb-8 font-bold">{service.description}</h1>
           <p className="font-semibold text-slate-500">{service.describe}</p>
         </div>
+        <div className="flex flex-col lg:flex-row">
+          <Image src={service2} className="px-4 lg:w-1/2 py-16 lg:rounded-3xl" />
 
-        <Image src={service2} className="px-4 py-16" />
-
-        <div className="mx-4 my-8">
-          <ul className=" flex flex-col py-8 gap-8 ">
-            {service.track.map((track) => (
-              <li key={service.id} className="flex gap-2 pb-4 border-b">
-                <span>
-                  <Image src={check} />
-                </span>
-                <p className="text-2xl font-bold">{track}</p>
-              </li>
-            ))}
-          </ul>
+          <div className="mx-4 my-8">
+            <ul className=" flex flex-col py-8 gap-8 ">
+              {service.track.map((track) => (
+                <li key={service.id} className="flex gap-2 pb-4 border-b">
+                  <span>
+                    <Image src={check} />
+                  </span>
+                  <p className="text-2xl font-bold">{track}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
-        <div className="mx-8">
+        <div className="mx-8 mb-16">
           <h1 className="text-4xl font-bold pb-4">Benefits</h1>
           {service.benefits.map((benefit) => (
             <li key={service.id} className="flex gap-2">
