@@ -1,8 +1,11 @@
 import {blog1, blog2, blog3, blog4, blog5, blog6, blog7, blog8, blog9} from '../../public/links'
 
 export const post = 
-    {
+    {  id:1,
+     date: "September 20, 2023",
      image: blog1,
+     keyword:"Cybersecurity",
+     content: "As the digital landscape continues to evolve, so do the cybersecurity threats that businesses face. Being proactive, informed, and continuously adapting your security measures is the key to defending against these threats in 2023 and beyond.",
      topic :"Top 10 Cybersecurity Threats in 2023 and How to Defend Against Them",
      title: "Ransomware attacks are evolving at an alarming rate, targeting organizations of all sizes. Cybercriminals are becoming more sophisticated, demanding larger ransoms, and using advanced encryption techniques",
      date: "September 20, 2023",
@@ -86,6 +89,7 @@ export const post =
     export const recentPosts = [
         { id: 2,
         image:blog2,
+        date: "September 20, 2023",
         keyword:"Artificial Intelligence",
         topic: "Navigating the AI-Driven Future of Business",
         title: "Navigating the AI-Driven Future of Business",
@@ -134,6 +138,7 @@ export const post =
         { id : 3,
           image: blog3,
           keyword:"Project management",
+          date: "September 20, 2023",
           topic: "Navigating IT Project Management: Strategies for Success",
           title: "Strategies for Success",
           introduction:"In the fast-paced realm of Information Technology (IT), project management is the cornerstone upon which successful endeavors are built. IT projects can encompass a broad spectrum, from software development and system integration to infrastructure upgrades and data migrations. Regardless of the specific project, effective project management is essential to ensure that initiatives are completed on time, within scope, and within budget, all while meeting the evolving needs of businesses and customers. This comprehensive guide delves into the essential strategies for achieving success in IT project management.",
@@ -180,6 +185,7 @@ export const post =
     export const blogs = [
             { id: 4,
             image:blog4,
+            date: "September 20, 2023",
             keyword:"Artificial Intelligence",
             topic: "Navigating the AI-Driven Future of Business",
             title: "Navigating the AI-Driven Future of Business",
@@ -225,8 +231,10 @@ export const post =
            conclusion: "In conclusion The future of AI in business is a horizon filled with promise and potential. From augmenting human capabilities to revolutionizing customer experiences and decision-making, AI will be a driving force in shaping the business landscape. As businesses adapt and embrace AI's transformative capabilities, they will find themselves better equipped to thrive in an era defined by innovation, data-driven insights, and unparalleled opportunities for growth. The future is AI, and the future is now.",
          },
     
-            { id : 3,
-              image: blog3,
+            { id : 5,
+              image: blog5,
+              date: "September 20, 2023",
+              keyword:"Project Management",
               topic: "Navigating IT Project Management: Strategies for Success",
               title: "Strategies for Success",
               introduction:"In the fast-paced realm of Information Technology (IT), project management is the cornerstone upon which successful endeavors are built. IT projects can encompass a broad spectrum, from software development and system integration to infrastructure upgrades and data migrations. Regardless of the specific project, effective project management is essential to ensure that initiatives are completed on time, within scope, and within budget, all while meeting the evolving needs of businesses and customers. This comprehensive guide delves into the essential strategies for achieving success in IT project management.",
