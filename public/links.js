@@ -51,3 +51,12 @@ export { default as featherdev } from "./images/featherdev.svg";
 export { default as spherrule } from "./images/spherrule.svg";
 export { default as nietzche } from "./images/nietzsche.svg";
 export { default as globalbank } from "./images/globalbank.svg";
+export {default as blog1} from './images/blog1.jpg'
+export {default as blog2} from './images/blog2.jpg'
+export {default as blog3} from './images/blog3.jpg'
+export {default as blog4} from './images/blog4.jpg'
+export {default as blog5} from './images/blog5.jpg'
+export {default as blog6} from './images/blog6.jpg'
+export {default as blog7} from './images/blog7.jpg'
+export {default as blog8} from './images/blog8.jpg'
+export {default as blog9} from './images/blog9.jpg'

@@ -10,7 +10,7 @@ const Result = ({data}) => {
         <div data-aos="fade-up" className="md:w-1/2 space-y-4">
           <p className='font-bold md:text-7xl text-4xl'>Results</p>
           {
-                data.resultlist.map((item,idx)=>(
+                data?.resultlist?.map((item,idx)=>(
 <div className='flex' key={idx}>
 <div className=' h-fit w-fit'>
 <BsCircle size={6} className='bg-violet-700 rounded-full text-white mx-2 mt-2.5'/>
