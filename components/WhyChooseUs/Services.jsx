@@ -1,5 +1,6 @@
 import React from 'react'
 import {FiArrowDownRight} from 'react-icons/fi'
+import ToggleParagraph from './ToggleParagraph'
 
 const Services = () => {
   return (
@@ -13,7 +14,15 @@ const Services = () => {
           </div>
       </div>
       <div className='md:w-1/2'>
-       <div> breadcramps</div>
+       <div className="my-12"> 
+
+<ToggleParagraph title="Q&A Testing" paragraph="Involves a systematic process of evaluating software applications or systems to identify and fix issues."/>
+<ToggleParagraph title="Account & Security" paragraph="Focus on safeguarding digital assets, sensitive information, and user accounts from unauthorized access and cyber threats."/>
+<ToggleParagraph title="Digital Consulting" paragraph="Unleashing the full potential of your business through expert guidance and strategic implementation of cutting-edge technologies."/>
+<ToggleParagraph title="Custom Software Development" paragraph="Tailor-made software solutions designed to align seamlessly with your unique business needs and drive productivity to new heights."/>
+
+
+       </div>
       </div>
     </div>
   )

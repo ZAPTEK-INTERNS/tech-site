@@ -11,7 +11,7 @@ const Hero = () => {
         </div>
       </div>
         <h1 data-aos="fade-up" className='font-bold text-5xl md:text-7xl text-center md:text-start text-[#1a0533]'> Why Choose Us</h1>
-        <h3 data-aos="fade-up" className='text-justify font-medium  md:pr-4 text-gray-500'>We provide a wide range of IT services, from strategic planning and cybersecurity to cloud computing and custom software development.</h3>
+        <h3 data-aos="fade-up" className='text-center mx-16 md:mx-0 font-medium  md:pr-4 text-gray-500'>We provide a wide range of IT services, from strategic planning and cybersecurity to cloud computing and custom software development.</h3>
       </div>
       <div className='lg:w-1/2   lg:bg-transparent  p-4 md:px-16  relative'>
         <Image data-aos="fade-left" height='auto' width='auto' src={CS1} alt='case study image' className='  w-full  lg:w-[70%] lg:h-[150%] lg:absolute lg:right-0 lg:-top-12 object-contain rounded-lg'/>

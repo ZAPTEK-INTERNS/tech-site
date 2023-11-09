@@ -16,7 +16,7 @@ const Work = () => {
 
         <p
           data-aos="fade-up"
-          className="text-7xl font-bold md:w-[50%] text-center md:text-start"
+          className="md:text-7xl font-bold md:w-[50%] text-4xl"
         >
           Our latest projects
         </p>
