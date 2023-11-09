@@ -1,4 +1,5 @@
 import logowhite from "../../../public/images/logo-white.svg";
+import logoblack from "../../../public/images/logo-black.svg"
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
@@ -60,14 +61,8 @@ const Navbar = ({ backgroundImage }) => {
     >
       <section className="flex justify-between items-center w-[90%] lg:w-[96%] mx-[5%] lg:ml-[4%]">
         <Image
-          src={
-            router.pathname === "/services"
-              ? logoHome
-              : router.pathname === "/home3" ||
-                router.pathname === "/services/[id]"
-              ? logo
-              : logowhite
-          }
+          src={changeLogo? logoblack : logowhite }
+          
         />
 
         <div
