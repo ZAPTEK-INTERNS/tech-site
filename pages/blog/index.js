@@ -1,4 +1,4 @@
-import {Navbar, BlogHero, Posts} from '../../components/links'
+import {Navbar, BlogHero, Posts, Blogs} from '../../components/links'
 
 const index = () => {
   return (
@@ -6,6 +6,7 @@ const index = () => {
      <Navbar/>
      <BlogHero/>
      <Posts/>
+     <Blogs/>
     </div>
   )
 }

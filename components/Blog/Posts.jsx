@@ -5,11 +5,19 @@ import {BsArrowRightShort} from 'react-icons/bs'
 
 const Posts = () => {
   return (
-    <section className='w-[90%] mx-[5%] lg:w-[86%] lg:mx-[7%] grid grid-cols-6 gap-8 mb-[100px]'>
-      <div className='col-span-6 md:col-span-4'>
-        <Link href={`/blog/${post.id}`}>
-          <Image src={post.image} className='rounded-md' alt="blog 1"/>
+    <section className='mx-[7%] w-[86%] sm:mx-[4%] sm:w-[92%] grid grid-cols-6 gap-8 mb-[150px]'>
+      <div className='col-span-6 md:col-span-4 relative mb-6 md:mb-0'>
+        <Link href={`/blog/${post.id}`} className=''>
+          <div className='overflow-hidden group'>
+           <Image 
+            src={post.image} 
+            className='transform transition-transform rounded-md group-hover:scale-110 duration-300' 
+            alt="blog 1"/>
+           </div>
         </Link>
+        <p className='text-white bg-violet-700 rounded-md px-4 py-1 w-fit absolute top-4 left-4 font-semibold'>
+          {post.keyword}
+        </p>
         <p className='mt-3 text-gray-600 font-semibold my-4'>{post.date}</p>
         <Link 
          href={`/blog/${post.id}`}
@@ -26,18 +34,27 @@ const Posts = () => {
         </Link>
       </div>
 
-      <div className='col-span-6 md:col-span-2 flex flex-col sm:flex-row md:flex-col gap-2 sm:gap-8 md:gap-2'>
+      <div className='col-span-6 md:col-span-2 flex flex-col sm:flex-row md:flex-col gap-8 md:gap-2'>
         {recentPosts.map((recent) => (
-          <article className='mb-3 w-full'>
-            <Link href={`/blog/${post.id}`} >
-               <Image src={recent.image} alt={recent.topic} className='rounded-md'/>
+          <article className='mb-3 w-full relative'>
+            <Link href={`/blog/${recent.id}`} >
+              <div className='overflow-hidden group'>
+               <Image 
+                 src={recent.image} 
+                 alt={recent.topic} 
+                 className='transform transition-transform rounded-md group-hover:scale-110 duration-300' 
+                 />
+                </div>
             </Link>
+            <p className='text-white bg-violet-700 rounded-md px-4 py-1 w-fit absolute top-4 left-4 font-semibold'>
+             {recent.keyword}
+            </p>
             <div className='flex justify-between items-center my-2 font-semibold'>
              <p className='text-violet-700'>Recent Post</p>
              <p className='text-gray-700'>{recent.date}</p>
             </div>
             <Link  
-             href={`/blog/${post.id}`} 
+             href={`/blog/${recent.id}`} 
              className='hover:text-violet-700 transition-all text-[1.15rem] text-gray-800 font-bold' >
               {recent.topic}
             </Link>

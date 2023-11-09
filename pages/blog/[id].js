@@ -1,8 +1,12 @@
-import React from 'react'
+import {PostDetail, Navbar} from '../../components/links'
 
 const Blogdetail = () => {
+  
   return (
-    <div>nnnnnnnnnnnn</div>
+    <div>
+      <Navbar/>
+      <PostDetail/>
+    </div>
   )
 }
 
