@@ -15,7 +15,7 @@ const PostDetail = () => {
       </h1>
       <p className="text-gray-600 text-lg font-semibold my-8">{post.date}</p>
       <Image src={post.image} alt={post.keyword} className='rounded-md'/>
-      <h1 className='my-6 pl-3 border-l-4 border-violet-700 text-xl sm:text-2xl sm:text-3xl font-bold text-gray-800'>
+      <h1 className='my-6 pl-3 border-l-4 border-violet-700 text-xl sm:text-2xl md:text-3xl font-bold text-gray-800'>
         {post.quote}
       </h1>
       <p className='text-lg text-gray-600 font-semibold'>{post.introduction}</p>

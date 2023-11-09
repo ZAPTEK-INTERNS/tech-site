@@ -6,6 +6,9 @@ const PopUp = ({video, setVideo}) => {
     setVideo(false)
   }
 
+
+
+  
   return (
     <>
     {video && (
