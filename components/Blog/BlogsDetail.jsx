@@ -1,13 +1,16 @@
 import { useRouter } from "next/router";
 import Image from "next/image";
-import { blogs } from './index'
+import { blogsData } from './index'
 
 const BlogsDetail = () => {
   const router = useRouter()
   const { id } = router.query
   const blogId = parseInt(id)
 
-  const blog = blogs.find((blog) => blog.id === blogId)
+  const blog = blogsData.blogs.find((blog) => blog.id === blogId)
+  if (!blogsData.post) {
+    return <Loader/>;
+  }
 
   return (
     <section className="mx-[7%] w-[86%] sm:mx-[5%] sm:w-[90%] mb-[60px]">
@@ -128,6 +131,8 @@ const BlogsDetail = () => {
           ))}
         </ul>
       </div>
+
+    {/*  <Navigation id ={blogId} data={blogsData.blogs}/>*/}
     </section>
   )
 }

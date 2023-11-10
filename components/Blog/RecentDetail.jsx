@@ -1,4 +1,4 @@
-import {recentPosts} from './index'
+import {blogsData} from './index'
 import {useRouter} from 'next/router';
 import {Loader} from '../../components/links'
 import Image from 'next/image';
@@ -8,7 +8,7 @@ const RecentDetail = () => {
   const postId = router.query.id;
   const newId = parseInt(postId) 
   
-  const post = recentPosts.find((post) => post.id === newId);
+  const post = blogsData.recentPosts.find((post) => post.id === newId);
   
   if(!post) return <Loader/>
 
@@ -67,6 +67,8 @@ const RecentDetail = () => {
           ))}
         </ul>
       </div>
+
+      {/*<Navigation id ={newId} data={blogsData.recentPosts}/>*/}
     </section>
     )
 }

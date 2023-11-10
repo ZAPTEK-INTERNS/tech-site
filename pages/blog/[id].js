@@ -1,6 +1,7 @@
-import { PostDetail, Navbar, RecentDetail, BlogsDetail } from '../../components/links';
+import { PostDetail, Navbar, RecentDetail, BlogsDetail , Navigation} from '../../components/links';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
+import {blogsData} from '../../components/Blog/index'
 
 const Blogdetail = () => {
   const router = useRouter();

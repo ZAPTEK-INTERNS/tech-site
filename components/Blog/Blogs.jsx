@@ -1,4 +1,4 @@
-import {blogs} from './index'
+import {blogsData} from './index'
 import Image from 'next/image'
 import Link from 'next/link'
 import {BsArrowRightShort} from 'react-icons/bs'
@@ -6,7 +6,7 @@ import {BsArrowRightShort} from 'react-icons/bs'
 const Blogs = () => {
   return (
     <section className='mx-[7%] w-[86%] sm:mx-[4%] sm:w-[92%] grid grid-cols-6 gap-8'>
-       {blogs.map((blog)=> (
+       {blogsData.blogs.map((blog)=> (
         <article id={blog.id} className='col-span-6 md:col-span-3 lg:col-span-2 relative'>
          <Link href={`/blog/${blog.id}`} className=''>
           <div className='overflow-hidden group'>
