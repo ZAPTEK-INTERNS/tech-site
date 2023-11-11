@@ -1,11 +1,14 @@
 import React from 'react'
 import { PageBanner, TestimonialCardSection } from '../components/testimonials'
 import Head from 'next/head'
+import { Navbar } from '../components/links'
 
 const testimonials = () => {
   return (
     <div>
         <Head> <title>Testimonials - Tech</title> </Head>
+
+        <Navbar />
         
         <PageBanner 
             Title='Testimonials' 
