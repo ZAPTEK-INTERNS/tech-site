@@ -13,7 +13,7 @@ const ServiceVideo = ({ title }) => {
 
   return (
     <div className="my-20 space-y-8 md:space-y-0 lg:flex md:space-x-12">
-      <div className="lg:w-1/2 justify-center flex relative">
+      <div className="lg:w-3/4 justify-center flex relative">
         <Image
           height="auto"
           width="auto"

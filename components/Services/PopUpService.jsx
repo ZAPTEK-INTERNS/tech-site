@@ -8,10 +8,10 @@ const PopUpService = ({ video, setVideo }) => {
   return (
     <>
       {video && (
-        <div className="bg-black/80 w-full h-screen fixed left-0 top-0 z-50 flex justify-center items-start">
-          <div className="flex justify-start items-start w-full h-screen mx-16 gap-10 my-[50px]">
+        <div className="fixed left-0 top-0 z-50 flex h-screen w-full items-start justify-center bg-black/80">
+          <div className="mx-16 my-[50px] flex h-screen w-full items-start justify-start gap-10">
             <iframe
-              className="w-full h-[30rem]"
+              className="h-[30rem] w-full"
               src="https://www.youtube.com/embed/vvyPj5bTcgQ"
               title="YouTube video player"
               allowFullScreen
@@ -19,7 +19,7 @@ const PopUpService = ({ video, setVideo }) => {
             <div onClick={handleVideo}>
               <AiOutlineClose
                 size={25}
-                className="cursor-pointer text-white font-bold"
+                className="cursor-pointer font-bold text-white"
               />
             </div>
           </div>

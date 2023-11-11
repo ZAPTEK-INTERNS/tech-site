@@ -1,5 +1,5 @@
-import logoblack from "../../../public/images/logo-black.svg";
 import logowhite from "../../../public/images/logo-white.svg";
+import logoblack from "../../../public/images/logo-black.svg"
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
@@ -9,12 +9,17 @@ import { FiArrowDownRight } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { DropDownA, DropDownB, DropDownC, Cart } from "../../links";
+import { useRouter } from "next/router";
+import home3 from "../../../pages/home3";
+import { logo, logoHome } from "../../../public/links";
 
-const Navbar = () => {
+const Navbar = ({ backgroundImage }) => {
   const [menu, setMenu] = useState(false);
   const [cart, setCart] = useState(false);
   const [navBg, setNavBg] = useState("");
   const [changeLogo, setChangeLogo] = useState(false);
+
+  const router = useRouter();
 
   useEffect(() => {
     const currentPage = window.location.pathname;
@@ -30,8 +35,7 @@ const Navbar = () => {
     ) {
       setNavBg("bg-transparent text-white");
       setChangeLogo(false);
-    } 
-    else {
+    } else {
       setNavBg("bg-white text-black");
       setChangeLogo(true);
     }
@@ -49,12 +53,20 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${navBg} w-full overflow-hidden my-6 pb-3 lg:my-0 lg:pb-0 border-b border-gray-400`}
+      className={`bg-${navBg} w-full overflow-hidden  ${
+        router.pathname === "/home3" || router.pathname === "/services/[id]"
+          ? "bg-[#1a0533] "
+          : ""
+      } my-6 pb-3 lg:my-0 lg:pb-0 border-b border-gray-400`}
     >
       <section className="flex justify-between items-center w-[90%] lg:w-[96%] mx-[5%] lg:ml-[4%]">
         <Image src={changeLogo ? logoblack : logowhite} />
 
-        <div className="hidden gap-12 text-lg font-semibold lg:flex">
+        <div
+          className={`hidden lg:flex text-lg gap-12 font-semibold ${
+            router.pathname === "/services/[id]" ? "text-white" : ""
+          }`}
+        >
           <div className="group">
             <p className="relative transition-all cursor-pointer hover:text-violet-900">
               <span className="absolute text-gray-400 bottom-3 left-[-15px] text-xs">
