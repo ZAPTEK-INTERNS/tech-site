@@ -55,7 +55,7 @@ const Navbar = ({ backgroundImage }) => {
         router.pathname === "/home3" || router.pathname === "/services/[id]"
           ? "bg-[#1a0533] "
           : ""
-      } py-6 pb-3 lg:my-0 lg:pb-0 border-b border-gray-400`}
+      } py-6 lg:py-0 pb-3 lg:my-0 lg:pb-0 border-b border-gray-400`}
     >
       <section className="flex justify-between items-center w-[90%] lg:w-[96%] mx-[5%] lg:ml-[4%]">
         <Image src={changeLogo ? logoblack : logowhite} />

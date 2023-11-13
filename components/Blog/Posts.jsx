@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {BsArrowRightShort} from 'react-icons/bs'
 
-const Posts = () => {
+const Posts = ({search}) => {
   return (
     <section className='mx-[7%] w-[86%] sm:mx-[4%] sm:w-[92%] grid grid-cols-6 gap-8 mb-[150px]'>
       <div className='col-span-6 md:col-span-4 relative mb-6 md:mb-0'>
@@ -35,7 +35,11 @@ const Posts = () => {
       </div>
 
       <div className='col-span-6 md:col-span-2 flex flex-col sm:flex-row md:flex-col gap-8 md:gap-2'>
-        {blogsData.slice(1,3).map((recent) => (
+        {blogsData.slice(1,3).filter((item) => {
+          return search.toLowerCase() === " " ?
+          item :
+          item.keyword.toLowerCase().includes(search)
+        }).map((recent) => (
           <article className='mb-3 w-full relative'>
             <Link href={`/blog/${recent.id}`} >
               <div className='overflow-hidden group'>
