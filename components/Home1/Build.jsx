@@ -9,7 +9,7 @@ const Build = () => {
   return (
     <div className='bg-[#1a0533] bg-cover bg-center bg-no-repeat w-full '>
       <div className='bg-ourteam w-full z-10'>
-        <div className='text-white text-5xl sm:text-6xl lg:text-7xl font-bold flex flex-col items-center mx-[5%] w-[90%] lg:w-[80%] lg:mx-[10%] mt-[150px] my-10'>
+        <div className='text-white text-5xl sm:text-6xl lg:text-7xl font-bold flex flex-col items-center mx-[5%] w-[90%] lg:w-[80%] lg:mx-[10%]'>
          <h1 className="mt-[60px]" data-aos="fade-up">
           Let's build something
            <div>

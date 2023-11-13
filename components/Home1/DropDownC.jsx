@@ -80,7 +80,7 @@ const DropDownC = () => {
           <div className="menu-link-bar"></div>
           <div>Shop</div>
         </Link>
-        <Link href="/shop/1" className='menu-link'>
+        <Link href="/shop/surface-pro" className='menu-link'>
           <div className="menu-link-bar"></div>
           <div>Shop Details</div>
         </Link>

@@ -4,7 +4,6 @@ import Image from "next/image";
 import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
-  
   return (
     <footer className="bg-[#1a0533] text-white z-20">
       <section className="py-12 text-lg font-semibold mx-[3%] w-[94%] lg:w-[90%] lg:mx-[5%] grid grid-cols-5 gap-12 lg:gap-2 place-items-center lg:place-items-start">
@@ -51,16 +50,25 @@ const Footer = () => {
 
         <div className="flex flex-col gap-4 col-span-3 sm:col-span-2 lg:col-span-1">
           <h1 className="text-2xl font-bold">Company</h1>
-          <Link href="/about-us" className="hover:text-violet-800 transition-all">
+          <Link
+            href="/about-us"
+            className="hover:text-violet-800 transition-all"
+          >
             About Us
           </Link>
-          <Link href="/pricing" className="hover:text-violet-800 transition-all">
+          <Link
+            href="/pricing"
+            className="hover:text-violet-800 transition-all"
+          >
             Pricing
           </Link>
           <Link href="/career" className="hover:text-violet-800 transition-all">
             Career
           </Link>
-          <Link href="/services" className="hover:text-violet-800 transition-all">
+          <Link
+            href="/services"
+            className="hover:text-violet-800 transition-all"
+          >
             Services
           </Link>
         </div>
@@ -70,7 +78,10 @@ const Footer = () => {
           <Link href="/blog" className="hover:text-violet-800 transition-all">
             Blog
           </Link>
-          <Link href="/case-studies" className="hover:text-violet-800 transition-all">
+          <Link
+            href="/case-studies"
+            className="hover:text-violet-800 transition-all"
+          >
             Case Studies
           </Link>
           <Link href="/blog/1" className="hover:text-violet-800 transition-all">
