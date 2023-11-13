@@ -26,6 +26,7 @@ const Blogdetail = () => {
     <div>
       <Navbar />
       {detailComponent}
+      <Navigation id={blogId} data={blogsData}/>
     </div>
   );
 };

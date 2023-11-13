@@ -28,8 +28,6 @@ const Navbar = ({ backgroundImage }) => {
       currentPage === "/home3" ||
       currentPage === "/shop" ||
       currentPage === "/getaquote" ||
-      currentPage === "/testimonials" ||
-      currentPage === "/pricing" ||
       currentPage === "/faq" ||
       currentPage === "/services/1"
     ) {
@@ -57,7 +55,7 @@ const Navbar = ({ backgroundImage }) => {
         router.pathname === "/home3" || router.pathname === "/services/[id]"
           ? "bg-[#1a0533] "
           : ""
-      } my-6 pb-3 lg:my-0 lg:pb-0 border-b border-gray-400`}
+      } py-6 pb-3 lg:my-0 lg:pb-0 border-b border-gray-400`}
     >
       <section className="flex justify-between items-center w-[90%] lg:w-[96%] mx-[5%] lg:ml-[4%]">
         <Image src={changeLogo ? logoblack : logowhite} />
@@ -136,13 +134,13 @@ const Navbar = ({ backgroundImage }) => {
             <Cart cart={cart} setCart={setCart} />
           </div>
           
-          <div className="z-30 items-center hidden gap-4 px-3 text-white transition-all cursor-pointer lg:flex py-7 group bg-violet-700 hover:bg-white hover:text-black">
+          <Link href='/getaquote' className="z-30 items-center hidden gap-4 px-3 text-white transition-all cursor-pointer lg:flex py-7 group bg-violet-700 hover:bg-white hover:text-black">
             <p className="h-full text-lg font-semibold">Get in Touch</p>
             <FiArrowDownRight
               size={28}
               className="transition-all group-hover:-rotate-45"
             />
-          </div>
+          </Link>
           <div onClick={handleMenu} className="block lg:hidden">
             <CgMenuRight size={35} />
           </div>
@@ -195,13 +193,13 @@ const Navbar = ({ backgroundImage }) => {
                 <DropDownC />
               </div>
             </div>
-            <div className="z-30 flex items-center gap-4 px-3 py-5 text-white transition-all cursor-pointer group bg-violet-700 hover:bg-white hover:text-black">
+            <Link href='/getaquote' className="z-30 flex items-center gap-4 px-3 py-5 text-white transition-all cursor-pointer group bg-violet-700 hover:bg-white hover:text-black">
               <p className="h-full text-lg font-semibold">Get in Touch</p>
               <FiArrowDownRight
                 size={35}
                 className="transition-all group-hover:-rotate-45"
               />
-            </div>
+            </Link>
           </div>
         </div>
       )}

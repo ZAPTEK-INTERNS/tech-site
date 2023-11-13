@@ -5,8 +5,8 @@ import {BsArrowRightShort} from 'react-icons/bs'
 
 const Blogs = () => {
   return (
-    <section className='mx-[7%] w-[86%] sm:mx-[4%] sm:w-[92%] grid grid-cols-6 gap-8'>
-       {blogsData.blogs.map((blog)=> (
+    <section className='mx-[7%] w-[86%] sm:mx-[4%] sm:w-[92%] grid grid-cols-6 gap-8 mb-10'>
+       {blogsData.slice(3,9).map((blog)=> (
         <article id={blog.id} className='col-span-6 md:col-span-3 lg:col-span-2 relative'>
          <Link href={`/blog/${blog.id}`} className=''>
           <div className='overflow-hidden group'>

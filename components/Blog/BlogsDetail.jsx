@@ -1,14 +1,17 @@
 import { useRouter } from "next/router";
 import Image from "next/image";
 import { blogsData } from './index'
+import { Loader } from "../links";
+
 
 const BlogsDetail = () => {
   const router = useRouter()
   const { id } = router.query
   const blogId = parseInt(id)
 
-  const blog = blogsData.blogs.find((blog) => blog.id === blogId)
-  if (!blogsData.post) {
+  const blog = blogsData.slice(3,9).find((blog) => blog.id === blogId)
+
+  if (!blog) {
     return <Loader/>;
   }
 
@@ -132,7 +135,6 @@ const BlogsDetail = () => {
         </ul>
       </div>
 
-    {/*  <Navigation id ={blogId} data={blogsData.blogs}/>*/}
     </section>
   )
 }

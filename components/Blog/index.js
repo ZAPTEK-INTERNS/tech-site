@@ -1,7 +1,7 @@
 import {blog1, blog2, blog3, blog4, blog5, blog6, blog7, blog8, blog9} from '../../public/links'
 
-export const blogsData = {
- post: {  id:1,
+export const blogsData = [
+  {  id:1,
   date: "September 20, 2023",
   image: blog1,
   keyword:"Cybersecurity",
@@ -85,8 +85,8 @@ supplyChainAttacks: {
 },
 } , 
     
-recentPosts : [
-    { id: 2,
+    { 
+    id: 2,
     image:blog2,
     date: "September 20, 2023",
     keyword:"Cloud Computing",
@@ -183,10 +183,8 @@ recentPosts : [
          "In the world of Information Technology project management, success is not a destination but a journey, marked by meticulous planning, steadfast leadership, and unwavering commitment. Sarah's triumph in navigating the complex realm of IT projects serves as a testament to the strategies for success outlined in this guide.",
         "Through defining clear objectives, assembling the right team, effective communication, and adeptly managing change and challenges, Sarah and her team transformed a monumental undertaking into a resounding success. Their dedication, expertise, and resilience demonstrated how a well-executed IT project can not only meet its goals but also significantly enhance organizational capabilities and service delivery.",
       ]
-    }}       
-]
-,
-blogs: [
+    }}  ,
+
 { 
 id: 4,
 image:blog4,
@@ -539,4 +537,3 @@ conclusion: {
   
   },
 ]
-}
