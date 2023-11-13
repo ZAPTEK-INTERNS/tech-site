@@ -1,6 +1,6 @@
 import {AiOutlineClose} from 'react-icons/ai'
 
-const PopUp = ({video, setVideo}) => {
+const Popup = ({video, setVideo}) => {
 
   const handleVideo = () => {
     setVideo(false)
@@ -30,4 +30,4 @@ const PopUp = ({video, setVideo}) => {
   )
 }
 
-export default PopUp
+export default Popup
