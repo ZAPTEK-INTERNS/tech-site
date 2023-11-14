@@ -5,8 +5,8 @@ import { ButtonLink } from '../links'
 
 const About = () => {
   return (
-    <section className='mx-[5%] w-[90%] lg:w-[80%] lg:mx-[10%] mt-[150px] mb-[100px] md:flex'>
-        <div className="w-1/2" >
+    <section className='mx-[5%] w-[90%] lg:w-[80%] lg:mx-[10%] mt-[150px] mb-[100px] md:flex md:space-x-4'>
+        <div className="md:w-1/2" >
 
      <h3 className='bg-black/10 text-lg font-semibold w-fit rounded-md px-4 py-2 text-violet-900' data-aos="fade-up">
        Who we are
@@ -24,8 +24,8 @@ const About = () => {
      </div>
         </div>
 
-     <div className='md:w-1/2'>
-      <div className='' data-aos="fade-left">          
+     <div className='md:w-1/2 md:relative'>
+      <div className='md:absolute md:z-10 md:top-[50%] my-8' data-aos="fade-left">          
         <ButtonLink URLLink='about-us' />
       </div>
       <Image 
@@ -34,9 +34,9 @@ const About = () => {
        className=' w-full h-[24rem] rounded-md' 
        data-aos="fade-up"
        />
-      <div className=' flex '>
+      <div className=' flex space-x-12 '>
         <div 
-          className='md:border-b md:border-gray-400 text-center md:text-left' 
+          className=' text-center md:text-left' 
           data-aos="fade-left"
           aos-duration="2000"
           >
@@ -45,7 +45,7 @@ const About = () => {
           Years of experience in software development
          </p>
         </div>
-        <div className='text-center md:text-left' data-aos="fade-left" aos-duration="2500">
+        <div className=' md:border-l px-4 md:border-gray-400 text-center md:text-left' data-aos="fade-left" aos-duration="2500">
           <h1 className='text-violet-800 text-5xl sm:text-6xl font-bold'>50</h1>
           <p className='text-lg font-semibold text-gray-500 mb-6'>
             Winning awards as one of the top world company
