@@ -6,7 +6,7 @@ import {BsArrowRightShort} from 'react-icons/bs'
 const Posts = ({search}) => {
   return (
     <section className='mx-[7%] w-[86%] sm:mx-[4%] sm:w-[92%] grid grid-cols-6 gap-8 mb-[150px]'>
-      <div className='col-span-6 md:col-span-4 relative mb-6 md:mb-0'>
+      <div className='col-span-6 md:col-span-4 relative mb-6 md:mb-0' data-aos="fade-up">
         <Link href={`/blog/${blogsData[0].id}`}>
           <div className='overflow-hidden group'>
            <Image 
@@ -40,7 +40,7 @@ const Posts = ({search}) => {
           item :
           item.keyword.toLowerCase().includes(search)
         }).map((recent) => (
-          <article className='mb-3 w-full relative'>
+          <article className='mb-3 w-full relative' data-aos="fade-up">
             <Link href={`/blog/${recent.id}`} >
               <div className='overflow-hidden group'>
                <Image 

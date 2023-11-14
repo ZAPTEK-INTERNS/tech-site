@@ -12,7 +12,7 @@ const Blogs = ({search}) => {
          item.keyword.toLowerCase().includes(search)
        }).map((blog)=> (
         
-        <article id={blog.id} className='col-span-6 md:col-span-3 lg:col-span-2 relative'>
+        <article id={blog.id} className='col-span-6 md:col-span-3 lg:col-span-2 relative' data-aos="fade-up">
          <Link href={`/blog/${blog.id}`} className=''>
           <div className='overflow-hidden group'>
             <Image 
