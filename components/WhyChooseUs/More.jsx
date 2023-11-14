@@ -1,4 +1,7 @@
 import React from "react";
+import Image from 'next/image'
+import p from '../../public/images/pricing2.webp'
+import p1 from '../../public/images/pricing1.webp'
 
 const More = () => {
   return (
@@ -22,22 +25,26 @@ const More = () => {
 
           <div>
             <p className="text-7xl font-bold py-8">12+</p>
-            <p className="text-gray-500 font-medium">Decades of experience in software development</p>
+            <p className="text-gray-400 font-medium">Decades of experience in software development</p>
           </div>
           <div>
             <p className="text-7xl font-bold py-8">300</p>
-            <p className="text-gray-500 font-medium">
+            <p className="text-gray-400 font-medium">
               Amassed a portfolio of numerous successfully completed projects
             </p>
           </div>
             </div>
         </div>
       </div> 
-      <p>image</p>
+      <div className="mx-4 flex justify-center">
+        <Image src={p} width="auto" height="auto" className="rounded-lg" />
+      </div>
       <div className="flex justify-around p-20">
 
-      <p className="text-center font-bold text-5xl">Your experience in IT  consulting provides us with a unique perspective that other consulting agencies may not have access</p>
+      <div className="text-center font-bold text-4xl flex"> Your experience in IT 
+        consulting provides us  with a unique perspective that other consulting agencies may not have access</div>
       </div>
+      {/* <Image src={p} width={100} height={40} className="rounded-full " /> */}
     </>
   );
 };
