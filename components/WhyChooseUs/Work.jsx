@@ -3,8 +3,8 @@ import ProjectCard from './ProjectCard';
 
 const Work = () => {
   return (
-    <div className="md:flex mx-4">
-      <div className="md:w-1/2">
+    <div className="md:flex mx-4 md:mx-16">
+      <div className="md:w-1/2 md:my-28">
         <div
           data-aos="fade-up"
           className="md:flex justify-center md:flex-none md:justify-normal "
