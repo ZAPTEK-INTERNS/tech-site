@@ -8,15 +8,14 @@ import { Build, Navbar } from '../components/links'
 
 const whychooseus = () => {
   return (
-    <div>
-        <Navbar/>
-      <Hero/>
-      <Sponsors/>
-      <More/>
-      <Services/>
-      <Work/>
-      <Build/>
-    </div>
+    <><Navbar /><div className='w-[100%] overflow-hidden'>
+      <Hero />
+      <Sponsors />
+      <More />
+      <Services />
+      <Work />
+      <Build />
+    </div></>
   )
 }
 
