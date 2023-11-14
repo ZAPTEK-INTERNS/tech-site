@@ -6,9 +6,12 @@ import { itservices } from '../Home1'
 const Variety = () => {
   return (
     <div className='bg-[#180030]'>
-           <h3 className='bg-gray/50  flex justify-center text-lg font-semibold w-fit rounded-md px-4 py-2 text-violet-900' data-aos="fade-up">
+        <div className='flex justify-center'>
+           <h3 className='bg-gray/50   text-lg font-semibold w-fit rounded-md px-4 py-2 text-violet-900' data-aos="fade-up">
            Variety solution for IT services
      </h3>
+
+        </div>
 
      <div>
         {

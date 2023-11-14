@@ -2,13 +2,37 @@ import Link from 'next/link';
 import { cardsData } from '../Home1';
 import Image from 'next/image';
 import { ButtonLink } from '../links'
-
+import { useState } from 'react';
+import { GoArrowRight } from "react-icons/go";
+import { GoArrowLeft } from "react-icons/go";
 
 const ProjectCard = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const itemsPerPage = 2;
+
+  const nextItems = () => {
+    const newIndex = currentIndex + itemsPerPage;
+    if (newIndex < cardsData.length) {
+      setCurrentIndex(newIndex);
+    } else {
+      // Start from the top if reaching the end
+      setCurrentIndex(0);
+    }
+  };
+
+  const prevItems = () => {
+    const newIndex = currentIndex - itemsPerPage;
+    if (newIndex >= 0) {
+      setCurrentIndex(newIndex);
+    } else {
+      // Go to the end if reaching the top
+      setCurrentIndex(cardsData.length - itemsPerPage);
+    }
+  };
   return (
     <section className='my-[120px] mx-[5%] w-[90%] lg:w-[86%] lg:mx-[7%]'>
       <div className='grid grid-cols-2 gap-8'>
-       {cardsData.map((card) => (
+      {cardsData.slice(currentIndex, currentIndex + itemsPerPage).map((card) => (
         <div key={card.id} className="col-span-2 md:col-span-1">
          <div class="group relative overflow-hidden">
            <Image
@@ -33,7 +57,12 @@ const ProjectCard = () => {
         </div>
         </div>
        ))}
+
        </div>  
+       <div className="flex space-x-8 mt-4">
+       <button onClick={prevItems}  className=" border border-slate-300 hover:text-white hover:bg-violet-700 rounded-full p-3"> <GoArrowLeft width={60} height={60}/> </button>
+        <button onClick={nextItems} className=" border border-slate-300 hover:text-white hover:bg-violet-700 rounded-full p-3"> <GoArrowRight width={40} height={60} /> </button>
+      </div>
     </section>
   )
 }
