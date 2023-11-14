@@ -1,7 +1,6 @@
 import React from "react";
 import Image from 'next/image'
 import p from '../../public/images/pricing2.webp'
-import p1 from '../../public/images/pricing1.webp'
 
 const More = () => {
   return (
@@ -21,23 +20,23 @@ const More = () => {
             </div>
         </div>
         <div className="md:w-1/2 flex justify-center md:p-16">
-            <div className="flex space-x-12">
+            <div className="sm:flex md:flex-col md:space-x-0">
 
-          <div>
+          <div className="md:flex md:space-x-4 border border-white  md:border-b-slate-300">
             <p className="text-7xl font-bold py-8">12+</p>
-            <p className="text-gray-400 font-medium">Decades of experience in software development</p>
+            <p className="text-gray-400 font-medium md:mt-[10%]">Decades of experience in software development</p>
           </div>
-          <div>
+          <div className="md:flex md:space-x-4">
             <p className="text-7xl font-bold py-8">300</p>
-            <p className="text-gray-400 font-medium">
+            <p className="text-gray-400 font-medium md:mt-[10%]">
               Amassed a portfolio of numerous successfully completed projects
             </p>
           </div>
             </div>
         </div>
       </div> 
-      <div className="mx-4 flex justify-center">
-        <Image src={p} width="auto" height="auto" className="rounded-lg" />
+      <div className="mx-4 flex justify-center mt-8 ">
+        <Image src={p} width="auto" height="auto" className="rounded-lg object-contain w-full" />
       </div>
       <div className="flex justify-around p-20">
 

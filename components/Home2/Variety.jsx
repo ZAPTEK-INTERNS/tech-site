@@ -13,7 +13,7 @@ const Variety = () => {
 
         </div>
 
-     <div>
+     <div className='mx-4 md:mx-16'>
 
      
         {
