@@ -1,6 +1,7 @@
 import React from "react";
 import Image from 'next/image'
 import p from '../../public/images/pricing2.webp'
+import {p3, p4} from '../../public/links'
 
 const More = () => {
   return (
@@ -38,10 +39,9 @@ const More = () => {
       <div className="mx-4 flex justify-center mt-8 ">
         <Image src={p} width="auto" height="auto" className="rounded-lg object-contain w-full" />
       </div>
-      <div className="flex justify-around p-20">
 
-      <div className="text-center font-bold text-4xl flex"> Your experience in IT 
-        consulting provides us  with a unique perspective that other consulting agencies may not have access</div>
+      <div className="font-bold text-4xl m-6">  Your experience in IT  consulting provides us 
+          with a unique perspective that other consulting agencies may not have access
       </div>
       {/* <Image src={p} width={100} height={40} className="rounded-full " /> */}
     </>
