@@ -1,87 +1,80 @@
-import { www, data, mobile, lock } from "../../public/links";
-import Image from "next/image";
-import { useState, useEffect } from "react";
+import Image from 'next/image';
+import React from 'react';
+import { datawhite, globewhite, mobilewhite, padlockwhite } from '../../public/links';
 
-const items = [
-  {
-    title: "Custom Software Development",
-    content:
-      "Tailor-made software solutions designed to align seamlessly with your unique business needs and drive productivity to new heights.",
-    Image: www,
-  },
-  {
-    title: "Data Analytics and Insights",
-    content:
-      "Unlocking the power of data to make informed decisions, identify trends, and gain a competitive edge in your industry.",
-    Image: data,
-  },
-  {
-    title: "Mobile App Development",
-    content:
-      "Creating captivating and user-friendly mobile applications that engage your audience and enhance your brand presence is a crucial aspect of business.",
-    Image: mobile,
-  },
-  {
-    title: "Cybersecurity Solutions",
-    content:
-      "Safeguarding your invaluable digital assets and fortifying your online against the relentless and ever-evolving global landscape of cyber threats.",
-    Image: lock,
-  },
-];
-
-function OurServices() {
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const sectionPositions = items.map(
-        (item) => item.element.getBoundingClientRect().top
-      );
-      const activeIndex = sectionPositions.findIndex(
-        (pos) => pos < window.innerHeight / 2
-      );
-
-      setActiveIndex(activeIndex);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  // Timeline.js
-
+const OurServices = () => {
   return (
-    <ol className="relative ml-8">
-      {items.map((item, index) => (
-        <li
-          key={index}
-          ref={(el) => (item.element = el)}
-          className={`mb-10 ml-6 ${index === activeIndex ? "active" : ""}`}
+    <>
+      <div className=" mb-8 ml-[4.5rem] flex items-start lg:ml-[18.5rem]">
+        <p
+          data-aos="fade-up"
+          className="w-fit rounded-md  bg-[#8000FF]/10 px-4 py-2 text-lg font-semibold text-violet-600/100"
         >
-          <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white ">
-            <Image
-              src={item.Image}
-              alt={`${item.name} image`}
-              className="rounded-full shadow-lg"
-              width={50}
-              height={50}
-            />
+          Our Services
+        </p>
+      </div>
+      <ol
+        className="relative mx-8 ml-24 h-[190vh]  border-s-[1.7px] border-dashed border-slate-300  bg-white lg:ml-[20rem] lg:h-[110vw]"
+        data-aos="fade-up"
+      >
+        <li className="mb-10  ms-6" data-aos="fade-up">
+          <span className="absolute -start-12 flex h-16 w-14 items-center justify-center rounded-xl bg-[#8000FF] ring-8 ring-white">
+            <Image src={globewhite} className="h-6 w-16  " />
           </span>
-
-          <div className="bg-white  rounded-lg ">
-            <div className="p-4">
-              <h1 className="text-3xl font-bold">{item.title}</h1>
-              <div className="text-lg font-normal text-gray-500">
-                {item.content}
-              </div>
-            </div>
-          </div>
+          <h3 className="mb-1 flex items-center text-lg font-semibold text-gray-900 dark:text-white"></h3>
+          <h1 className="mb-4 ml-8 text-5xl font-bold lg:text-8xl">
+            Custom Software Development
+          </h1>
+          <p className="mb-4 ml-8 w-11/12 text-lg font-semibold text-slate-500 lg:w-1/2 lg:text-base">
+            Tailor-made software solutions designed to align seamlessly with
+            your unique business needs and drive productivity to new heights.
+          </p>
         </li>
-      ))}
-    </ol>
+        <li className="mb-10 ms-6 mt-24" data-aos="fade-up">
+          <span className="absolute -start-12 flex h-16 w-14 items-center justify-center rounded-xl bg-[#8000FF] ring-8 ring-white">
+            <Image src={datawhite} className="h-6 w-16  " />
+          </span>
+          <h3 className="mb-1 flex items-center text-lg font-semibold text-gray-900 dark:text-white"></h3>
+          <h1 className="mb-4 ml-8 text-5xl font-bold  lg:text-8xl">
+            Data Analytics and Insights
+          </h1>
+          <p className="mb-4 ml-8 w-11/12 text-lg font-semibold text-slate-500 lg:w-1/2 lg:text-base">
+            Tailor-made software solutions designed to align seamlessly with
+            your unique business needs and drive productivity to new heights.
+          </p>
+        </li>
+        <li className="ms-6 mt-24" data-aos="fade-up">
+          <span className="absolute -start-12 flex h-16 w-14 items-center justify-center rounded-xl bg-[#8000FF] ring-8 ring-white">
+            <Image src={mobilewhite} className="h-6 w-16  " />
+          </span>
+          <h3 className="mb-1 flex items-center text-lg font-semibold text-gray-900 dark:text-white"></h3>
+          <h1 className="mb-4 ml-8 text-5xl font-bold  lg:text-8xl">
+            Mobile App Development
+          </h1>
+          <p className="mb-4 ml-8 w-11/12 text-lg font-semibold text-slate-500 lg:w-1/2 lg:text-base">
+            Tailor-made software solutions designed to align seamlessly with
+            your unique business needs and drive productivity to new heights.
+          </p>
+        </li>
+        <li className="ms-6 mt-24" data-aos="fade-up">
+          <span className="absolute -start-12 flex h-16 w-14 items-center justify-center rounded-xl bg-[#8000FF] ring-8 ring-white">
+            <Image src={padlockwhite} className="h-6 w-16  " />
+          </span>
+          <h3 className="mb-1 flex items-center text-lg font-semibold text-gray-900 dark:text-white"></h3>
+          <h1 className="mb-4 ml-8 text-5xl font-bold  lg:text-8xl">
+            Cybersecurity Solutions
+          </h1>
+          <p className="mb-4 ml-8 w-11/12 text-lg font-semibold text-slate-500 lg:w-1/2 lg:text-base">
+            Tailor-made software solutions designed to align seamlessly with
+            your unique business needs and drive productivity to new heights.
+          </p>
+        </li>
+        <button className="btn-primary mt-8 inline-flex w-48 items-center ml-14  justify-center gap-4 rounded-3xl py-3 text-xl font-semibold text-white hover:border-2 hover:border-[#1a0533] hover:bg-white hover:text-black">
+          Learn More <span className="">●</span>
+        </button>
+      </ol>
+    </>
   );
-}
+};
+
 export default OurServices;
