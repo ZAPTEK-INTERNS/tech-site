@@ -50,32 +50,32 @@ export const cardsData = [
 ];
 
 export const services = [
-    { id:1,
+    { id:6,
       icon:digital,
      title:"Digital Consulting",
      text: "Unleashing the full potential of your business through expert guidance and strategic implementation of cutting-edge technologies."
     },
-    { id:2,
+    { id:7,
      icon:www,
      title:"Custom Software Development",
      text: "Tailor-made software solutions designed to align seamlessly with your unique business needs and drive productivity to new heights."
     },
-    { id:3,
+    { id:8,
      icon:data,
      title:"Data Analytics and Insights",
      text: "Unlocking the power of data to make informed decisions, identify trends, and gain a competitive edge in your industry."
     },
-    { id:4,
+    { id:9,
     icon:mobile,
-    title:"Mobile App Developmentt",
+    title:"Mobile App Development",
     text: "Creating captivating and user-friendly mobile applications that engage your audience and enhance your brand presence is a crucial aspect of business."
     },
-    {  id:5,
+    {  id:10,
     icon:padlock,
     title:"Cybersecurity Solutions",
     text: "Safeguarding your invaluable digital assets and fortifying your online against the relentless and ever-evolving global landscape of cyber threats."
     },
-    { id:6,
+    { id:11,
      icon:cloud,
     title:"Cloud Services and Migration",
     text: "Transitioning your business to the cloud, unlocking scalability, efficiency, and enhanced collaboration across your organization."

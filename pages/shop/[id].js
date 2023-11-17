@@ -3,6 +3,7 @@ import { ShopDB } from "../../components/shop/ShopDB";
 import Image from 'next/image';
 import CartCard from '../../components/shop/CartCard';
 import Head from 'next/head';
+import { Navbar } from '../../components/links';
 
 const ShopDetails = () => {
   const router = useRouter();
@@ -10,7 +11,12 @@ const ShopDetails = () => {
   const shop = ShopDB.find((shop) => shop.url === shopId);
 
   if (!shop) {
-    return <div>Loading...</div>;
+    return (
+      <>
+        <Navbar />
+        <div>Loading...</div>
+      </>
+    );
   }
 
   // Getting three items from the ShopDB
@@ -29,6 +35,8 @@ const ShopDetails = () => {
   return (
     <div>
       <Head> <title>{shop.name} - Tech</title> </Head>
+
+      <Navbar />
 
       <section className="grid w-full grid-cols-6 gap-8 px-4 md:px-[170px] py-16 md:pt-[100px] md:pb-[10px]">
         <div className="col-span-6 space-y-6 md:col-span-3">

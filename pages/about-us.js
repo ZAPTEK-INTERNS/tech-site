@@ -5,7 +5,7 @@ import Better from "../components/AboutUs/Better";
 import Build from "../components/AboutUs/Build";
 import Culture from "../components/AboutUs/Culture";
 import Work from "../components/AboutUs/Work";
-import {Testimonials} from "../components/Links";
+import {Testimonials} from "../components/links";
 import TeamCards from "../components/AboutUs/TeamCards";
 import Excellence from "../components/AboutUs/Excellence";
 

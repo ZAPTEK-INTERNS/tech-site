@@ -62,3 +62,5 @@ export { default as blog6 } from "./images/blog6.jpg";
 export { default as blog7 } from "./images/blog7.jpg";
 export { default as blog8 } from "./images/blog8.jpg";
 export { default as blog9 } from "./images/blog9.jpg";
+export { default as p3 } from "./images/pppp3.jpg";
+export { default as p4 } from "./images/pppp4.jpg";
