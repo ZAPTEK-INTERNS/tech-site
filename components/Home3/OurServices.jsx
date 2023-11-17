@@ -1,87 +1,55 @@
+"use client";
+
+import { Button, Timeline } from "flowbite-react";
+import { HiArrowNarrowRight, HiCalendar } from "react-icons/hi";
+import { TbWorldWww } from "react-icons/tb";
 import { www, data, mobile, lock } from "../../public/links";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
-const items = [
-  {
-    title: "Custom Software Development",
-    content:
-      "Tailor-made software solutions designed to align seamlessly with your unique business needs and drive productivity to new heights.",
-    Image: www,
-  },
-  {
-    title: "Data Analytics and Insights",
-    content:
-      "Unlocking the power of data to make informed decisions, identify trends, and gain a competitive edge in your industry.",
-    Image: data,
-  },
-  {
-    title: "Mobile App Development",
-    content:
-      "Creating captivating and user-friendly mobile applications that engage your audience and enhance your brand presence is a crucial aspect of business.",
-    Image: mobile,
-  },
-  {
-    title: "Cybersecurity Solutions",
-    content:
-      "Safeguarding your invaluable digital assets and fortifying your online against the relentless and ever-evolving global landscape of cyber threats.",
-    Image: lock,
-  },
-];
-
 function OurServices() {
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const sectionPositions = items.map(
-        (item) => item.element.getBoundingClientRect().top
-      );
-      const activeIndex = sectionPositions.findIndex(
-        (pos) => pos < window.innerHeight / 2
-      );
-
-      setActiveIndex(activeIndex);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  // Timeline.js
-
   return (
-    <ol className="relative ml-8">
-      {items.map((item, index) => (
-        <li
-          key={index}
-          ref={(el) => (item.element = el)}
-          className={`mb-10 ml-6 ${index === activeIndex ? "active" : ""}`}
-        >
-          <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white ">
-            <Image
-              src={item.Image}
-              alt={`${item.name} image`}
-              className="rounded-full shadow-lg"
-              width={50}
-              height={50}
-            />
-          </span>
-
-          <div className="bg-white  rounded-lg ">
-            <div className="p-4">
-              <h1 className="text-3xl font-bold">{item.title}</h1>
-              <div className="text-lg font-normal text-gray-500">
-                {item.content}
-              </div>
-            </div>
-          </div>
-        </li>
-      ))}
-    </ol>
+    <Timeline className="ml-8">
+      <Timeline.Item>
+        <Timeline.Point icon={TbWorldWww} className="" />
+        <Timeline.Content>
+          <Timeline.Time>February 2022</Timeline.Time>
+          <Timeline.Title>Application UI code in Tailwind CSS</Timeline.Title>
+          <Timeline.Body>
+            Get access to over 20+ pages including a dashboard layout, charts,
+            kanban board, calendar, and pre-order E-commerce & Marketing pages.
+          </Timeline.Body>
+          <Button color="gray">
+            Learn More
+            <HiArrowNarrowRight className="ml-2 h-3 w-3" />
+          </Button>
+        </Timeline.Content>
+      </Timeline.Item>
+      <Timeline.Item>
+        <Timeline.Point icon={HiCalendar} />
+        <Timeline.Content>
+          <Timeline.Time>March 2022</Timeline.Time>
+          <Timeline.Title>Marketing UI design in Figma</Timeline.Title>
+          <Timeline.Body>
+            All of the pages and components are first designed in Figma and we
+            keep a parity between the two versions even as we update the
+            project.
+          </Timeline.Body>
+        </Timeline.Content>
+      </Timeline.Item>
+      <Timeline.Item>
+        <Timeline.Point icon={HiCalendar} />
+        <Timeline.Content>
+          <Timeline.Time>April 2022</Timeline.Time>
+          <Timeline.Title>E-Commerce UI code in Tailwind CSS</Timeline.Title>
+          <Timeline.Body>
+            Get started with dozens of web components and interactive elements
+            built on top of Tailwind CSS.
+          </Timeline.Body>
+        </Timeline.Content>
+      </Timeline.Item>
+    </Timeline>
   );
 }
+
 export default OurServices;
