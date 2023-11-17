@@ -74,3 +74,7 @@ body {
 .menu-link:hover .menu-link-bar {
   display: block;
 }
+
+input:checked ~ .dot {
+  transform: translateX(100%);
+}

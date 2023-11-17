@@ -2,7 +2,7 @@ import {vpole} from '../../public/links'
 import Image from 'next/image'
 import {BsPlayFill} from 'react-icons/bs'
 import { useState } from 'react'
-import PopUp from './PopUp'
+import Popup from './Popup'
 
 const Video = () => {
   const [video, setVideo] = useState(false)
@@ -29,7 +29,7 @@ const Video = () => {
         </div>
 
         <div>
-           <PopUp  video={video} setVideo={setVideo}/>
+           <Popup  video={video} setVideo={setVideo}/>
          </div>
 
        </div>

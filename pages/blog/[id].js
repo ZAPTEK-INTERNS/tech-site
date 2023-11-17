@@ -1,9 +1,34 @@
-import React from 'react'
+import { PostDetail, Navbar, RecentDetail, BlogsDetail , Navigation} from '../../components/links';
+import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
+import {blogsData} from '../../components/Blog/index'
 
 const Blogdetail = () => {
-  return (
-    <div>nnnnnnnnnnnn</div>
-  )
-}
+  const router = useRouter();
+  const { id } = router.query;
+  const blogId = parseInt(id);
 
-export default Blogdetail
+  const [detailComponent, setDetailComponent] = useState(null);
+
+  useEffect(() => {
+    if (blogId === 1) {
+      setDetailComponent(<PostDetail />);
+    } 
+    else if (blogId === 2 || blogId === 3) {
+      setDetailComponent(<RecentDetail />);
+    } 
+    else {
+      setDetailComponent(<BlogsDetail />);
+    }
+  }, [blogId]);
+
+  return (
+    <div>
+      <Navbar />
+      {detailComponent}
+      <Navigation id={blogId} data={blogsData}/>
+    </div>
+  );
+};
+
+export default Blogdetail;
